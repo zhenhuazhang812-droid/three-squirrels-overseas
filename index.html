@@ -3,2210 +3,300 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" data-i18n="meta.description" content="Three Squirrels Overseas - Premium Chinese Snacks Export. Discover our high-quality nuts, dried fruits, and specialty snacks for global markets.">
-  <title data-i18n="meta.title">Three Squirrels Overseas | Premium Chinese Snacks Exporter</title>
-
-  <!-- Fonts -->
+  <title>Three Squirrels Overseas | Premium Chinese Snacks for Global Markets</title>
+  <meta name="description" content="Three Squirrels is China's leading snack food exporter, offering premium nuts, dried fruits, sea snacks and gift sets to distributors and retailers worldwide. MOQ from 200 boxes.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- i18n -->
-  <script src="js/i18n.js"></script>
+  <link rel="icon" type="image/png" href="images/logo-original.png">
 </head>
 <body>
-  <!-- Loading Overlay -->
-  <div class="loading-overlay">
-    <div class="loader">
-      <svg class="loader-squirrel" viewBox="0 0 100 100" fill="none">
-        <circle cx="50" cy="50" r="45" stroke="#FF6B35" stroke-width="4" fill="none"/>
-        <path d="M50 15 L55 25 L65 25 L57 32 L60 42 L50 36 L40 42 L43 32 L35 25 L45 25 Z" fill="#FF6B35"/>
-        <circle cx="50" cy="55" r="20" fill="#FF6B35"/>
-        <circle cx="44" cy="52" r="3" fill="#fff"/>
-        <circle cx="56" cy="52" r="3" fill="#fff"/>
-        <ellipse cx="50" cy="60" rx="4" ry="3" fill="#E85A24"/>
-      </svg>
-    </div>
-  </div>
 
-  <!-- Header -->
+  <!-- HEADER -->
   <header class="header">
-    <div class="container">
-      <div class="header-inner">
-        <a href="index.html" class="logo">
-          <img src="images/logo-original.png" alt="Three Squirrels" class="logo-img">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo-original.png" alt="Three Squirrels" class="logo-img">
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="inquiry.html" class="cart-btn" title="My Inquiry">
+          <i data-lucide="shopping-cart"></i>
+          <span class="cart-badge" id="cartBadge" style="display:none;">0</span>
         </a>
-
-        <nav class="nav-menu">
-          <a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a>
-          <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
-          <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
-          <a href="products.html" class="nav-link" data-i18n="nav.products">Products</a>
-          <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
-        </nav>
-
-        <div class="nav-actions">
-          <!-- Language Switcher -->
-          <div class="language-switcher">
-            <button class="current-lang-indicator" type="button">
-              <span class="lang-flag">EN</span>
-              <span class="current-lang-name">English</span>
-              <i data-lucide="chevron-down"></i>
-            </button>
-            <div class="lang-dropdown">
-              <button class="lang-btn active" data-lang="en">
-                <span class="lang-flag">EN</span>
-                <span class="lang-name">English</span>
-              </button>
-              <button class="lang-btn" data-lang="zh">
-                <span class="lang-flag">中</span>
-                <span class="lang-name">Chinese</span>
-              </button>
-              <button class="lang-btn" data-lang="ko">
-                <span class="lang-flag">한</span>
-                <span class="lang-name">Korean</span>
-              </button>
-              <button class="lang-btn" data-lang="ms">
-                <span class="lang-flag">MS</span>
-                <span class="lang-name">Malay</span>
-              </button>
-              <button class="lang-btn" data-lang="vi">
-                <span class="lang-flag">VI</span>
-                <span class="lang-name">Vietnamese</span>
-              </button>
-            </div>
-          </div>
-          <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.getQuote">Get Quote</a>
-        </div>
-
-        <button class="menu-toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <a href="products.html" class="btn btn-primary btn-sm">Start Sourcing</a>
       </div>
+      <button class="menu-toggle" onclick="document.querySelector('.nav').classList.toggle('active')">
+        <i data-lucide="menu"></i>
+      </button>
     </div>
   </header>
-
-  <!-- Mobile Navigation -->
   <nav class="mobile-nav">
-    <a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a>
-    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
-    <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
-    <a href="products.html" class="nav-link" data-i18n="nav.products">Products</a>
-    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
-    <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;" data-i18n="nav.getQuote">Get Quote</a>
-
-    <!-- Mobile Language Switcher -->
-    <div class="mobile-lang-switcher">
-      <p style="font-size: 0.875rem; color: var(--color-gray); margin-bottom: var(--space-sm);">Select Language:</p>
-      <div class="mobile-lang-list">
-        <button class="mobile-lang-btn active" data-lang="en">English</button>
-        <button class="mobile-lang-btn" data-lang="zh">中文</button>
-        <button class="mobile-lang-btn" data-lang="ko">한국어</button>
-        <button class="mobile-lang-btn" data-lang="ms">Bahasa Melayu</button>
-        <button class="mobile-lang-btn" data-lang="vi">Tiếng Việt</button>
-      </div>
-    </div>
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="products.html" class="nav-link">Products</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="inquiry.html" class="btn btn-primary" style="margin-top:16px; text-align:center;">My Inquiry</a>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg-pattern"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <i data-lucide="globe" style="width: 16px; height: 16px;"></i>
-        <span data-i18n="hero.badge">Global Snack Solutions Since 2012</span>
-      </div>
-      <h1 class="hero-title" data-i18n="hero.title">Premium Chinese Snacks<br><span class="highlight">For the World</span></h1>
-      <p class="hero-subtitle" data-i18n="hero.subtitle">Bringing authentic Chinese snack culture to global markets with premium quality nuts, dried fruits, and specialty treats.</p>
-      <div class="hero-buttons">
-        <a href="products.html" class="btn btn-primary btn-lg" data-i18n="hero.ctaProducts">Explore Products</a>
-        <a href="contact.html" class="btn btn-white btn-lg" data-i18n="hero.ctaContact">Contact Us</a>
-      </div>
-      <div class="hero-features">
-        <div class="hero-feature">
-          <i data-lucide="shield-check" style="width: 18px; height: 18px;"></i>
-          <span>ISO 22000 Certified</span>
-        </div>
-        <div class="hero-feature">
-          <i data-lucide="truck" style="width: 18px; height: 18px;"></i>
-          <span>50+ Countries Served</span>
-        </div>
-        <div class="hero-feature">
-          <i data-lucide="package" style="width: 18px; height: 18px;"></i>
-          <span>500+ Products SKU</span>
-        </div>
-      </div>
+    <div class="hero-bg">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
     </div>
-    <div class="hero-scroll">
-      <span data-i18n="hero.scrollDown">Scroll Down</span>
-      <i data-lucide="chevron-down" style="width: 24px; height: 24px;"></i>
-    </div>
-  </section>
-
-  <!-- Stats Section -->
-  <section class="stats-section">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-card reveal">
-          <i data-lucide="trending-up" class="stat-icon"></i>
-          <div class="stat-number" data-counter="1500">0</div>
-          <div class="stat-unit">M+</div>
-          <div class="stat-label" data-i18n="stats.sales">Annual Sales (USD)</div>
-        </div>
-        <div class="stat-card reveal">
-          <i data-lucide="package" class="stat-icon"></i>
-          <div class="stat-number" data-counter="500">0</div>
-          <div class="stat-unit">+</div>
-          <div class="stat-label" data-i18n="stats.skus">Product SKUs</div>
-        </div>
-        <div class="stat-card reveal">
-          <i data-lucide="globe-2" class="stat-icon"></i>
-          <div class="stat-number" data-counter="50">0</div>
-          <div class="stat-unit">+</div>
-          <div class="stat-label" data-i18n="stats.countries">Countries Served</div>
-        </div>
-        <div class="stat-card reveal">
-          <i data-lucide="handshake" class="stat-icon"></i>
-          <div class="stat-number" data-counter="200">0</div>
-          <div class="stat-unit">+</div>
-          <div class="stat-label" data-i18n="stats.partners">Global Partners</div>
-        </div>
+    <div class="container hero-content">
+      <div class="hero-tag">
+        <span class="tag-orange">🐿️ China's #1 Snack Exporter</span>
       </div>
-    </div>
-  </section>
-
-  <!-- About Preview Section -->
-  <section class="about-preview section">
-    <div class="container">
-      <div class="about-preview-grid">
-        <div class="about-preview-image reveal">
-          <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=800&h=600&fit=crop" alt="Three Squirrels Production Facility">
-          <div class="about-badge" data-i18n="aboutPreview.since">Since 2012</div>
-        </div>
-        <div class="about-preview-content reveal">
-          <h2 data-i18n="aboutPreview.title">Your Trusted Partner in Premium Chinese Snacks</h2>
-          <p data-i18n="aboutPreview.desc1">Three Squirrels Overseas Center specializes in bringing the finest Chinese snack delicacies to international markets. With over a decade of experience, we've built strong relationships with manufacturers and maintain rigorous quality control standards.</p>
-          <p data-i18n="aboutPreview.desc2">From traditional favorites to innovative new flavors, we curate products that meet diverse global tastes while preserving authentic Chinese snack culture.</p>
-
-          <div class="about-features">
-            <div class="about-feature">
-              <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
-              <span data-i18n="aboutPreview.cert1">ISO 22000 Certified</span>
-            </div>
-            <div class="about-feature">
-              <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
-              <span data-i18n="aboutPreview.cert2">FDA Registered</span>
-            </div>
-            <div class="about-feature">
-              <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
-              <span data-i18n="aboutPreview.cert3">HACCP Compliant</span>
-            </div>
-            <div class="about-feature">
-              <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
-              <span data-i18n="aboutPreview.cert4">Custom Packaging</span>
-            </div>
-          </div>
-
-          <a href="about.html" class="btn btn-secondary" data-i18n="aboutPreview.cta">Learn More About Us</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Strengths Section -->
-  <section class="strengths-section section">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 data-i18n="strengths.title">Why Choose Three Squirrels</h2>
-        <p data-i18n="strengths.subtitle">We combine traditional craftsmanship with modern quality standards to deliver exceptional snack experiences worldwide.</p>
-      </div>
-
-      <div class="strengths-grid">
-        <div class="strength-card reveal">
-          <div class="strength-icon">
-            <i data-lucide="award" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4 data-i18n="strengths.quality.title">Premium Quality</h4>
-          <p data-i18n="strengths.quality.desc">Carefully selected ingredients from certified suppliers with strict quality control at every stage.</p>
-        </div>
-
-        <div class="strength-card reveal">
-          <div class="strength-icon">
-            <i data-lucide="truck" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4 data-i18n="strengths.logistics.title">Global Logistics</h4>
-          <p data-i18n="strengths.logistics.desc">Efficient supply chain with warehousing in key locations for fast delivery to 50+ countries.</p>
-        </div>
-
-        <div class="strength-card reveal">
-          <div class="strength-icon">
-            <i data-lucide="palette" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4 data-i18n="strengths.custom.title">Custom Solutions</h4>
-          <p data-i18n="strengths.custom.desc">Flexible MOQ options with custom branding, packaging, and flavor development available.</p>
-        </div>
-
-        <div class="strength-card reveal">
-          <div class="strength-icon">
-            <i data-lucide="headphones" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4 data-i18n="strengths.support.title">Dedicated Support</h4>
-          <p data-i18n="strengths.support.desc">Personal account managers and 24/7 responsive service for all your business needs.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Video Showcase Section -->
-  <section class="video-showcase section">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 data-i18n="videoShowcase.title">Discover Our Story</h2>
-        <p data-i18n="videoShowcase.subtitle">Watch how Three Squirrels brings authentic Chinese snacks to tables around the world.</p>
-      </div>
-
-      <div class="video-grid">
-        <div class="video-card reveal" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
-          <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=600&h=400&fit=crop" alt="Company Introduction">
-          <span class="video-duration">3:45</span>
-          <div class="video-overlay">
-            <div class="play-button">
-              <i data-lucide="play" style="width: 24px; height: 24px; color: white;"></i>
-            </div>
-            <span class="video-category" data-i18n="videoShowcase.cat1">Company Profile</span>
-            <span class="video-title" data-i18n="videoShowcase.video1">Introduction to Three Squirrels</span>
-          </div>
-        </div>
-
-        <div class="video-card reveal" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
-          <img src="https://images.unsplash.com/photo-1563729768-6af7c46d5e86?w=600&h=400&fit=crop" alt="Production Process">
-          <span class="video-duration">2:30</span>
-          <div class="video-overlay">
-            <div class="play-button">
-              <i data-lucide="play" style="width: 24px; height: 24px; color: white;"></i>
-            </div>
-            <span class="video-category" data-i18n="videoShowcase.cat2">Behind The Scenes</span>
-            <span class="video-title" data-i18n="videoShowcase.video2">Quality Production Process</span>
-          </div>
-        </div>
-
-        <div class="video-card reveal" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
-          <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a8?w=600&h=400&fit=crop" alt="Product Showcase">
-          <span class="video-duration">4:15</span>
-          <div class="video-overlay">
-            <div class="play-button">
-              <i data-lucide="play" style="width: 24px; height: 24px; color: white;"></i>
-            </div>
-            <span class="video-category" data-i18n="videoShowcase.cat3">Products</span>
-            <span class="video-title" data-i18n="videoShowcase.video3">Product Line Overview</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-lg">
-        <a href="videos.html" class="btn btn-secondary" data-i18n="videoShowcase.cta">View All Videos</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Products Preview Section -->
-  <section class="products-preview section">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 data-i18n="productsPreview.title">Featured Products</h2>
-        <p data-i18n="productsPreview.subtitle">Explore our curated selection of premium Chinese snacks loved by customers worldwide.</p>
-      </div>
-
-      <div class="products-grid">
-        <a href="product-detail.html" class="product-card reveal">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?w=400&h=400&fit=crop" alt="Premium Mixed Nuts">
-            <div class="product-overlay">
-              <span class="btn btn-white btn-sm">View Details</span>
-            </div>
-          </div>
-          <div class="product-content">
-            <span class="product-category">Nuts & Seeds</span>
-            <h4 class="product-name">Premium Mixed Nuts Selection</h4>
-            <div class="product-meta">
-              <span class="product-moq">MOQ: 500 boxes</span>
-              <span class="product-price">$2.80 - $4.50</span>
-            </div>
-          </div>
+      <h1 class="hero-title">Premium Chinese Snacks<br>For Global Markets</h1>
+      <p class="hero-desc">Connect with Three Squirrels — your trusted B2B partner for premium nuts, dried fruits, sea snacks and gift sets. Serving distributors and retailers in 20+ countries.</p>
+      <div class="hero-btns">
+        <a href="products.html" class="btn btn-orange btn-lg">
+          <i data-lucide="grid-3x3" style="width:18px;height:18px;"></i>
+          Browse Products
         </a>
-
-        <a href="product-detail.html" class="product-card reveal">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&h=400&fit=crop" alt="Dried Mango Slices">
-            <div class="product-overlay">
-              <span class="btn btn-white btn-sm">View Details</span>
-            </div>
-          </div>
-          <div class="product-content">
-            <span class="product-category">Dried Fruits</span>
-            <h4 class="product-name">Tropical Dried Mango Slices</h4>
-            <div class="product-meta">
-              <span class="product-moq">MOQ: 300 boxes</span>
-              <span class="product-price">$3.20 - $5.00</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="product-detail.html" class="product-card reveal">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop" alt="Seaweed Snacks">
-            <div class="product-overlay">
-              <span class="btn btn-white btn-sm">View Details</span>
-            </div>
-          </div>
-          <div class="product-content">
-            <span class="product-category">Sea Snacks</span>
-            <h4 class="product-name">Japanese Style Seaweed Snacks</h4>
-            <div class="product-meta">
-              <span class="product-moq">MOQ: 1000 boxes</span>
-              <span class="product-price">$1.50 - $2.80</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="product-detail.html" class="product-card reveal">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?w=400&h=400&fit=crop" alt="Candied Walnuts">
-            <div class="product-overlay">
-              <span class="btn btn-white btn-sm">View Details</span>
-            </div>
-          </div>
-          <div class="product-content">
-            <span class="product-category">Nuts & Seeds</span>
-            <h4 class="product-name">Honey Glazed Candied Walnuts</h4>
-            <div class="product-meta">
-              <span class="product-moq">MOQ: 500 boxes</span>
-              <span class="product-price">$4.20 - $6.50</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="product-detail.html" class="product-card reveal">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1599480653546-1b1a23c0d0e9?w=400&h=400&fit=crop" alt="Black Sesame Candies">
-            <div class="product-overlay">
-              <span class="btn btn-white btn-sm">View Details</span>
-            </div>
-          </div>
-          <div class="product-content">
-            <span class="product-category">Traditional Sweets</span>
-            <h4 class="product-name">Black Sesame Rice Candies</h4>
-            <div class="product-meta">
-              <span class="product-moq">MOQ: 800 boxes</span>
-              <span class="product-price">$2.50 - $3.80</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="product-detail.html" class="product-card reveal">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=400&h=400&fit=crop" alt="Gift Box Set">
-            <div class="product-overlay">
-              <span class="btn btn-white btn-sm">View Details</span>
-            </div>
-          </div>
-          <div class="product-content">
-            <span class="product-category">Gift Sets</span>
-            <h4 class="product-name">Premium Gift Box Collection</h4>
-            <div class="product-meta">
-              <span class="product-moq">MOQ: 200 boxes</span>
-              <span class="product-price">$15.00 - $28.00</span>
-            </div>
-          </div>
+        <a href="contact.html" class="btn btn-white btn-lg">
+          <i data-lucide="mail" style="width:18px;height:18px;"></i>
+          Contact Sales
         </a>
       </div>
+    </div>
+  </section>
 
-      <div class="text-center">
-        <a href="products.html" class="btn btn-primary btn-lg" data-i18n="productsPreview.cta">View All Products</a>
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-num" data-count="12">0</div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-count="20">0</div>
+        <div class="stat-label">Countries Served</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-count="100">0</div>
+        <div class="stat-label">+ Product SKUs</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-count="5000">0</div>
+        <div class="stat-label">Million USD Annual Sales</div>
       </div>
     </div>
   </section>
 
-  <!-- Partners Section -->
-  <section class="partners-section section">
+  <!-- CATEGORIES -->
+  <section class="section categories">
     <div class="container">
-      <div class="section-header reveal">
-        <h2 data-i18n="partners.title">Trusted by Global Partners</h2>
-        <p data-i18n="partners.subtitle">We proudly serve distributors, retailers, and foodservice companies in over 50 countries.</p>
+      <div class="section-header">
+        <h2 class="section-title">Product Categories</h2>
+        <p class="section-desc">Explore our complete range of premium Chinese snacks</p>
       </div>
-
-      <div class="partners-grid reveal">
-        <svg class="partner-logo" viewBox="0 0 120 60" fill="currentColor">
-          <rect x="10" y="15" width="100" height="30" rx="5" stroke="#636E72" stroke-width="2" fill="none"/>
-          <text x="60" y="37" text-anchor="middle" fill="#636E72" font-size="12" font-weight="600">PARTNER 1</text>
-        </svg>
-        <svg class="partner-logo" viewBox="0 0 120 60" fill="currentColor">
-          <rect x="10" y="15" width="100" height="30" rx="5" stroke="#636E72" stroke-width="2" fill="none"/>
-          <text x="60" y="37" text-anchor="middle" fill="#636E72" font-size="12" font-weight="600">PARTNER 2</text>
-        </svg>
-        <svg class="partner-logo" viewBox="0 0 120 60" fill="currentColor">
-          <rect x="10" y="15" width="100" height="30" rx="5" stroke="#636E72" stroke-width="2" fill="none"/>
-          <text x="60" y="37" text-anchor="middle" fill="#636E72" font-size="12" font-weight="600">PARTNER 3</text>
-        </svg>
-        <svg class="partner-logo" viewBox="0 0 120 60" fill="currentColor">
-          <rect x="10" y="15" width="100" height="30" rx="5" stroke="#636E72" stroke-width="2" fill="none"/>
-          <text x="60" y="37" text-anchor="middle" fill="#636E72" font-size="12" font-weight="600">PARTNER 4</text>
-        </svg>
-        <svg class="partner-logo" viewBox="0 0 120 60" fill="currentColor">
-          <rect x="10" y="15" width="100" height="30" rx="5" stroke="#636E72" stroke-width="2" fill="none"/>
-          <text x="60" y="37" text-anchor="middle" fill="#636E72" font-size="12" font-weight="600">PARTNER 5</text>
-        </svg>
+      <div class="cat-grid">
+        <a href="products.html?cat=nuts" class="cat-card">
+          <div class="cat-icon">🥜</div>
+          <h3>Nuts & Seeds</h3>
+          <p>Premium roasted nuts, mixed selections, candied walnuts and more</p>
+          <span class="cat-count">4 Products</span>
+        </a>
+        <a href="products.html?cat=dried-fruits" class="cat-card">
+          <div class="cat-icon">🥭</div>
+          <h3>Dried Fruits</h3>
+          <p>Tropical mango, freeze-dried strawberries, natural dried fruits</p>
+          <span class="cat-count">2 Products</span>
+        </a>
+        <a href="products.html?cat=sea-snacks" class="cat-card">
+          <div class="cat-icon">🌊</div>
+          <h3>Sea Snacks</h3>
+          <p>Japanese seaweed, crispy kelp strips, authentic sea flavors</p>
+          <span class="cat-count">2 Products</span>
+        </a>
+        <a href="products.html?cat=sweets" class="cat-card">
+          <div class="cat-icon">🍬</div>
+          <h3>Traditional Sweets</h3>
+          <p>Black sesame candies, milk candy, Asian-inspired treats</p>
+          <span class="cat-count">2 Products</span>
+        </a>
+        <a href="products.html?cat=gift-sets" class="cat-card">
+          <div class="cat-icon">🎁</div>
+          <h3>Gift Sets</h3>
+          <p>Premium assorted gift boxes for retail and corporate gifting</p>
+          <span class="cat-count">1 Product</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="cta-section">
+  <!-- WHY CHOOSE US -->
+  <section class="section why-us">
     <div class="container">
-      <h2 data-i18n="cta.title">Ready to Partner with Us?</h2>
-      <p data-i18n="cta.subtitle">Join hundreds of global distributors who trust Three Squirrels for premium Chinese snacks. Let's discuss how we can support your business growth.</p>
-      <a href="contact.html" class="btn btn-white btn-lg" data-i18n="cta.button">Start Your Partnership</a>
+      <div class="section-header">
+        <h2 class="section-title">Why Choose Three Squirrels</h2>
+        <p class="section-desc">The trusted choice of distributors and retailers worldwide</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i data-lucide="award" style="width:32px;height:32px;color:#FF6B35;"></i></div>
+          <h3>China's #1 Snack Brand</h3>
+          <p>Named "Three Squirrels" — the #1 nut and snack brand in China for 12 consecutive years. Official partner to leading global retailers.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i data-lucide="globe" style="width:32px;height:32px;color:#FF6B35;"></i></div>
+          <h3>20+ Countries Served</h3>
+          <p>Active in North America, Southeast Asia, Middle East, Europe and beyond. Familiar with export regulations in major markets.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i data-lucide="shield-check" style="width:32px;height:32px;color:#FF6B35;"></i></div>
+          <h3>Full Certification</h3>
+          <p>HALAL, FDA, ISO22000 certified. Factory audits welcome. Quality and compliance guaranteed for every market.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i data-lucide="truck" style="width:32px;height:32px;color:#FF6B35;"></i></div>
+          <h3>Flexible MOQ</h3>
+          <p>MOQ starts from 200 boxes. Perfect for both small retailers and large distributors. FOB, CIF, DDP shipping terms available.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i data-lucide="package" style="width:32px;height:32px;color:#FF6B35;"></i></div>
+          <h3>Custom Branding</h3>
+          <p>Private label and custom packaging available. Design support for your own brand in 海外 markets.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i data-lucide="headphones" style="width:32px;height:32px;color:#FF6B35;"></i></div>
+          <h3>Dedicated Export Team</h3>
+          <p>English-speaking sales team with 10+ years of overseas trade experience. WeChat, WhatsApp, email — always responsive.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- HOW IT WORKS -->
+  <section class="section how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">How to Work With Us</h2>
+        <p class="section-desc">Simple 4-step process to start sourcing</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3>Browse & Select</h3>
+          <p>Explore our product catalog, filter by category, and add items you're interested in to your inquiry list.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3>Submit Inquiry</h3>
+          <p>Fill in your company information and send us your product selection. Download as image for WeChat, or submit online.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3>Get Quotation</h3>
+          <p>Our sales team will respond within 24 hours with detailed pricing, shipping terms and sample options.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <h3>Place Order</h3>
+          <p>Confirm your order. We handle production, quality control, export documentation and logistics to your port.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container cta-content">
+      <h2>Ready to Source Premium Chinese Snacks?</h2>
+      <p>Browse our full product range and start your inquiry today. Our export team is ready to assist.</p>
+      <div class="hero-btns">
+        <a href="products.html" class="btn btn-white btn-lg">
+          <i data-lucide="grid-3x3" style="width:18px;height:18px;"></i>
+          Browse Products
+        </a>
+        <a href="contact.html" class="btn btn-outline-white btn-lg">
+          <i data-lucide="mail" style="width:18px;height:18px;"></i>
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
-              <circle cx="24" cy="24" r="22" fill="#FF6B35"/>
-              <path d="M24 8 L27 14 L33 14 L28 18 L30 24 L24 20 L18 24 L20 18 L15 14 L21 14 Z" fill="#fff"/>
-              <circle cx="24" cy="30" r="10" fill="#fff"/>
-            </svg>
-            <span class="logo-text">Three<span>Squirrels</span></span>
-          </a>
-          <p data-i18n="footer.brandText">Premium Chinese snacks exporter serving global markets since 2012. Quality, authenticity, and reliability in every bite.</p>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="LinkedIn">
-              <i data-lucide="linkedin" style="width: 20px; height: 20px;"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Twitter">
-              <i data-lucide="twitter" style="width: 20px; height: 20px;"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="YouTube">
-              <i data-lucide="youtube" style="width: 20px; height: 20px;"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Instagram">
-              <i data-lucide="instagram" style="width: 20px; height: 20px;"></i>
-            </a>
-          </div>
+          <img src="images/logo-original.png" alt="Three Squirrels" class="footer-logo">
+          <p>China's leading snack food exporter.<br>Premium quality, global reach.</p>
         </div>
-
-        <div class="footer-nav">
-          <h4 class="footer-title" data-i18n="footer.quickLinks">Quick Links</h4>
-          <div class="footer-links">
-            <a href="about.html" data-i18n="nav.about">About Us</a>
-            <a href="products.html" data-i18n="nav.products">Products</a>
-            <a href="videos.html" data-i18n="nav.videos">Videos</a>
-            <a href="contact.html" data-i18n="nav.contact">Contact</a>
-          </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
         </div>
-
-        <div class="footer-nav">
-          <h4 class="footer-title" data-i18n="footer.products">Products</h4>
-          <div class="footer-links">
-            <a href="products.html" data-i18n="products.category.nuts">Nuts & Seeds</a>
-            <a href="products.html" data-i18n="products.category.driedFruits">Dried Fruits</a>
-            <a href="products.html" data-i18n="products.category.seaSnacks">Sea Snacks</a>
-            <a href="products.html" data-i18n="products.category.giftSets">Gift Sets</a>
-          </div>
+        <div class="footer-links">
+          <h4>Products</h4>
+          <a href="products.html?cat=nuts">Nuts & Seeds</a>
+          <a href="products.html?cat=dried-fruits">Dried Fruits</a>
+          <a href="products.html?cat=sea-snacks">Sea Snacks</a>
+          <a href="products.html?cat=sweets">Traditional Sweets</a>
+          <a href="products.html?cat=gift-sets">Gift Sets</a>
         </div>
-
-        <div class="footer-contact-info">
-          <h4 class="footer-title" data-i18n="footer.contactUs">Contact Us</h4>
-          <ul class="footer-contact">
-            <li>
-              <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
-              <span data-i18n-html="true" data-i18n="footer.address">Building A, Innovation Park<br>Hefei, Anhui, China 230001</span>
-            </li>
-            <li>
-              <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
-              <span data-i18n="footer.phone">+86 551 1234 5678</span>
-            </li>
-            <li>
-              <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
-              <span data-i18n="footer.email">overseas@threesquirrels.com</span>
-            </li>
-          </ul>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i data-lucide="mail" style="width:14px;height:14px;"></i> overseas@three-squirrels.com</p>
+          <p><i data-lucide="phone" style="width:14px;height:14px;"></i> +86 400-888-8888</p>
+          <p><i data-lucide="map-pin" style="width:14px;height:14px;"></i> Hefei, Anhui, China</p>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <p data-i18n="footer.copyright">2024 Three Squirrels Overseas Center. All rights reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
-          <a href="#" data-i18n="footer.terms">Terms of Service</a>
-        </div>
+        <p>© 2026 Three Squirrels Overseas. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
-  <a href="#" class="back-to-top" aria-label="Back to top">
-    <i data-lucide="arrow-up" style="width: 24px; height: 24px;"></i>
-  </a>
-
-  <!-- Video Modal -->
-  <div class="video-modal" id="videoModal">
-    <div class="video-modal-content">
-      <button class="video-modal-close" aria-label="Close video">
-        <i data-lucide="x" style="width: 24px; height: 24px;"></i>
-      </button>
-      <video controls></video>
-    </div>
-  </div>
-
-  <!-- Scripts -->
-  <script src="js/main.js"></script>
+  <script src="js/inquiry.js"></script>
   <script>
-    // Initialize Lucide icons
-    lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      updateCartBadge();
 
-    // Mobile language switcher handler
-    document.querySelectorAll('.mobile-lang-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        const lang = this.dataset.lang;
+      // Stats counter animation
+      const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const counters = entry.target.querySelectorAll('.stat-num');
+            counters.forEach(counter => {
+              const target = parseInt(counter.dataset.count);
+              let current = 0;
+              const step = target / 60;
+              const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                  counter.textContent = target + (target >= 100 ? '+' : '+');
+                  clearInterval(timer);
+                } else {
+                  counter.textContent = Math.floor(current);
+                }
+              }, 30);
+            });
+            statsObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
 
-        // Update active state
-        document.querySelectorAll('.mobile-lang-btn').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-
-        // Change language via i18n
-        if (window.i18n) {
-          window.i18n.changeLanguage(lang);
-        }
-      });
+      const statsEl = document.querySelector('.stats-grid');
+      if (statsEl) statsObserver.observe(statsEl);
     });
   </script>
-
-<style>
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-}
-
-.inland-security-footer {
-  position: fixed;
-  z-index: 10;
-  bottom: 0;
-  right: 0;
-  width: fit-content;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.tooltip-container {
-  position: relative;
-}
-
-.trigger-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-  background-color: transparent;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.minimax-link {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-weight: 300;
-  color: #adadad;
-  text-decoration: none;
-}
-
-.minimax-link:visited {
-  color: #adadad;
-}
-
-.minimax-link:hover {
-  color: #666666;
-}
-
-.tooltip-content {
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  padding: 8px;
-  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
-  font-size: 12px;
-  line-height: 17px;
-  background-color: #fafafa;
-  border-radius: 12px;
-  white-space: nowrap;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  color: #171717;
-}
-
-/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
-.tooltip-content::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  right: 0;
-  height: 16px;
-}
-
-.tooltip-container:hover .tooltip-content {
-  display: flex;
-}
-
-.info-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
-
-.beian-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #171717;
-}
-
-.beian-icon {
-  width: 14px;
-  height: 14px;
-  margin-right: 2px;
-}
-
-.underline-text {
-  color: #171717;
-  text-decoration: underline;
-}
-
-.underline-text:hover {
-  color: #000000;
-}
-
-/* 深色模式支持 */
-@media (prefers-color-scheme: dark) {
-  .trigger-content {
-    background-color: transparent;
-  }
-
-  .minimax-link,
-  .minimax-link:visited {
-    color: #666666;
-  }
-
-  .minimax-link:hover {
-    color: #adadad;
-  }
-
-  .tooltip-content {
-    background-color: #262626;
-    color: #ededed;
-  }
-
-  .beian-link,
-  .underline-text {
-    color: #ededed;
-  }
-
-  .underline-text:hover {
-    color: #ffffff;
-  }
-}
-
-</style>
-<div class="inland-security-footer">
-  <div class="tooltip-container">
-    <div class="trigger-content">
-      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
-        <span>© 2026 MiniMax</span>
-      </a>
-    </div>
-    <div class="tooltip-content">
-      <section class="info-section">
-        <span>上海稀宇科技有限公司</span>
-      </section>
-
-      <section class="info-section">
-        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
-          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
-          <span class="underline-text">沪公网安备31010402010179号</span>
-        </a>
-        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
-          沪ICP备2023003282号-38
-        </a>
-      </section>
-
-      <section class="info-section">
-        <span>模型名称：MiniMax</span>
-        <span>备案号：Shanghai-MiniMax-202505230046</span>
-      </section>
-
-      <section class="info-section">
-        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
-          用户协议
-        </a>
-        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
-          隐私政策
-        </a>
-      </section>
-    </div>
-  </div>
-</div>
-
-
-<script>
-/**
- * Iframe 元素高亮注入脚本
- * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
- *
- * 使用方法：
- * 1. 将此脚本添加到目标网站的 HTML 中
- * 2. 或通过浏览器扩展、用户脚本等方式注入
- */
-
-(function () {
-  "use strict";
-
-  // 检查是否在 iframe 中
-  if (window.self === window.top) {
-    return; // 不在 iframe 中，不执行
-  }
-
-  // 检查是否已经初始化过
-  if (window.__iframeHighlightInitialized) {
-    return;
-  }
-  window.__iframeHighlightInitialized = true;
-  console.log("Iframe 高亮脚本已加载");
-
-  // 创建高亮覆盖层
-  var overlay = document.createElement("div");
-  overlay.id = "iframe-highlight-overlay";
-  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
-
-  // 创建悬停高亮框（虚线边框）
-  var highlightBox = document.createElement("div");
-  highlightBox.id = "iframe-highlight-box";
-  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
-
-  // 创建选中节点的常驻高亮框（实线边框）
-  var selectedBox = document.createElement("div");
-  selectedBox.id = "iframe-selected-box";
-  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
-
-  // 创建悬停标签显示
-  var tagLabel = document.createElement("div");
-  tagLabel.id = "iframe-tag-label";
-  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
-
-  // 创建选中节点标签
-  var selectedLabel = document.createElement("div");
-  selectedLabel.id = "iframe-selected-label";
-  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
-  overlay.appendChild(highlightBox);
-  overlay.appendChild(selectedBox);
-  overlay.appendChild(tagLabel);
-  overlay.appendChild(selectedLabel);
-  document.body.appendChild(overlay);
-
-  // 存储当前选中的元素
-  var selectedElement = null;
-  var highlightEnabled = false;
-
-  // 更新选中元素的高亮显示
-  function updateSelectedHighlight(element) {
-    console.log("updateSelectedHighlight called with:", element);
-    if (!element) {
-      selectedBox.style.display = "none";
-      selectedLabel.style.display = "none";
-      selectedElement = null;
-      console.log("Cleared selected highlight");
-      return;
-    }
-    selectedElement = element;
-    var rect = element.getBoundingClientRect();
-    console.log("Selected element rect:", rect);
-
-    // 更新选中高亮框位置
-    selectedBox.style.display = "block";
-    selectedBox.style.left = "".concat(rect.left - 2, "px");
-    selectedBox.style.top = "".concat(rect.top - 2, "px");
-    selectedBox.style.width = "".concat(rect.width + 4, "px");
-    selectedBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新选中标签位置和内容
-    selectedLabel.style.display = "block";
-    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 28;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 5) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
-    if (labelLeft + labelWidth > window.innerWidth - 10) {
-      labelLeft = window.innerWidth - labelWidth - 10;
-    }
-    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
-    selectedLabel.style.top = "".concat(labelTop, "px");
-    console.log("Selected highlight positioned at:", {
-      left: selectedBox.style.left,
-      top: selectedBox.style.top,
-      width: selectedBox.style.width,
-      height: selectedBox.style.height
-    });
-  }
-  function getElementSelector(element) {
-    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
-    var segments = [];
-    var current = element;
-    while (current !== document.documentElement) {
-      var selector = '';
-      // 优先检查唯一ID
-      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
-        segments.unshift("#".concat(current.id));
-        break; // ID唯一，无需继续向上
-      }
-
-      // 生成类名选择器（取第一个有效类名）
-      var classes = Array.from(current.classList).filter(function (c) {
-        return !c.startsWith('js-');
-      });
-      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
-
-      // 生成位置索引（nth-child）
-      var tag = current.tagName.toLowerCase();
-      if (!className) {
-        var siblings = Array.from(current.parentNode.children);
-        var index = siblings.findIndex(function (el) {
-          return el === current;
-        }) + 1;
-        selector = "".concat(tag, ":nth-child(").concat(index, ")");
-      } else {
-        selector = className;
-      }
-      segments.unshift(selector);
-      current = current.parentElement;
-    }
-
-    // 处理根元素
-    if (current === document.documentElement) {
-      segments.unshift('html');
-    }
-    return segments.join(' > ');
-  }
-
-  // 获取元素文本内容
-  function getElementText(element) {
-    var _element$textContent;
-    if (element.tagName === "INPUT") {
-      return element.value || element.placeholder || "";
-    }
-    if (element.tagName === "TEXTAREA") {
-      return element.value || element.placeholder || "";
-    }
-    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
-    return text.length > 50 ? text.substring(0, 50) + "..." : text;
-  }
-
-  // 获取元素属性信息
-  function getElementAttributes(element) {
-    var attrs = {};
-    for (var i = 0; i < element.attributes.length; i++) {
-      var attr = element.attributes[i];
-      attrs[attr.name] = attr.value;
-    }
-    return attrs;
-  }
-
-  // 鼠标悬停事件处理
-  function handleMouseOver(e) {
-    if (!highlightEnabled) return;
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免高亮 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 如果是已选中的元素，不显示悬停高亮
-    if (target === selectedElement) {
-      highlightBox.style.display = "none";
-      tagLabel.style.display = "none";
-      return;
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-
-    // 更新悬停高亮框位置
-    highlightBox.style.display = "block";
-    highlightBox.style.left = "".concat(rect.left - 2, "px");
-    highlightBox.style.top = "".concat(rect.top - 2, "px");
-    highlightBox.style.width = "".concat(rect.width + 4, "px");
-    highlightBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新标签位置和内容
-    tagLabel.style.display = "block";
-    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 22;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 0) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
-      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
-    }
-    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
-    tagLabel.style.top = "".concat(labelTop, "px");
-
-    // 发送消息到父窗口
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 鼠标离开事件处理
-  function handleMouseOut(e) {
-    if (!highlightEnabled) return;
-    var relatedTarget = e.relatedTarget;
-
-    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
-    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
-      return;
-    }
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: null,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 点击事件处理
-  function handleClick(e) {
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免处理 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 检查是否是交互元素，这些元素需要保留默认行为
-    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
-
-    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
-    if (highlightEnabled) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-    console.log("Element clicked:", {
-      tagName: target.tagName,
-      selector: selector,
-      rect: rect
-    });
-
-    // 立即更新选中高亮
-    updateSelectedHighlight(target);
-
-    // 隐藏悬停高亮，因为现在是选中状态
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-click",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 监听来自父窗口的消息
-  function handleParentMessage(event) {
-    console.log("Received message from parent:", event.data);
-    if (event.data.type === "iframe-highlight-toggle") {
-      var enabled = event.data.enabled;
-      console.log("Highlight toggle:", enabled);
-      if (enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "enable-iframe-highlight") {
-      console.log("Enable iframe highlight");
-      enableHighlight();
-    } else if (event.data.type === "disable-iframe-highlight") {
-      console.log("Disable iframe highlight");
-      disableHighlight();
-    } else if (event.data.type === "toggle-iframe-highlight") {
-      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
-      console.log("Toggle iframe highlight to:", _enabled);
-      if (_enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "update-selected-element") {
-      var selector = event.data.selector;
-      console.log("Update selected element with selector:", selector);
-      if (selector) {
-        try {
-          var element = document.querySelector(selector);
-          console.log("Found element by selector:", element);
-          updateSelectedHighlight(element);
-        } catch (error) {
-          console.warn("Failed to select element:", error);
-          updateSelectedHighlight(null);
-        }
-      } else {
-        updateSelectedHighlight(null);
-      }
-    } else if (event.data.type === "clear-selected-element") {
-      console.log("Clear selected element");
-      updateSelectedHighlight(null);
-    }
-  }
-
-  // 启用高亮功能
-  function enableHighlight() {
-    console.log("Enabling highlight");
-    document.addEventListener("mouseover", handleMouseOver, true);
-    document.addEventListener("mouseout", handleMouseOut, true);
-    document.addEventListener("click", handleClick, true);
-    highlightEnabled = true;
-    overlay.style.display = "block";
-  }
-
-  // 禁用高亮功能
-  function disableHighlight() {
-    console.log("Disabling highlight");
-    highlightEnabled = false;
-    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
-    // 这样可以保留选中状态的显示
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
-  }
-
-  // 完全禁用高亮功能（移除所有监听器）
-  function fullyDisableHighlight() {
-    console.log("Fully disabling highlight");
-    highlightEnabled = false;
-    document.removeEventListener("mouseover", handleMouseOver, true);
-    document.removeEventListener("mouseout", handleMouseOut, true);
-    document.removeEventListener("click", handleClick, true);
-    overlay.style.display = "none";
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    selectedBox.style.display = "none";
-    selectedLabel.style.display = "none";
-  }
-
-  // 添加事件监听
-  enableHighlight();
-  window.addEventListener("message", handleParentMessage);
-
-  // 暴露全局函数供外部调用
-  window.__iframeHighlightControl = {
-    enable: enableHighlight,
-    disable: disableHighlight,
-    fullyDisable: fullyDisableHighlight,
-    isEnabled: function isEnabled() {
-      return highlightEnabled;
-    },
-    getSelectedElement: function getSelectedElement() {
-      return selectedElement;
-    },
-    updateSelected: updateSelectedHighlight,
-    // 通过消息发送开关控制
-    sendToggleMessage: function sendToggleMessage(enabled) {
-      window.parent.postMessage({
-        type: 'iframe-highlight-status',
-        enabled: enabled || highlightEnabled,
-        source: 'iframe-highlight-injector'
-      }, '*');
-    }
-  };
-
-  // 通知父窗口脚本已加载
-  try {
-    window.parent.postMessage({
-      type: "iframe-highlight-ready",
-      data: {
-        url: window.location.href,
-        userAgent: navigator.userAgent,
-        timestamp: Date.now()
-      },
-      source: "iframe-highlight-injector"
-    }, "*");
-  } catch (error) {
-    console.warn("无法发送就绪消息到父窗口:", error);
-  }
-
-  // 清理函数
-  window.__iframeHighlightCleanup = function () {
-    fullyDisableHighlight();
-    window.removeEventListener("message", handleParentMessage);
-    if (overlay.parentElement) {
-      overlay.parentElement.removeChild(overlay);
-    }
-    delete window.__iframeHighlightInitialized;
-    delete window.__iframeHighlightCleanup;
-  };
-})();
-
-</script>
-
-<script>
-/**
- * Iframe 元素高亮注入脚本
- * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
- *
- * 使用方法：
- * 1. 将此脚本添加到目标网站的 HTML 中
- * 2. 或通过浏览器扩展、用户脚本等方式注入
- */
-
-(function () {
-  "use strict";
-
-  // 检查是否在 iframe 中
-  if (window.self === window.top) {
-    return; // 不在 iframe 中，不执行
-  }
-
-  // 检查是否已经初始化过
-  if (window.__iframeHighlightInitialized) {
-    return;
-  }
-  window.__iframeHighlightInitialized = true;
-  console.log("Iframe 高亮脚本已加载");
-
-  // 创建高亮覆盖层
-  var overlay = document.createElement("div");
-  overlay.id = "iframe-highlight-overlay";
-  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
-
-  // 创建悬停高亮框（虚线边框）
-  var highlightBox = document.createElement("div");
-  highlightBox.id = "iframe-highlight-box";
-  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
-
-  // 创建选中节点的常驻高亮框（实线边框）
-  var selectedBox = document.createElement("div");
-  selectedBox.id = "iframe-selected-box";
-  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
-
-  // 创建悬停标签显示
-  var tagLabel = document.createElement("div");
-  tagLabel.id = "iframe-tag-label";
-  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
-
-  // 创建选中节点标签
-  var selectedLabel = document.createElement("div");
-  selectedLabel.id = "iframe-selected-label";
-  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
-  overlay.appendChild(highlightBox);
-  overlay.appendChild(selectedBox);
-  overlay.appendChild(tagLabel);
-  overlay.appendChild(selectedLabel);
-  document.body.appendChild(overlay);
-
-  // 存储当前选中的元素
-  var selectedElement = null;
-  var highlightEnabled = false;
-
-  // 更新选中元素的高亮显示
-  function updateSelectedHighlight(element) {
-    console.log("updateSelectedHighlight called with:", element);
-    if (!element) {
-      selectedBox.style.display = "none";
-      selectedLabel.style.display = "none";
-      selectedElement = null;
-      console.log("Cleared selected highlight");
-      return;
-    }
-    selectedElement = element;
-    var rect = element.getBoundingClientRect();
-    console.log("Selected element rect:", rect);
-
-    // 更新选中高亮框位置
-    selectedBox.style.display = "block";
-    selectedBox.style.left = "".concat(rect.left - 2, "px");
-    selectedBox.style.top = "".concat(rect.top - 2, "px");
-    selectedBox.style.width = "".concat(rect.width + 4, "px");
-    selectedBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新选中标签位置和内容
-    selectedLabel.style.display = "block";
-    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 28;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 5) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
-    if (labelLeft + labelWidth > window.innerWidth - 10) {
-      labelLeft = window.innerWidth - labelWidth - 10;
-    }
-    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
-    selectedLabel.style.top = "".concat(labelTop, "px");
-    console.log("Selected highlight positioned at:", {
-      left: selectedBox.style.left,
-      top: selectedBox.style.top,
-      width: selectedBox.style.width,
-      height: selectedBox.style.height
-    });
-  }
-  function getElementSelector(element) {
-    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
-    var segments = [];
-    var current = element;
-    while (current !== document.documentElement) {
-      var selector = '';
-      // 优先检查唯一ID
-      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
-        segments.unshift("#".concat(current.id));
-        break; // ID唯一，无需继续向上
-      }
-
-      // 生成类名选择器（取第一个有效类名）
-      var classes = Array.from(current.classList).filter(function (c) {
-        return !c.startsWith('js-');
-      });
-      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
-
-      // 生成位置索引（nth-child）
-      var tag = current.tagName.toLowerCase();
-      if (!className) {
-        var siblings = Array.from(current.parentNode.children);
-        var index = siblings.findIndex(function (el) {
-          return el === current;
-        }) + 1;
-        selector = "".concat(tag, ":nth-child(").concat(index, ")");
-      } else {
-        selector = className;
-      }
-      segments.unshift(selector);
-      current = current.parentElement;
-    }
-
-    // 处理根元素
-    if (current === document.documentElement) {
-      segments.unshift('html');
-    }
-    return segments.join(' > ');
-  }
-
-  // 获取元素文本内容
-  function getElementText(element) {
-    var _element$textContent;
-    if (element.tagName === "INPUT") {
-      return element.value || element.placeholder || "";
-    }
-    if (element.tagName === "TEXTAREA") {
-      return element.value || element.placeholder || "";
-    }
-    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
-    return text.length > 50 ? text.substring(0, 50) + "..." : text;
-  }
-
-  // 获取元素属性信息
-  function getElementAttributes(element) {
-    var attrs = {};
-    for (var i = 0; i < element.attributes.length; i++) {
-      var attr = element.attributes[i];
-      attrs[attr.name] = attr.value;
-    }
-    return attrs;
-  }
-
-  // 鼠标悬停事件处理
-  function handleMouseOver(e) {
-    if (!highlightEnabled) return;
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免高亮 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 如果是已选中的元素，不显示悬停高亮
-    if (target === selectedElement) {
-      highlightBox.style.display = "none";
-      tagLabel.style.display = "none";
-      return;
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-
-    // 更新悬停高亮框位置
-    highlightBox.style.display = "block";
-    highlightBox.style.left = "".concat(rect.left - 2, "px");
-    highlightBox.style.top = "".concat(rect.top - 2, "px");
-    highlightBox.style.width = "".concat(rect.width + 4, "px");
-    highlightBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新标签位置和内容
-    tagLabel.style.display = "block";
-    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 22;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 0) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
-      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
-    }
-    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
-    tagLabel.style.top = "".concat(labelTop, "px");
-
-    // 发送消息到父窗口
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 鼠标离开事件处理
-  function handleMouseOut(e) {
-    if (!highlightEnabled) return;
-    var relatedTarget = e.relatedTarget;
-
-    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
-    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
-      return;
-    }
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: null,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 点击事件处理
-  function handleClick(e) {
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免处理 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 检查是否是交互元素，这些元素需要保留默认行为
-    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
-
-    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
-    if (highlightEnabled) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-    console.log("Element clicked:", {
-      tagName: target.tagName,
-      selector: selector,
-      rect: rect
-    });
-
-    // 立即更新选中高亮
-    updateSelectedHighlight(target);
-
-    // 隐藏悬停高亮，因为现在是选中状态
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-click",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 监听来自父窗口的消息
-  function handleParentMessage(event) {
-    console.log("Received message from parent:", event.data);
-    if (event.data.type === "iframe-highlight-toggle") {
-      var enabled = event.data.enabled;
-      console.log("Highlight toggle:", enabled);
-      if (enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "enable-iframe-highlight") {
-      console.log("Enable iframe highlight");
-      enableHighlight();
-    } else if (event.data.type === "disable-iframe-highlight") {
-      console.log("Disable iframe highlight");
-      disableHighlight();
-    } else if (event.data.type === "toggle-iframe-highlight") {
-      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
-      console.log("Toggle iframe highlight to:", _enabled);
-      if (_enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "update-selected-element") {
-      var selector = event.data.selector;
-      console.log("Update selected element with selector:", selector);
-      if (selector) {
-        try {
-          var element = document.querySelector(selector);
-          console.log("Found element by selector:", element);
-          updateSelectedHighlight(element);
-        } catch (error) {
-          console.warn("Failed to select element:", error);
-          updateSelectedHighlight(null);
-        }
-      } else {
-        updateSelectedHighlight(null);
-      }
-    } else if (event.data.type === "clear-selected-element") {
-      console.log("Clear selected element");
-      updateSelectedHighlight(null);
-    }
-  }
-
-  // 启用高亮功能
-  function enableHighlight() {
-    console.log("Enabling highlight");
-    document.addEventListener("mouseover", handleMouseOver, true);
-    document.addEventListener("mouseout", handleMouseOut, true);
-    document.addEventListener("click", handleClick, true);
-    highlightEnabled = true;
-    overlay.style.display = "block";
-  }
-
-  // 禁用高亮功能
-  function disableHighlight() {
-    console.log("Disabling highlight");
-    highlightEnabled = false;
-    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
-    // 这样可以保留选中状态的显示
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
-  }
-
-  // 完全禁用高亮功能（移除所有监听器）
-  function fullyDisableHighlight() {
-    console.log("Fully disabling highlight");
-    highlightEnabled = false;
-    document.removeEventListener("mouseover", handleMouseOver, true);
-    document.removeEventListener("mouseout", handleMouseOut, true);
-    document.removeEventListener("click", handleClick, true);
-    overlay.style.display = "none";
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    selectedBox.style.display = "none";
-    selectedLabel.style.display = "none";
-  }
-
-  // 添加事件监听
-  enableHighlight();
-  window.addEventListener("message", handleParentMessage);
-
-  // 暴露全局函数供外部调用
-  window.__iframeHighlightControl = {
-    enable: enableHighlight,
-    disable: disableHighlight,
-    fullyDisable: fullyDisableHighlight,
-    isEnabled: function isEnabled() {
-      return highlightEnabled;
-    },
-    getSelectedElement: function getSelectedElement() {
-      return selectedElement;
-    },
-    updateSelected: updateSelectedHighlight,
-    // 通过消息发送开关控制
-    sendToggleMessage: function sendToggleMessage(enabled) {
-      window.parent.postMessage({
-        type: 'iframe-highlight-status',
-        enabled: enabled || highlightEnabled,
-        source: 'iframe-highlight-injector'
-      }, '*');
-    }
-  };
-
-  // 通知父窗口脚本已加载
-  try {
-    window.parent.postMessage({
-      type: "iframe-highlight-ready",
-      data: {
-        url: window.location.href,
-        userAgent: navigator.userAgent,
-        timestamp: Date.now()
-      },
-      source: "iframe-highlight-injector"
-    }, "*");
-  } catch (error) {
-    console.warn("无法发送就绪消息到父窗口:", error);
-  }
-
-  // 清理函数
-  window.__iframeHighlightCleanup = function () {
-    fullyDisableHighlight();
-    window.removeEventListener("message", handleParentMessage);
-    if (overlay.parentElement) {
-      overlay.parentElement.removeChild(overlay);
-    }
-    delete window.__iframeHighlightInitialized;
-    delete window.__iframeHighlightCleanup;
-  };
-})();
-
-</script>
-
-<script>
-/**
- * Iframe 元素高亮注入脚本
- * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
- *
- * 使用方法：
- * 1. 将此脚本添加到目标网站的 HTML 中
- * 2. 或通过浏览器扩展、用户脚本等方式注入
- */
-
-(function () {
-  "use strict";
-
-  // 检查是否在 iframe 中
-  if (window.self === window.top) {
-    return; // 不在 iframe 中，不执行
-  }
-
-  // 检查是否已经初始化过
-  if (window.__iframeHighlightInitialized) {
-    return;
-  }
-  window.__iframeHighlightInitialized = true;
-  console.log("Iframe 高亮脚本已加载");
-
-  // 创建高亮覆盖层
-  var overlay = document.createElement("div");
-  overlay.id = "iframe-highlight-overlay";
-  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
-
-  // 创建悬停高亮框（虚线边框）
-  var highlightBox = document.createElement("div");
-  highlightBox.id = "iframe-highlight-box";
-  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
-
-  // 创建选中节点的常驻高亮框（实线边框）
-  var selectedBox = document.createElement("div");
-  selectedBox.id = "iframe-selected-box";
-  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
-
-  // 创建悬停标签显示
-  var tagLabel = document.createElement("div");
-  tagLabel.id = "iframe-tag-label";
-  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
-
-  // 创建选中节点标签
-  var selectedLabel = document.createElement("div");
-  selectedLabel.id = "iframe-selected-label";
-  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
-  overlay.appendChild(highlightBox);
-  overlay.appendChild(selectedBox);
-  overlay.appendChild(tagLabel);
-  overlay.appendChild(selectedLabel);
-  document.body.appendChild(overlay);
-
-  // 存储当前选中的元素
-  var selectedElement = null;
-  var highlightEnabled = false;
-
-  // 更新选中元素的高亮显示
-  function updateSelectedHighlight(element) {
-    console.log("updateSelectedHighlight called with:", element);
-    if (!element) {
-      selectedBox.style.display = "none";
-      selectedLabel.style.display = "none";
-      selectedElement = null;
-      console.log("Cleared selected highlight");
-      return;
-    }
-    selectedElement = element;
-    var rect = element.getBoundingClientRect();
-    console.log("Selected element rect:", rect);
-
-    // 更新选中高亮框位置
-    selectedBox.style.display = "block";
-    selectedBox.style.left = "".concat(rect.left - 2, "px");
-    selectedBox.style.top = "".concat(rect.top - 2, "px");
-    selectedBox.style.width = "".concat(rect.width + 4, "px");
-    selectedBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新选中标签位置和内容
-    selectedLabel.style.display = "block";
-    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 28;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 5) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
-    if (labelLeft + labelWidth > window.innerWidth - 10) {
-      labelLeft = window.innerWidth - labelWidth - 10;
-    }
-    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
-    selectedLabel.style.top = "".concat(labelTop, "px");
-    console.log("Selected highlight positioned at:", {
-      left: selectedBox.style.left,
-      top: selectedBox.style.top,
-      width: selectedBox.style.width,
-      height: selectedBox.style.height
-    });
-  }
-  function getElementSelector(element) {
-    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
-    var segments = [];
-    var current = element;
-    while (current !== document.documentElement) {
-      var selector = '';
-      // 优先检查唯一ID
-      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
-        segments.unshift("#".concat(current.id));
-        break; // ID唯一，无需继续向上
-      }
-
-      // 生成类名选择器（取第一个有效类名）
-      var classes = Array.from(current.classList).filter(function (c) {
-        return !c.startsWith('js-');
-      });
-      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
-
-      // 生成位置索引（nth-child）
-      var tag = current.tagName.toLowerCase();
-      if (!className) {
-        var siblings = Array.from(current.parentNode.children);
-        var index = siblings.findIndex(function (el) {
-          return el === current;
-        }) + 1;
-        selector = "".concat(tag, ":nth-child(").concat(index, ")");
-      } else {
-        selector = className;
-      }
-      segments.unshift(selector);
-      current = current.parentElement;
-    }
-
-    // 处理根元素
-    if (current === document.documentElement) {
-      segments.unshift('html');
-    }
-    return segments.join(' > ');
-  }
-
-  // 获取元素文本内容
-  function getElementText(element) {
-    var _element$textContent;
-    if (element.tagName === "INPUT") {
-      return element.value || element.placeholder || "";
-    }
-    if (element.tagName === "TEXTAREA") {
-      return element.value || element.placeholder || "";
-    }
-    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
-    return text.length > 50 ? text.substring(0, 50) + "..." : text;
-  }
-
-  // 获取元素属性信息
-  function getElementAttributes(element) {
-    var attrs = {};
-    for (var i = 0; i < element.attributes.length; i++) {
-      var attr = element.attributes[i];
-      attrs[attr.name] = attr.value;
-    }
-    return attrs;
-  }
-
-  // 鼠标悬停事件处理
-  function handleMouseOver(e) {
-    if (!highlightEnabled) return;
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免高亮 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 如果是已选中的元素，不显示悬停高亮
-    if (target === selectedElement) {
-      highlightBox.style.display = "none";
-      tagLabel.style.display = "none";
-      return;
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-
-    // 更新悬停高亮框位置
-    highlightBox.style.display = "block";
-    highlightBox.style.left = "".concat(rect.left - 2, "px");
-    highlightBox.style.top = "".concat(rect.top - 2, "px");
-    highlightBox.style.width = "".concat(rect.width + 4, "px");
-    highlightBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新标签位置和内容
-    tagLabel.style.display = "block";
-    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 22;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 0) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
-      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
-    }
-    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
-    tagLabel.style.top = "".concat(labelTop, "px");
-
-    // 发送消息到父窗口
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 鼠标离开事件处理
-  function handleMouseOut(e) {
-    if (!highlightEnabled) return;
-    var relatedTarget = e.relatedTarget;
-
-    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
-    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
-      return;
-    }
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: null,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 点击事件处理
-  function handleClick(e) {
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免处理 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 检查是否是交互元素，这些元素需要保留默认行为
-    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
-
-    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
-    if (highlightEnabled) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-    console.log("Element clicked:", {
-      tagName: target.tagName,
-      selector: selector,
-      rect: rect
-    });
-
-    // 立即更新选中高亮
-    updateSelectedHighlight(target);
-
-    // 隐藏悬停高亮，因为现在是选中状态
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-click",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 监听来自父窗口的消息
-  function handleParentMessage(event) {
-    console.log("Received message from parent:", event.data);
-    if (event.data.type === "iframe-highlight-toggle") {
-      var enabled = event.data.enabled;
-      console.log("Highlight toggle:", enabled);
-      if (enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "enable-iframe-highlight") {
-      console.log("Enable iframe highlight");
-      enableHighlight();
-    } else if (event.data.type === "disable-iframe-highlight") {
-      console.log("Disable iframe highlight");
-      disableHighlight();
-    } else if (event.data.type === "toggle-iframe-highlight") {
-      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
-      console.log("Toggle iframe highlight to:", _enabled);
-      if (_enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "update-selected-element") {
-      var selector = event.data.selector;
-      console.log("Update selected element with selector:", selector);
-      if (selector) {
-        try {
-          var element = document.querySelector(selector);
-          console.log("Found element by selector:", element);
-          updateSelectedHighlight(element);
-        } catch (error) {
-          console.warn("Failed to select element:", error);
-          updateSelectedHighlight(null);
-        }
-      } else {
-        updateSelectedHighlight(null);
-      }
-    } else if (event.data.type === "clear-selected-element") {
-      console.log("Clear selected element");
-      updateSelectedHighlight(null);
-    }
-  }
-
-  // 启用高亮功能
-  function enableHighlight() {
-    console.log("Enabling highlight");
-    document.addEventListener("mouseover", handleMouseOver, true);
-    document.addEventListener("mouseout", handleMouseOut, true);
-    document.addEventListener("click", handleClick, true);
-    highlightEnabled = true;
-    overlay.style.display = "block";
-  }
-
-  // 禁用高亮功能
-  function disableHighlight() {
-    console.log("Disabling highlight");
-    highlightEnabled = false;
-    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
-    // 这样可以保留选中状态的显示
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
-  }
-
-  // 完全禁用高亮功能（移除所有监听器）
-  function fullyDisableHighlight() {
-    console.log("Fully disabling highlight");
-    highlightEnabled = false;
-    document.removeEventListener("mouseover", handleMouseOver, true);
-    document.removeEventListener("mouseout", handleMouseOut, true);
-    document.removeEventListener("click", handleClick, true);
-    overlay.style.display = "none";
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    selectedBox.style.display = "none";
-    selectedLabel.style.display = "none";
-  }
-
-  // 添加事件监听
-  enableHighlight();
-  window.addEventListener("message", handleParentMessage);
-
-  // 暴露全局函数供外部调用
-  window.__iframeHighlightControl = {
-    enable: enableHighlight,
-    disable: disableHighlight,
-    fullyDisable: fullyDisableHighlight,
-    isEnabled: function isEnabled() {
-      return highlightEnabled;
-    },
-    getSelectedElement: function getSelectedElement() {
-      return selectedElement;
-    },
-    updateSelected: updateSelectedHighlight,
-    // 通过消息发送开关控制
-    sendToggleMessage: function sendToggleMessage(enabled) {
-      window.parent.postMessage({
-        type: 'iframe-highlight-status',
-        enabled: enabled || highlightEnabled,
-        source: 'iframe-highlight-injector'
-      }, '*');
-    }
-  };
-
-  // 通知父窗口脚本已加载
-  try {
-    window.parent.postMessage({
-      type: "iframe-highlight-ready",
-      data: {
-        url: window.location.href,
-        userAgent: navigator.userAgent,
-        timestamp: Date.now()
-      },
-      source: "iframe-highlight-injector"
-    }, "*");
-  } catch (error) {
-    console.warn("无法发送就绪消息到父窗口:", error);
-  }
-
-  // 清理函数
-  window.__iframeHighlightCleanup = function () {
-    fullyDisableHighlight();
-    window.removeEventListener("message", handleParentMessage);
-    if (overlay.parentElement) {
-      overlay.parentElement.removeChild(overlay);
-    }
-    delete window.__iframeHighlightInitialized;
-    delete window.__iframeHighlightCleanup;
-  };
-})();
-
-</script>
 </body>
 </html>
