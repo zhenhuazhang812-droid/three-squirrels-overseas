@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Catalog | Three Squirrels Overseas</title>
-  <meta name="description" content="Browse Three Squirrels premium Chinese snacks: nuts, dried fruits, sea snacks, traditional sweets and gift sets. Wholesale MOQ from 200 boxes. Global shipping available.">
+  <title>Products | Three Squirrels Overseas</title>
+  <meta name="description" content="Browse Three Squirrels premium Chinese snack products. Nuts, dried fruits, sea snacks, sweets and gift sets. Export to 20+ countries.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -12,15 +12,71 @@
   <link rel="stylesheet" href="css/inquiry.css">
   <link rel="icon" type="image/png" href="images/logo-original.png">
   <script src="js/inquiry.js"></script>
+  <style>
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #E8E8E8;
+      overflow: hidden;
+      transition: all 0.25s;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+      border-color: #FF6B35;
+    }
+    .product-img-wrap { position: relative; aspect-ratio: 1; overflow: hidden; background: #F8F9FA; }
+    .product-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+    .product-card:hover .product-img { transform: scale(1.05); }
+    .product-badge {
+      position: absolute; top: 12px; left: 12px;
+      background: #FF6B35; color: #fff;
+      font-size: 0.7rem; font-weight: 700;
+      padding: 3px 10px; border-radius: 20px;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .product-overlay {
+      position: absolute; inset: 0;
+      background: rgba(45,52,54,0.6);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity 0.25s;
+    }
+    .product-card:hover .product-overlay { opacity: 1; }
+    .add-to-inquiry-btn {
+      display: flex; align-items: center; gap: 6px;
+      background: #fff; color: #FF6B35;
+      border: none; border-radius: 30px;
+      padding: 10px 20px; font-size: 0.85rem; font-weight: 700;
+      cursor: pointer; transition: all 0.2s; font-family: inherit;
+    }
+    .add-to-inquiry-btn:hover { background: #FF6B35; color: #fff; }
+    .product-info { padding: 16px; }
+    .product-cat { font-size: 0.72rem; font-weight: 700; color: #FF6B35; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+    .product-name { font-family: 'Poppins', sans-serif; font-size: 0.95rem; font-weight: 600; color: #2D3436; margin-bottom: 6px; line-height: 1.3; }
+    .product-desc { font-size: 0.78rem; color: #636E72; line-height: 1.5; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .product-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: #636E72; padding-top: 10px; border-top: 1px solid #F0F3F5; }
+    .product-price { font-weight: 700; color: #FF6B35; }
+    .cat-filter-btn {
+      padding: 8px 20px; border: 2px solid #DFE6E9; border-radius: 30px;
+      background: #fff; font-size: 0.85rem; font-weight: 600; color: #2D3436;
+      cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px;
+    }
+    .cat-filter-btn:hover { border-color: #FF6B35; color: #FF6B35; }
+    .cat-filter-btn.active { background: #FF6B35 !important; color: #fff !important; border-color: #FF6B35 !important; }
+    @media (max-width: 768px) { .products-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
+    @media (max-width: 480px) { .products-grid { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
-
-  <!-- HEADER -->
   <header class="header">
     <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <img src="images/logo-original.png" alt="Three Squirrels" class="logo-img">
-      </a>
+      <a href="index.html" class="logo"><img src="images/logo-original.png" alt="Three Squirrels" class="logo-img"></a>
       <nav class="nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="products.html" class="nav-link active">Products</a>
@@ -28,358 +84,385 @@
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
       <div class="header-actions">
-        <a href="inquiry.html" class="cart-btn" title="My Inquiry" onclick="toggleCartPanel()">
+        <button class="cart-btn" onclick="toggleCartPanel()" title="My Inquiry">
           <i data-lucide="shopping-cart"></i>
           <span class="cart-badge" id="cartBadge" style="display:none;">0</span>
-        </a>
-        <a href="inquiry.html" class="btn btn-orange btn-sm">
-          <i data-lucide="clipboard-list" style="width:14px;height:14px;"></i>
-          My Quote
-        </a>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
+  <div style="margin-top:70px;padding:60px 0 0;">
     <div class="container">
-      <h1>Product Catalog</h1>
-      <p>Browse our premium selection of Chinese snacks. Add products to your inquiry list and send us a quote request.</p>
-    </div>
-  </section>
-
-  <!-- FILTER BAR -->
-  <div class="filter-bar">
-    <div class="container filter-inner">
-      <div class="filter-tabs" id="filterTabs">
-        <button class="filter-tab active" data-category="all">All Products</button>
-        <button class="filter-tab" data-category="nuts">Nuts & Seeds</button>
-        <button class="filter-tab" data-category="dried-fruits">Dried Fruits</button>
-        <button class="filter-tab" data-category="sea-snacks">Sea Snacks</button>
-        <button class="filter-tab" data-category="sweets">Traditional Sweets</button>
-        <button class="filter-tab" data-category="gift-sets">Gift Sets</button>
-      </div>
-      <div class="filter-tags">
-        <label class="filter-tag-label">
-          <input type="checkbox" id="halalFilter"> HALAL Only
-        </label>
-        <label class="filter-tag-label">
-          <input type="checkbox" id="organicFilter"> Organic
-        </label>
-      </div>
-    </div>
-  </div>
-
-  <!-- PRODUCTS GRID -->
-  <section class="section products-section">
-    <div class="container">
-      <div class="products-count" id="productsCount">Showing 10 products</div>
-      <div class="products-grid" id="productsGrid">
-        <!-- Products injected by JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- CART SIDEBAR -->
-  <div id="inquiryCartPanel" class="cart-panel">
-    <div class="cart-panel-header">
-      <h3><i data-lucide="shopping-cart" style="width:18px;height:18px;"></i> My Inquiry <span class="cart-badge" id="cartBadge2" style="display:none;">0</span></h3>
-      <button class="cart-close" onclick="toggleCartPanel()"><i data-lucide="x" style="width:20px;height:20px;"></i></button>
-    </div>
-    <div id="cartEmpty" class="cart-empty" style="display:flex;">
-      <i data-lucide="shopping-cart" style="width:48px;height:48px;color:#DFE6E9;"></i>
-      <p>No products yet.<br>Browse the catalog and add items.</p>
-    </div>
-    <div id="cartContent" style="display:none; flex-direction:column; height:100%;">
-      <div id="cartItems" class="cart-items" style="flex:1; overflow-y:auto;"></div>
-      <div id="cartTotal" class="cart-total" style="display:block;"></div>
-      <div class="cart-actions">
-        <a href="inquiry.html" class="btn btn-primary" onclick="toggleCartPanel()">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:24px;">
+        <div>
+          <h1 style="font-family:'Poppins',sans-serif;font-size:1.8rem;font-weight:700;color:#2D3436;margin-bottom:6px;display:flex;align-items:center;gap:10px;">
+            <i data-lucide="grid-3x3" style="width:22px;height:22px;color:#FF6B35;"></i>
+            Product Catalog
+          </h1>
+          <p style="color:#636E72;font-size:0.9rem;">Add items to your inquiry list — submit to our sales team for a tailored quote.</p>
+        </div>
+        <a href="inquiry.html" class="btn btn-orange" id="viewInquiryBtn" style="display:none;">
           <i data-lucide="clipboard-list" style="width:16px;height:16px;"></i>
-          Review & Submit
+          View My Inquiry
         </a>
       </div>
+
+      <!-- Sample notice -->
+      <div style="background:#FFF9E6;border:1px solid #F39C12;border-radius:12px;padding:14px 18px;margin-bottom:28px;display:flex;gap:10px;align-items:flex-start;font-size:0.85rem;color:#856404;line-height:1.6;">
+        <i data-lucide="info" style="width:16px;height:16px;color:#F39C12;flex-shrink:0;margin-top:2px;"></i>
+        <span><strong>Product samples &amp; exact pricing:</strong> These are representative listings. Detailed specs, pricing, and samples available upon inquiry — our team responds within 24 hours.</span>
+      </div>
+
+      <!-- Category filter -->
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;" id="filterBar">
+        <button class="cat-filter-btn active" data-cat="all">All Products</button>
+        <button class="cat-filter-btn" data-cat="nuts">🥜 Nuts & Seeds</button>
+        <button class="cat-filter-btn" data-cat="dried-fruits">🍇 Dried Fruits</button>
+        <button class="cat-filter-btn" data-cat="sea-snacks">🦐 Sea Snacks</button>
+        <button class="cat-filter-btn" data-cat="sweets">🍬 Sweets</button>
+        <button class="cat-filter-btn" data-cat="gift-sets">🎁 Gift Sets</button>
+      </div>
+
+      <!-- GRID -->
+      <div class="products-grid" id="productsGrid">
+
+        <!-- P001 Cashews -->
+        <div class="product-card" data-cat="nuts">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?w=400&auto=format&fit=crop" alt="Roasted Cashews" class="product-img">
+            <span class="product-badge">Top Seller</span>
+            <div class="product-overlay">
+              <button class="add-to-inquiry-btn" onclick="handleAdd(this)" data-p='{"id":"p001","name":"Premium Roasted Cashews","category":"Nuts & Seeds","moq":200,"unit":"ctns","priceMin":8.5,"priceMax":12.0,"tags":["HALAL","FDA"],"image":"https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?w=200&auto=format&fit=crop"}'>
+                <i data-lucide="plus" style="width:15px;height:15px;"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Nuts & Seeds</div>
+            <h3 class="product-name">Premium Roasted Cashews</h3>
+            <p class="product-desc">Whole roasted cashews, lightly salted. Consistent W240 grade. Popular across all markets.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;">
+              <span style="background:#F0FBF8;color:#00B894;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">HALAL</span>
+              <span style="background:#F0F8FF;color:#3498DB;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">FDA</span>
+            </div>
+            <div class="product-meta">
+              <span>MOQ: <strong>200 ctns</strong></span>
+              <span class="product-price">$8.50–$12.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- P002 Almonds -->
+        <div class="product-card" data-cat="nuts">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=400&auto=format&fit=crop" alt="Roasted Almonds" class="product-img">
+            <div class="product-overlay">
+              <button class="add-to-inquiry-btn" onclick="handleAdd(this)" data-p='{"id":"p002","name":"Natural Roasted Almonds","category":"Nuts & Seeds","moq":200,"unit":"ctns","priceMin":6.5,"priceMax":9.5,"tags":["HALAL","FDA"],"image":"https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=200&auto=format&fit=crop"}'>
+                <i data-lucide="plus" style="width:15px;height:15px;"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Nuts & Seeds</div>
+            <h3 class="product-name">Natural Roasted Almonds</h3>
+            <p class="product-desc">California almonds, dry roasted with sea salt. No oil added. Multiple packaging options.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;">
+              <span style="background:#F0FBF8;color:#00B894;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">HALAL</span>
+              <span style="background:#F0F8FF;color:#3498DB;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">FDA</span>
+            </div>
+            <div class="product-meta">
+              <span>MOQ: <strong>200 ctns</strong></span>
+              <span class="product-price">$6.50–$9.50</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- P003 Goji -->
+        <div class="product-card" data-cat="dried-fruits">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1546548970-71785318a17b?w=400&auto=format&fit=crop" alt="Dried Goji Berries" class="product-img">
+            <span class="product-badge" style="background:#27AE60;">Premium</span>
+            <div class="product-overlay">
+              <button class="add-to-inquiry-btn" onclick="handleAdd(this)" data-p='{"id":"p003","name":"Premium Dried Goji Berries","category":"Dried Fruits","moq":100,"unit":"ctns","priceMin":12.0,"priceMax":18.0,"tags":["Organic","HALAL"],"image":"https://images.unsplash.com/photo-1546548970-71785318a17b?w=200&auto=format&fit=crop"}'>
+                <i data-lucide="plus" style="width:15px;height:15px;"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Dried Fruits</div>
+            <h3 class="product-name">Premium Dried Goji Berries</h3>
+            <p class="product-desc">Ningxia sourced. Premium grade, naturally sun-dried. High antioxidant content.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;">
+              <span style="background:#F0FBF8;color:#00B894;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">Organic</span>
+              <span style="background:#F0FBF8;color:#00B894;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">HALAL</span>
+            </div>
+            <div class="product-meta">
+              <span>MOQ: <strong>100 ctns</strong></span>
+              <span class="product-price">$12.00–$18.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- P004 Longan -->
+        <div class="product-card" data-cat="dried-fruits">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1595272722529-6d2d1a1a1c6e?w=400&auto=format&fit=crop" alt="Dried Longan" class="product-img">
+            <div class="product-overlay">
+              <button class="add-to-inquiry-btn" onclick="handleAdd(this)" data-p='{"id":"p004","name":"Sweet Dried Longan","category":"Dried Fruits","moq":100,"unit":"ctns","priceMin":7.5,"priceMax":11.0,"tags":["HALAL","FDA"],"image":"https://images.unsplash.com/photo-1595272722529-6d2d1a1a1c6e?w=200&auto=format&fit=crop"}'>
+                <i data-lucide="plus" style="width:15px;height:15px;"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Dried Fruits</div>
+            <h3 class="product-name">Sweet Dried Longan</h3>
+            <p class="product-desc">Honey-glazed longan flesh. Chewy, sweet, aromatic. A staple in Asian markets worldwide.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;">
+              <span style="background:#F0FBF8;color:#00B894;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">HALAL</span>
+              <span style="background:#F0F8FF;color:#3498DB;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">FDA</span>
+            </div>
+            <div class="product-meta">
+              <span>MOQ: <strong>100 ctns</strong></span>
+              <span class="product-price">$7.50–$11.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- P005 Dried Shrimp -->
+        <div class="product-card" data-cat="sea-snacks">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1585664811087-47f65abbad64?w=400&auto=format&fit=crop" alt="Dried Sea Shrimp" class="product-img">
+            <span class="product-badge" style="background:#8E44AD;">New</span>
+            <div class="product-overlay">
+              <button class="add-to-inquiry-btn" onclick="handleAdd(this)" data-p='{"id":"p005","name":"Dried Sea Shrimp","category":"Sea Snacks","moq":100,"unit":"ctns","priceMin":15.0,"priceMax":22.0,"tags":["Wild Catch","HALAL"],"image":"https://images.unsplash.com/photo-1585664811087-47f65abbad64?w=200&auto=format&fit=crop"}'>
+                <i data-lucide="plus" style="width:15px;height:15px;"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Sea Snacks</div>
+            <h3 class="product-name">Dried Sea Shrimp</h3>
+            <p class="product-desc">Wild-caught dried shrimp from Shandong coast. Rich umami, high protein. Whole or ground.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;">
+              <span style="background:#FFF9E6;color:#E67E22;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">Wild Catch</span>
+              <span style="background:#F0FBF8;color:#00B894;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">HALAL</span>
+            </div>
+            <div class="product-meta">
+              <span>MOQ: <strong>100 ctns</strong></span>
+              <span class="product-price">$15.00–$22.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- P006 Seaweed -->
+        <div class="product-card" data-cat="sea-snacks">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1559056961-1f4f1a0d6e87?w=400&auto=format&fit=crop" alt="Roasted Seaweed" class="product-img">
+            <div class="product-overlay">
+              <button class="add-to-inquiry-btn" onclick="handleAdd(this)" data-p='{"id":"p006","name":"Roasted Seaweed Sheets","category":"Sea Snacks","moq":200,"unit":"ctns","priceMin":4.5,"priceMax":7.0,"tags":["Low Sodium","HALAL"],"image":"https://images.unsplash.com/photo-1559056961-1f4f1a0d6e87?w=200&auto=format&fit=crop"}'>
+                <i data-lucide="plus" style="width:15px;height:15px;"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Sea Snacks</div>
+            <h3 class="product-name">Roasted Seaweed Sheets</h3>
+            <p class="product-desc">Paper-thin roasted seaweed, sesame oil & salt. Low calorie, rich in minerals. Multiple flavors.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;">
+              <span style="background:#F0FBF8;color:#00B894;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">Low Sodium</span>
+              <span style="background:#F0FBF8;color:#00B894;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">HALAL</span>
+            </div>
+            <div class="product-meta">
+              <span>MOQ: <strong>200 ctns</strong></span>
+              <span class="product-price">$4.50–$7.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- P007 Melon Seeds -->
+        <div class="product-card" data-cat="sweets">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1582196016295-f8c8bd4b3a99?w=400&auto=format&fit=crop" alt="Roasted Melon Seeds" class="product-img">
+            <div class="product-overlay">
+              <button class="add-to-inquiry-btn" onclick="handleAdd(this)" data-p='{"id":"p007","name":"Roasted Melon Seeds (瓜子)","category":"Traditional Sweets","moq":300,"unit":"ctns","priceMin":3.5,"priceMax":5.5,"tags":["Vegetarian","HALAL"],"image":"https://images.unsplash.com/photo-1582196016295-f8c8bd4b3a99?w=200&auto=format&fit=crop"}'>
+                <i data-lucide="plus" style="width:15px;height:15px;"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Traditional Sweets</div>
+            <h3 class="product-name">Roasted Melon Seeds (瓜子)</h3>
+            <p class="product-desc">Classic Chinese sunflower seeds, big size, roasted with sea salt. The iconic Chinese snack.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;">
+              <span style="background:#F0FBF8;color:#00B894;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">Vegetarian</span>
+              <span style="background:#F0FBF8;color:#00B894;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">HALAL</span>
+            </div>
+            <div class="product-meta">
+              <span>MOQ: <strong>300 ctns</strong></span>
+              <span class="product-price">$3.50–$5.50</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- P008 Rice Crackers -->
+        <div class="product-card" data-cat="sweets">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&auto=format&fit=crop" alt="Rice Crackers" class="product-img">
+            <div class="product-overlay">
+              <button class="add-to-inquiry-btn" onclick="handleAdd(this)" data-p='{"id":"p008","name":"Japanese-Style Rice Crackers","category":"Traditional Sweets","moq":200,"unit":"ctns","priceMin":5.0,"priceMax":8.0,"tags":["Gluten-Free","Vegetarian"],"image":"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&auto=format&fit=crop"}'>
+                <i data-lucide="plus" style="width:15px;height:15px;"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Traditional Sweets</div>
+            <h3 class="product-name">Japanese-Style Rice Crackers</h3>
+            <p class="product-desc">Crispy baked rice crackers with savory seasoning. Flavors: wasabi, seaweed, sesame.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;">
+              <span style="background:#FFF0F5;color:#E84393;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">Gluten-Free</span>
+              <span style="background:#F0FBF8;color:#00B894;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">Vegetarian</span>
+            </div>
+            <div class="product-meta">
+              <span>MOQ: <strong>200 ctns</strong></span>
+              <span class="product-price">$5.00–$8.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- P009 NY Gift Set -->
+        <div class="product-card" data-cat="gift-sets">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=400&auto=format&fit=crop" alt="Lunar New Year Gift Set" class="product-img">
+            <span class="product-badge" style="background:#E74C3C;">Holiday</span>
+            <div class="product-overlay">
+              <button class="add-to-inquiry-btn" onclick="handleAdd(this)" data-p='{"id":"p009","name":"Lunar New Year Premium Gift Set","category":"Gift Sets","moq":50,"unit":"sets","priceMin":25.0,"priceMax":45.0,"tags":["Custom Logo","HALAL"],"image":"https://images.unsplash.com/photo-1512909006721-3d6018887383?w=200&auto=format&fit=crop"}'>
+                <i data-lucide="plus" style="width:15px;height:15px;"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Gift Sets</div>
+            <h3 class="product-name">Lunar New Year Premium Gift Set</h3>
+            <p class="product-desc">Luxury festive box with assorted nuts, dried fruits & teas. Custom logo available for New Year 2026.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;">
+              <span style="background:#FFF9E6;color:#E67E22;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">Custom Logo</span>
+              <span style="background:#F0FBF8;color:#00B894;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">HALAL</span>
+            </div>
+            <div class="product-meta">
+              <span>MOQ: <strong>50 sets</strong></span>
+              <span class="product-price">$25.00–$45.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- P010 Classic Gift Box -->
+        <div class="product-card" data-cat="gift-sets">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=400&auto=format&fit=crop" alt="Classic Gift Box" class="product-img">
+            <div class="product-overlay">
+              <button class="add-to-inquiry-btn" onclick="handleAdd(this)" data-p='{"id":"p010","name":"Classic Gourmet Gift Box","category":"Gift Sets","moq":50,"unit":"sets","priceMin":18.0,"priceMax":30.0,"tags":["Custom Logo","HALAL"],"image":"https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=200&auto=format&fit=crop"}'>
+                <i data-lucide="plus" style="width:15px;height:15px;"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Gift Sets</div>
+            <h3 class="product-name">Classic Gourmet Gift Box</h3>
+            <p class="product-desc">Elegantly packaged assorted snack box. Perfect for corporate gifting and retail. Fully customizable.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;">
+              <span style="background:#FFF9E6;color:#E67E22;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">Custom Logo</span>
+              <span style="background:#F0FBF8;color:#00B894;font-size:0.68rem;padding:2px 8px;border-radius:10px;font-weight:600;">HALAL</span>
+            </div>
+            <div class="product-meta">
+              <span>MOQ: <strong>50 sets</strong></span>
+              <span class="product-price">$18.00–$30.00</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
-  <div class="cart-overlay" id="cartOverlay" onclick="toggleCartPanel()"></div>
 
-  <!-- FOOTER -->
+  <!-- CART PANEL -->
+  <div class="cart-overlay" id="cartOverlay" onclick="toggleCartPanel()"></div>
+  <div class="cart-panel" id="inquiryCartPanel">
+    <div class="cart-panel-header">
+      <h3><i data-lucide="clipboard-list" style="width:18px;height:18px;color:#FF6B35;"></i> My Inquiry List</h3>
+      <button class="cart-close" onclick="toggleCartPanel()"><i data-lucide="x" style="width:18px;height:18px;"></i></button>
+    </div>
+    <div id="cartEmpty" class="cart-empty" style="display:none;flex-direction:column;align-items:center;justify-content:center;gap:12px;flex:1;text-align:center;padding:40px 24px;color:#B2BEC3;">
+      <i data-lucide="package-x" style="width:48px;height:48px;color:#DFE6E9;"></i>
+      <p style="font-size:0.9rem;">Your inquiry list is empty.<br>Browse products and add items.</p>
+      <a href="products.html" class="btn btn-orange btn-sm">Browse Products</a>
+    </div>
+    <div id="cartContent" style="display:flex;flex-direction:column;flex:1;overflow:hidden;">
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-total" id="cartTotal"></div>
+      <div class="cart-actions">
+        <a href="inquiry.html" class="btn btn-orange"><i data-lucide="clipboard-list" style="width:16px;height:16px;"></i> Review &amp; Submit</a>
+        <button class="btn btn-outline btn-sm" onclick="clearInquiry();renderCartPanel();updateCartBadge();">Clear All</button>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="images/logo-original.png" alt="Three Squirrels" class="footer-logo">
-          <p>China's leading snack food exporter.<br>Premium quality, global reach.</p>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <a href="index.html">Home</a>
-          <a href="products.html">Products</a>
-          <a href="about.html">About Us</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="footer-links">
-          <h4>Products</h4>
-          <a href="products.html?cat=nuts">Nuts & Seeds</a>
-          <a href="products.html?cat=dried-fruits">Dried Fruits</a>
-          <a href="products.html?cat=sea-snacks">Sea Snacks</a>
-          <a href="products.html?cat=sweets">Traditional Sweets</a>
-          <a href="products.html?cat=gift-sets">Gift Sets</a>
-        </div>
-        <div class="footer-contact">
-          <h4>Contact</h4>
-          <p><i data-lucide="mail" style="width:14px;height:14px;"></i> overseas@three-squirrels.com</p>
-          <p><i data-lucide="phone" style="width:14px;height:14px;"></i> +86 400-888-8888</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom" style="border:none;padding:0;text-align:center;">
         <p>© 2026 Three Squirrels Overseas. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
   <script>
+    function handleAdd(btn) {
+      const p = JSON.parse(btn.dataset.p || '{}');
+      if (!p.id) return;
+      const added = addToInquiry(p);
+      updateCartBadge();
+      renderCartPanel();
+      // Button feedback
+      const orig = btn.innerHTML;
+      btn.innerHTML = '<i data-lucide="check" style="width:15px;height:15px;color:#00B894;"></i> Added!';
+      btn.style.background = '#F0FBF8';
+      btn.style.color = '#00B894';
+      setTimeout(() => {
+        btn.innerHTML = orig;
+        btn.style.background = '';
+        btn.style.color = '';
+        lucide.createIcons();
+      }, 1500);
+      lucide.createIcons();
+      // Show view inquiry button
+      document.getElementById('viewInquiryBtn').style.display = 'flex';
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
       lucide.createIcons();
       updateCartBadge();
-      renderProducts();
-      setupFilters();
-    });
+      renderCartPanel();
 
-    // Product data
-    const products = [
-      { id:'p001', name:'Premium Mixed Nuts Selection', category:'Nuts & Seeds', slug:'nuts', image:'https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?w=400&h=400&fit=crop', moq:500, unit:'boxes', priceMin:2.80, priceMax:4.50, tags:['HALAL','Organic'] },
-      { id:'p002', name:'Tropical Dried Mango Slices', category:'Dried Fruits', slug:'dried-fruits', image:'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&h=400&fit=crop', moq:300, unit:'boxes', priceMin:3.20, priceMax:5.00, tags:['HALAL','Organic'] },
-      { id:'p003', name:'Japanese Style Seaweed Snacks', category:'Sea Snacks', slug:'sea-snacks', image:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop', moq:1000, unit:'boxes', priceMin:1.50, priceMax:2.80, tags:['HALAL','Vegan'] },
-      { id:'p004', name:'Honey Glazed Candied Walnuts', category:'Nuts & Seeds', slug:'nuts', image:'https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?w=400&h=400&fit=crop', moq:500, unit:'boxes', priceMin:4.20, priceMax:6.50, tags:['HALAL'] },
-      { id:'p005', name:'Black Sesame Rice Candies', category:'Traditional Sweets', slug:'sweets', image:'https://images.unsplash.com/photo-1599480653546-1b1a23c0d0e9?w=400&h=400&fit=crop', moq:800, unit:'boxes', priceMin:2.50, priceMax:3.80, tags:['HALAL'] },
-      { id:'p006', name:'Premium Gift Box Collection', category:'Gift Sets', slug:'gift-sets', image:'https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=400&h=400&fit=crop', moq:200, unit:'boxes', priceMin:15.00, priceMax:28.00, tags:['Custom'] },
-      { id:'p007', name:'Premium Roasted Cashews', category:'Nuts & Seeds', slug:'nuts', image:'https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=400&h=400&fit=crop', moq:500, unit:'boxes', priceMin:5.50, priceMax:8.00, tags:['HALAL','Organic'] },
-      { id:'p008', name:'Freeze-Dried Strawberries', category:'Dried Fruits', slug:'dried-fruits', image:'https://images.unsplash.com/photo-1560023907-5f339617ea30?w=400&h=400&fit=crop', moq:300, unit:'boxes', priceMin:4.80, priceMax:7.20, tags:['Organic','Vegan'] },
-      { id:'p009', name:'Crispy Kelp Strips', category:'Sea Snacks', slug:'sea-snacks', image:'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=400&h=400&fit=crop', moq:800, unit:'boxes', priceMin:2.20, priceMax:3.50, tags:['HALAL','Vegan'] },
-      { id:'p010', name:'Milk Candy Variety Pack', category:'Traditional Sweets', slug:'sweets', image:'https://images.unsplash.com/photo-1582056615449-3b65df0e7c8c?w=400&h=400&fit=crop', moq:500, unit:'boxes', priceMin:2.00, priceMax:3.50, tags:['HALAL'] },
-    ];
-
-    function renderProducts(filter = 'all', halalOnly = false, organicOnly = false) {
-      const grid = document.getElementById('productsGrid');
-      const countEl = document.getElementById('productsCount');
-      const filtered = products.filter(p => {
-        const catMatch = filter === 'all' || p.slug === filter;
-        const halalMatch = !halalOnly || p.tags.some(t => ['HALAL'].includes(t));
-        const organicMatch = !organicOnly || p.tags.some(t => ['Organic'].includes(t));
-        return catMatch && halalMatch && organicMatch;
-      });
-      countEl.textContent = `Showing ${filtered.length} product${filtered.length !== 1 ? 's' : ''}`;
-
-      grid.innerHTML = filtered.map(p => `
-        <div class="product-card reveal" data-category="${p.slug}">
-          <div class="product-img-wrap">
-            <img src="${p.image}" alt="${p.name}" loading="lazy"
-                 onerror="this.src='https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?w=400&h=400&fit=crop'">
-            <div class="product-overlay">
-              <button class="btn btn-orange btn-sm add-to-inquiry-btn"
-                onclick="addProduct('${p.id}')">
-                <i data-lucide="plus" style="width:13px;height:13px;margin-right:3px;"></i>
-                Add to Quote
-              </button>
-            </div>
-          </div>
-          <div class="product-info">
-            <div class="product-tags-row">
-              ${p.tags.map(t => `<span class="product-tag tag-${t.toLowerCase()}">${t}</span>`).join('')}
-            </div>
-            <h3 class="product-name">${p.name}</h3>
-            <p class="product-cat">${p.category}</p>
-            <div class="product-meta-row">
-              <span class="product-moq">MOQ: ${p.moq} ${p.unit}</span>
-              <span class="product-price">$${p.priceMin.toFixed(2)} – $${p.priceMax.toFixed(2)}</span>
-            </div>
-          </div>
-        </div>
-      `).join('');
-
-      lucide.createIcons();
-
-      // Re-init AOS if available
-      if (typeof AOS !== 'undefined') AOS.refresh();
-    }
-
-    function addProduct(id) {
-      const p = products.find(x => x.id === id);
-      if (!p) return;
-      const added = addToInquiry(p);
-      if (added) {
-        showToast(`✓ ${p.name} added to quote`);
-        if (!cartPanelOpen) setTimeout(() => toggleCartPanel(), 400);
-      } else {
-        showToast(`✓ Already in your quote`);
-      }
-    }
-
-    function showToast(msg) {
-      const existing = document.querySelector('.toast-msg');
-      if (existing) existing.remove();
-      const el = document.createElement('div');
-      el.className = 'toast-msg';
-      el.textContent = msg;
-      document.body.appendChild(el);
-      setTimeout(() => el.classList.add('show'), 10);
-      setTimeout(() => { el.classList.remove('show'); setTimeout(() => el.remove(), 400); }, 2500);
-    }
-
-    function setupFilters() {
-      // URL param filter
-      const params = new URLSearchParams(location.search);
-      const catParam = params.get('cat');
-      if (catParam) {
-        document.querySelectorAll('.filter-tab').forEach(btn => {
-          btn.classList.toggle('active', btn.dataset.category === catParameter);
-        });
-      }
-
-      document.querySelectorAll('.filter-tab').forEach(btn => {
+      // Category filter
+      document.querySelectorAll('.cat-filter-btn').forEach(btn => {
         btn.addEventListener('click', () => {
-          document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+          document.querySelectorAll('.cat-filter-btn').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
-          const halal = document.getElementById('halalFilter').checked;
-          const organic = document.getElementById('organicFilter').checked;
-          renderProducts(btn.dataset.category, halal, organic);
+          const cat = btn.dataset.cat;
+          document.querySelectorAll('.product-card').forEach(card => {
+            card.style.display = (!cat || cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+          });
         });
       });
 
-      document.getElementById('halalFilter').addEventListener('change', () => {
-        const activeCat = document.querySelector('.filter-tab.active')?.dataset.category || 'all';
-        const halal = document.getElementById('halalFilter').checked;
-        const organic = document.getElementById('organicFilter').checked;
-        renderProducts(activeCat, halal, organic);
-      });
-
-      document.getElementById('organicFilter').addEventListener('change', () => {
-        const activeCat = document.querySelector('.filter-tab.active')?.dataset.category || 'all';
-        const halal = document.getElementById('halalFilter').checked;
-        const organic = document.getElementById('organicFilter').checked;
-        renderProducts(activeCat, halal, organic);
-      });
-    }
+      // Check URL param for category
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get('cat');
+      if (cat) {
+        const btn = document.querySelector(`.cat-filter-btn[data-cat="${cat}"]`);
+        if (btn) btn.click();
+      }
+    });
   </script>
-  <style>
-    .filter-bar {
-      background: #fff;
-      border-bottom: 1px solid #F0F3F5;
-      position: sticky;
-      top: 70px;
-      z-index: 90;
-    }
-    .filter-inner {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 14px 0;
-      flex-wrap: wrap;
-    }
-    .filter-tabs {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      flex: 1;
-    }
-    .filter-tab {
-      padding: 7px 16px;
-      border: 1.5px solid #DFE6E9;
-      border-radius: 20px;
-      background: #fff;
-      color: #636E72;
-      font-size: 0.85rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.2s;
-      font-family: inherit;
-    }
-    .filter-tab:hover { border-color: #FF6B35; color: #FF6B35; }
-    .filter-tab.active { background: #FF6B35; border-color: #FF6B35; color: #fff; }
-    .filter-tags { display: flex; gap: 12px; }
-    .filter-tag-label { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; color: #636E72; cursor: pointer; }
-    .filter-tag-label input { accent-color: #FF6B35; }
-    .products-section { padding-top: 32px; }
-    .products-count { font-size: 0.9rem; color: #636E72; margin-bottom: 20px; }
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 24px;
-    }
-    .product-card {
-      background: #fff;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-      border: 1px solid #F0F3F5;
-      transition: transform 0.25s, box-shadow 0.25s;
-    }
-    .product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
-    .product-img-wrap { position: relative; aspect-ratio: 1; overflow: hidden; }
-    .product-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
-    .product-card:hover .product-img-wrap img { transform: scale(1.05); }
-    .product-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.35);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 0.25s;
-    }
-    .product-card:hover .product-overlay { opacity: 1; }
-    .product-overlay .btn { white-space: nowrap; }
-    .product-info { padding: 16px; }
-    .product-tags-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
-    .product-tag {
-      font-size: 0.68rem;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-    }
-    .tag-halal { background: #E8F5E9; color: #2E7D32; }
-    .tag-organic { background: #E8F5E9; color: #1B5E20; }
-    .tag-vegan { background: #E3F2FD; color: #1565C0; }
-    .tag-custom { background: #FFF3E0; color: #E65100; }
-    .product-name { font-size: 0.95rem; font-weight: 600; color: #2D3436; margin: 0 0 4px; line-height: 1.3; }
-    .product-cat { font-size: 0.8rem; color: #636E72; margin: 0 0 12px; }
-    .product-meta-row { display: flex; justify-content: space-between; align-items: center; }
-    .product-moq { font-size: 0.78rem; color: #636E72; }
-    .product-price { font-size: 0.85rem; font-weight: 700; color: #FF6B35; }
-    .btn-orange { background: #FF6B35; color: #fff; border: none; }
-    .btn-orange:hover { background: #E85A24; }
-    .btn-white { background: #fff; color: #2D3436; border: none; }
-    .btn-white:hover { background: #F0F3F5; }
-    .page-hero {
-      background: linear-gradient(135deg, #2D3436 0%, #4A5568 100%);
-      color: #fff;
-      padding: 60px 0 48px;
-      text-align: center;
-    }
-    .page-hero h1 { font-family: 'Poppins', sans-serif; font-size: 2.2rem; font-weight: 700; margin: 0 0 12px; }
-    .page-hero p { font-size: 1rem; color: rgba(255,255,255,0.8); max-width: 560px; margin: 0 auto; line-height: 1.7; }
-    .toast-msg {
-      position: fixed;
-      bottom: 24px;
-      left: 50%;
-      transform: translateX(-50%) translateY(80px);
-      background: #2D3436;
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      z-index: 9999;
-      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-      white-space: nowrap;
-    }
-    .toast-msg.show { transform: translateX(-50%) translateY(0); }
-    .add-to-inquiry-btn { background: #FF6B35; color: #fff; border: none; padding: 8px 16px; border-radius: 6px; font-size: 0.82rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; font-family: inherit; }
-    .add-to-inquiry-btn:hover { background: #E85A24; }
-  </style>
 </body>
 </html>
