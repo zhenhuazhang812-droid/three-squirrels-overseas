@@ -3,657 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" data-i18n="aboutPage.meta.description" content="Learn about Three Squirrels Overseas - Our story, mission, certifications, and the team behind premium Chinese snacks.">
-  <title data-i18n="aboutPage.title">About Us | Three Squirrels Overseas</title>
-
-  <!-- Fonts -->
+  <title>About Us | Three Squirrels Overseas</title>
+  <meta name="description" content="Learn about Three Squirrels - China's leading snack food exporter with 12 years of experience serving distributors in 20+ countries.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- i18n -->
-  <script src="js/i18n.js"></script>
+  <link rel="icon" type="image/png" href="images/logo-original.png">
+  <script src="js/inquiry.js"></script>
 </head>
 <body>
-  <!-- Header -->
   <header class="header">
-    <div class="container">
-      <div class="header-inner">
-        <a href="index.html" class="logo">
-          <img src="images/logo-original.png" alt="Three Squirrels" class="logo-img">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="images/logo-original.png" alt="Three Squirrels" class="logo-img"></a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="inquiry.html" class="cart-btn" title="My Inquiry">
+          <i data-lucide="shopping-cart"></i>
+          <span class="cart-badge" id="cartBadge" style="display:none;">0</span>
         </a>
-
-        <nav class="nav-menu">
-          <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
-          <a href="about.html" class="nav-link active" data-i18n="nav.about">About</a>
-          <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
-          <a href="products.html" class="nav-link" data-i18n="nav.products">Products</a>
-          <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
-        </nav>
-
-        <div class="nav-actions">
-          <!-- Language Switcher -->
-          <div class="language-switcher">
-            <button class="current-lang-indicator" type="button">
-              <span class="lang-flag">EN</span>
-              <span class="current-lang-name">English</span>
-              <i data-lucide="chevron-down"></i>
-            </button>
-            <div class="lang-dropdown">
-              <button class="lang-btn active" data-lang="en">
-                <span class="lang-flag">EN</span>
-                <span class="lang-name">English</span>
-              </button>
-              <button class="lang-btn" data-lang="zh">
-                <span class="lang-flag">中</span>
-                <span class="lang-name">Chinese</span>
-              </button>
-              <button class="lang-btn" data-lang="ko">
-                <span class="lang-flag">한</span>
-                <span class="lang-name">Korean</span>
-              </button>
-              <button class="lang-btn" data-lang="ms">
-                <span class="lang-flag">MS</span>
-                <span class="lang-name">Malay</span>
-              </button>
-              <button class="lang-btn" data-lang="vi">
-                <span class="lang-flag">VI</span>
-                <span class="lang-name">Vietnamese</span>
-              </button>
-            </div>
-          </div>
-          <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.getQuote">Get Quote</a>
-        </div>
-
-        <button class="menu-toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <a href="products.html" class="btn btn-primary btn-sm">Start Sourcing</a>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Navigation -->
-  <nav class="mobile-nav">
-    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
-    <a href="about.html" class="nav-link active" data-i18n="nav.about">About</a>
-    <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
-    <a href="products.html" class="nav-link" data-i18n="nav.products">Products</a>
-    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
-    <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;" data-i18n="nav.getQuote">Get Quote</a>
-
-    <!-- Mobile Language Switcher -->
-    <div class="mobile-lang-switcher">
-      <p style="font-size: 0.875rem; color: var(--color-gray); margin-bottom: var(--space-sm);">Select Language:</p>
-      <div class="mobile-lang-list">
-        <button class="mobile-lang-btn active" data-lang="en">English</button>
-        <button class="mobile-lang-btn" data-lang="zh">中文</button>
-        <button class="mobile-lang-btn" data-lang="ko">한국어</button>
-        <button class="mobile-lang-btn" data-lang="ms">Bahasa Melayu</button>
-        <button class="mobile-lang-btn" data-lang="vi">Tiếng Việt</button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page Header -->
-  <div class="page-header">
+  <section class="page-hero">
     <div class="container">
-      <h1 data-i18n="aboutPage.pageTitle">About Three Squirrels</h1>
-      <div class="breadcrumb">
-        <a href="index.html" data-i18n="nav.home">Home</a>
-        <span class="breadcrumb-separator">/</span>
-        <span data-i18n="aboutPage.breadcrumb">About Us</span>
-      </div>
+      <h1>About Three Squirrels</h1>
+      <p>China's leading snack food brand — From a single apartment in Hefei to a global export powerhouse.</p>
     </div>
-  </div>
+  </section>
 
-  <!-- About Content -->
-  <section class="about-preview section">
-    <div class="container">
-      <div class="about-preview-grid">
-        <div class="about-preview-image reveal">
-          <img src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=800&h=600&fit=crop" alt="Three Squirrels Headquarters">
-          <div class="about-badge" data-i18n="aboutPage.estBadge">Est. 2012</div>
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:60px;">
+        <div>
+          <div style="font-size:11px;color:#FF6B35;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Our Story</div>
+          <h2 style="font-family:'Poppins',sans-serif;font-size:2rem;font-weight:700;color:#2D3436;margin-bottom:16px;line-height:1.3;">From Anhui to the World: The Three Squirrels Story</h2>
+          <p style="color:#636E72;line-height:1.8;margin-bottom:16px;">Founded in 2012 in Hefei, Anhui Province, Three Squirrels started as a small online store with a big ambition: to bring premium Chinese snacks to every corner of the world.</p>
+          <p style="color:#636E72;line-height:1.8;">Today, Three Squirrels is China's #1 nut and snack brand, with annual sales exceeding 5 billion RMB, serving distributors and retailers in over 20 countries across 5 continents.</p>
         </div>
-        <div class="about-preview-content reveal">
-          <h2 data-i18n="aboutPage.ourStoryTitle">Our Story</h2>
-          <p data-i18n="aboutPage.ourStory1">Three Squirrels Overseas Center was founded in 2012 with a singular vision: to share the rich tapestry of Chinese snack culture with the world. What began as a small export operation has grown into a trusted global partner serving distributors, retailers, and foodservice companies across 50+ countries.</p>
-          <p data-i18n="aboutPage.ourStory2">Our name draws inspiration from the industrious squirrel—symbolizing our commitment to carefully curating and delivering the finest snacks from China's diverse culinary landscape. Just as squirrels gather and preserve the best nature has to offer, we source, inspect, and deliver premium products that meet exacting international standards.</p>
-          <p data-i18n="aboutPage.ourStory3">Today, we manage over 500 product SKUs and work with more than 200 global partners. Our success is built on three pillars: unwavering quality, transparent partnerships, and a genuine passion for sharing authentic Chinese flavors.</p>
+        <div style="background:linear-gradient(135deg,#FF6B35,#FF9B6A);border-radius:24px;padding:48px 32px;text-align:center;color:#fff;">
+          <div style="font-size:4rem;margin-bottom:16px;">🐿️</div>
+          <div style="font-family:'Poppins',sans-serif;font-size:2.5rem;font-weight:700;margin-bottom:8px;">12+ Years</div>
+          <div style="font-size:0.9rem;opacity:0.9;">of industry leadership</div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:60px;">
+        <div style="background:#fff;border:1px solid #F0F3F5;border-radius:16px;padding:28px;text-align:center;">
+          <div style="font-size:2.2rem;font-weight:700;color:#FF6B35;margin-bottom:8px;">20+</div>
+          <div style="font-size:0.85rem;color:#636E72;">Countries Served</div>
+        </div>
+        <div style="background:#fff;border:1px solid #F0F3F5;border-radius:16px;padding:28px;text-align:center;">
+          <div style="font-size:2.2rem;font-weight:700;color:#FF6B35;margin-bottom:8px;">100+</div>
+          <div style="font-size:0.85rem;color:#636E72;">Product SKUs</div>
+        </div>
+        <div style="background:#fff;border:1px solid #F0F3F5;border-radius:16px;padding:28px;text-align:center;">
+          <div style="font-size:2.2rem;font-weight:700;color:#FF6B35;margin-bottom:8px;">5000M+</div>
+          <div style="font-size:0.85rem;color:#636E72;">USD Annual Sales</div>
+        </div>
+      </div>
+
+      <h2 style="font-family:'Poppins',sans-serif;font-size:1.6rem;font-weight:700;color:#2D3436;margin-bottom:24px;">Our Values</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div style="background:#fff;border:1px solid #F0F3F5;border-radius:16px;padding:24px;">
+          <div style="font-size:1.5rem;margin-bottom:8px;">🎯</div>
+          <h3 style="font-size:1rem;font-weight:600;color:#2D3436;margin-bottom:6px;">Quality First</h3>
+          <p style="font-size:0.85rem;color:#636E72;line-height:1.7;">Every product undergoes strict quality control. We work only with certified factories that meet international food safety standards.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #F0F3F5;border-radius:16px;padding:24px;">
+          <div style="font-size:1.5rem;margin-bottom:8px;">🤝</div>
+          <h3 style="font-size:1rem;font-weight:600;color:#2D3436;margin-bottom:6px;">Long-term Partnerships</h3>
+          <p style="font-size:0.85rem;color:#636E72;line-height:1.7;">We view every distributor as a partner. Fair pricing, consistent supply, and responsive service are the foundation of every relationship.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #F0F3F5;border-radius:16px;padding:24px;">
+          <div style="font-size:1.5rem;margin-bottom:8px;">🌍</div>
+          <h3 style="font-size:1rem;font-weight:600;color:#2D3436;margin-bottom:6px;">Global Mindset</h3>
+          <p style="font-size:0.85rem;color:#636E72;line-height:1.7;">We understand the unique requirements of different markets — from FDA compliance for the US to HALAL certification for Muslim markets.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #F0F3F5;border-radius:16px;padding:24px;">
+          <div style="font-size:1.5rem;margin-bottom:8px;">⚡</div>
+          <h3 style="font-size:1rem;font-weight:600;color:#2D3436;margin-bottom:6px;">Speed & Reliability</h3>
+          <p style="font-size:0.85rem;color:#636E72;line-height:1.7;">Efficient logistics and experienced export teams ensure your orders arrive on time, every time. We handle the complexity so you can focus on sales.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Mission & Vision -->
-  <section class="strengths-section section" style="background: var(--color-white);">
-    <div class="container">
-      <div class="strengths-grid" style="grid-template-columns: 1fr 1fr;">
-        <div class="strength-card reveal">
-          <div class="strength-icon">
-            <i data-lucide="target" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4 data-i18n="aboutPage.missionTitle">Our Mission</h4>
-          <p data-i18n="aboutPage.missionText">To be the bridge between Chinese snack heritage and global consumers, delivering authentic flavors that delight taste buds while upholding the highest standards of quality, safety, and reliability.</p>
-        </div>
-
-        <div class="strength-card reveal">
-          <div class="strength-icon">
-            <i data-lucide="eye" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4 data-i18n="aboutPage.visionTitle">Our Vision</h4>
-          <p data-i18n="aboutPage.visionText">To become the world's most trusted Chinese snack export partner, recognized for our product excellence, customer service, and contribution to introducing Chinese culinary culture to every corner of the globe.</p>
-        </div>
-      </div>
+  <section style="background:#FAFBFC;padding:60px 0;">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-family:'Poppins',sans-serif;font-size:1.6rem;font-weight:700;color:#2D3436;margin-bottom:12px;">Ready to Start Sourcing?</h2>
+      <p style="color:#636E72;margin-bottom:28px;">Browse our full product catalog and submit your first inquiry today.</p>
+      <a href="products.html" class="btn btn-orange btn-lg">View Products</a>
     </div>
   </section>
 
-  <!-- Timeline Section -->
-  <section class="timeline-section section">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 data-i18n="aboutPage.timelineTitle">Our Journey</h2>
-        <p data-i18n="aboutPage.timelineSubtitle">Key milestones in our growth from a local startup to a global export leader.</p>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <div class="timeline-content">
-            <div class="timeline-year">2012</div>
-            <h4 class="timeline-title" data-i18n="aboutPage.timeline2012Title">Foundation</h4>
-            <p class="timeline-desc" data-i18n="aboutPage.timeline2012Text">Three Squirrels Overseas Center established in Hefei, Anhui, with a small team of 10 passionate food enthusiasts.</p>
-          </div>
-          <div class="timeline-dot">
-            <div class="timeline-dot-inner"></div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-content">
-            <div class="timeline-year">2015</div>
-            <h4 class="timeline-title" data-i18n="aboutPage.timeline2015Title">First International Shipment</h4>
-            <p class="timeline-desc" data-i18n="aboutPage.timeline2015Text">Expanded to serve our first international clients in Southeast Asia, marking the beginning of our global journey.</p>
-          </div>
-          <div class="timeline-dot">
-            <div class="timeline-dot-inner"></div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-content">
-            <div class="timeline-year">2017</div>
-            <h4 class="timeline-title" data-i18n="aboutPage.timeline2017Title">European Market Entry</h4>
-            <p class="timeline-desc" data-i18n="aboutPage.timeline2017Text">Successfully entered the European market with full FDA and EU compliance certifications.</p>
-          </div>
-          <div class="timeline-dot">
-            <div class="timeline-dot-inner"></div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-content">
-            <div class="timeline-year">2019</div>
-            <h4 class="timeline-title" data-i18n="aboutPage.timeline2019Title">Product Line Expansion</h4>
-            <p class="timeline-desc" data-i18n="aboutPage.timeline2019Text">Grew our product portfolio to over 300 SKUs and established partnerships with 100+ global distributors.</p>
-          </div>
-          <div class="timeline-dot">
-            <div class="timeline-dot-inner"></div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-content">
-            <div class="timeline-year">2022</div>
-            <h4 class="timeline-title" data-i18n="aboutPage.timeline2022Title">10th Anniversary</h4>
-            <p class="timeline-desc" data-i18n="aboutPage.timeline2022Text">Celebrated serving 50+ countries with 500+ products and 200+ global partners across all continents.</p>
-          </div>
-          <div class="timeline-dot">
-            <div class="timeline-dot-inner"></div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-content">
-            <div class="timeline-year">2024</div>
-            <h4 class="timeline-title" data-i18n="aboutPage.timeline2024Title">Innovation Center</h4>
-            <p class="timeline-desc" data-i18n="aboutPage.timeline2024Text">Opened state-of-the-art product development center to create custom formulations for global partners.</p>
-          </div>
-          <div class="timeline-dot">
-            <div class="timeline-dot-inner"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Certificates Section -->
-  <section class="strengths-section section">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 data-i18n="aboutPage.certTitle">Certifications & Compliance</h2>
-        <p data-i18n="aboutPage.certSubtitle">We maintain the highest international standards for food safety and quality management.</p>
-      </div>
-
-      <div class="certificates-grid">
-        <div class="certificate-card reveal">
-          <div class="certificate-icon">
-            <i data-lucide="shield-check" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4>ISO 22000</h4>
-          <p data-i18n="aboutPage.iso22000">Food Safety Management System</p>
-        </div>
-
-        <div class="certificate-card reveal">
-          <div class="certificate-icon">
-            <i data-lucide="award" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4>FSSC 22000</h4>
-          <p data-i18n="aboutPage.fssc22000">Food Safety System Certification</p>
-        </div>
-
-        <div class="certificate-card reveal">
-          <div class="certificate-icon">
-            <i data-lucide="check-circle" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4>HACCP</h4>
-          <p data-i18n="aboutPage.haccp">Hazard Analysis Critical Control Point</p>
-        </div>
-
-        <div class="certificate-card reveal">
-          <div class="certificate-icon">
-            <i data-lucide="globe" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4 data-i18n="aboutPage.fdaTitle">FDA Registered</h4>
-          <p data-i18n="aboutPage.fdaText">US Food and Drug Administration</p>
-        </div>
-
-        <div class="certificate-card reveal">
-          <div class="certificate-icon">
-            <i data-lucide="leaf" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4>ISO 14001</h4>
-          <p data-i18n="aboutPage.iso14001">Environmental Management System</p>
-        </div>
-
-        <div class="certificate-card reveal">
-          <div class="certificate-icon">
-            <i data-lucide="users" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4>ISO 45001</h4>
-          <p data-i18n="aboutPage.iso45001">Occupational Health & Safety</p>
-        </div>
-
-        <div class="certificate-card reveal">
-          <div class="certificate-icon">
-            <i data-lucide="star" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4>BRC Global Standard</h4>
-          <p data-i18n="aboutPage.brc">Food Safety Certification</p>
-        </div>
-
-        <div class="certificate-card reveal">
-          <div class="certificate-icon">
-            <i data-lucide="heart" style="width: 32px; height: 32px;"></i>
-          </div>
-          <h4 data-i18n="aboutPage.halalTitle">HALAL Certified</h4>
-          <p data-i18n="aboutPage.halalText">Islamic Food Standards</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Team Section -->
-  <section class="section" style="background: var(--color-off-white);">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 data-i18n="aboutPage.teamTitle">Leadership Team</h2>
-        <p data-i18n="aboutPage.teamSubtitle">Meet the experienced professionals driving Three Squirrels' global success.</p>
-      </div>
-
-      <div class="team-grid">
-        <div class="team-card reveal">
-          <div class="team-avatar">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop" alt="Zhang Wei">
-          </div>
-          <h4>Zhang Wei</h4>
-          <p class="team-role" data-i18n="aboutPage.ceo">Chief Executive Officer</p>
-        </div>
-
-        <div class="team-card reveal">
-          <div class="team-avatar">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop" alt="Li Mei">
-          </div>
-          <h4>Li Mei</h4>
-          <p class="team-role" data-i18n="aboutPage.coo">Chief Operating Officer</p>
-        </div>
-
-        <div class="team-card reveal">
-          <div class="team-avatar">
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop" alt="David Chen">
-          </div>
-          <h4>David Chen</h4>
-          <p class="team-role" data-i18n="aboutPage.headSales">Head of International Sales</p>
-        </div>
-
-        <div class="team-card reveal">
-          <div class="team-avatar">
-            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop" alt="Sarah Wang">
-          </div>
-          <h4>Sarah Wang</h4>
-          <p class="team-role" data-i18n="aboutPage.qaDirector">Quality Assurance Director</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="container">
-      <h2 data-i18n="aboutPage.ctaTitle">Ready to Partner with Us?</h2>
-      <p data-i18n="aboutPage.ctaText">Join hundreds of global distributors who trust Three Squirrels for premium Chinese snacks.</p>
-      <a href="contact.html" class="btn btn-white btn-lg" data-i18n="aboutPage.ctaButton">Get in Touch</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
-              <circle cx="24" cy="24" r="22" fill="#FF6B35"/>
-              <path d="M24 8 L27 14 L33 14 L28 18 L30 24 L24 20 L18 24 L20 18 L15 14 L21 14 Z" fill="#fff"/>
-              <circle cx="24" cy="30" r="10" fill="#fff"/>
-            </svg>
-            <span class="logo-text">Three<span>Squirrels</span></span>
-          </a>
-          <p data-i18n="footer.brandText">Premium Chinese snacks exporter serving global markets since 2012. Quality, authenticity, and reliability in every bite.</p>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="LinkedIn">
-              <i data-lucide="linkedin" style="width: 20px; height: 20px;"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Twitter">
-              <i data-lucide="twitter" style="width: 20px; height: 20px;"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="YouTube">
-              <i data-lucide="youtube" style="width: 20px; height: 20px;"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Instagram">
-              <i data-lucide="instagram" style="width: 20px; height: 20px;"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-nav">
-          <h4 class="footer-title" data-i18n="footer.quickLinks">Quick Links</h4>
-          <div class="footer-links">
-            <a href="about.html" data-i18n="nav.about">About Us</a>
-            <a href="products.html" data-i18n="nav.products">Products</a>
-            <a href="videos.html" data-i18n="nav.videos">Videos</a>
-            <a href="contact.html" data-i18n="nav.contact">Contact</a>
-          </div>
-        </div>
-
-        <div class="footer-nav">
-          <h4 class="footer-title" data-i18n="footer.products">Products</h4>
-          <div class="footer-links">
-            <a href="products.html" data-i18n="products.category.nuts">Nuts & Seeds</a>
-            <a href="products.html" data-i18n="products.category.driedFruits">Dried Fruits</a>
-            <a href="products.html" data-i18n="products.category.seaSnacks">Sea Snacks</a>
-            <a href="products.html" data-i18n="products.category.giftSets">Gift Sets</a>
-          </div>
-        </div>
-
-        <div class="footer-contact-info">
-          <h4 class="footer-title" data-i18n="footer.contactUs">Contact Us</h4>
-          <ul class="footer-contact">
-            <li>
-              <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
-              <span data-i18n-html="true" data-i18n="footer.address">Building A, Innovation Park<br>Hefei, Anhui, China 230001</span>
-            </li>
-            <li>
-              <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
-              <span data-i18n="footer.phone">+86 551 1234 5678</span>
-            </li>
-            <li>
-              <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
-              <span data-i18n="footer.email">overseas@threesquirrels.com</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p data-i18n="footer.copyright">2024 Three Squirrels Overseas Center. All rights reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
-          <a href="#" data-i18n="footer.terms">Terms of Service</a>
-        </div>
+      <div class="footer-bottom" style="border:none;padding:0;text-align:center;">
+        <p>© 2026 Three Squirrels Overseas. All rights reserved.</p>
       </div>
     </div>
   </footer>
-
-  <!-- Back to Top Button -->
-  <a href="#" class="back-to-top" aria-label="Back to top">
-    <i data-lucide="arrow-up" style="width: 24px; height: 24px;"></i>
-  </a>
-
-  <!-- Scripts -->
-  <script src="js/main.js"></script>
-  <script>
-    // Initialize Lucide icons
-    lucide.createIcons();
-
-    // Mobile language switcher handler
-    document.querySelectorAll('.mobile-lang-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        const lang = this.dataset.lang;
-
-        // Update active state
-        document.querySelectorAll('.mobile-lang-btn').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-
-        // Change language via i18n
-        if (window.i18n) {
-          window.i18n.changeLanguage(lang);
-        }
-      });
-    });
-  </script>
-
-<style>
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-}
-
-.inland-security-footer {
-  position: fixed;
-  z-index: 10;
-  bottom: 0;
-  right: 0;
-  width: fit-content;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.tooltip-container {
-  position: relative;
-}
-
-.trigger-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-  background-color: transparent;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.minimax-link {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-weight: 300;
-  color: #adadad;
-  text-decoration: none;
-}
-
-.minimax-link:visited {
-  color: #adadad;
-}
-
-.minimax-link:hover {
-  color: #666666;
-}
-
-.tooltip-content {
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  padding: 8px;
-  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
-  font-size: 12px;
-  line-height: 17px;
-  background-color: #fafafa;
-  border-radius: 12px;
-  white-space: nowrap;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  color: #171717;
-}
-
-/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
-.tooltip-content::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  right: 0;
-  height: 16px;
-}
-
-.tooltip-container:hover .tooltip-content {
-  display: flex;
-}
-
-.info-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
-
-.beian-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #171717;
-}
-
-.beian-icon {
-  width: 14px;
-  height: 14px;
-  margin-right: 2px;
-}
-
-.underline-text {
-  color: #171717;
-  text-decoration: underline;
-}
-
-.underline-text:hover {
-  color: #000000;
-}
-
-/* 深色模式支持 */
-@media (prefers-color-scheme: dark) {
-  .trigger-content {
-    background-color: transparent;
-  }
-
-  .minimax-link,
-  .minimax-link:visited {
-    color: #666666;
-  }
-
-  .minimax-link:hover {
-    color: #adadad;
-  }
-
-  .tooltip-content {
-    background-color: #262626;
-    color: #ededed;
-  }
-
-  .beian-link,
-  .underline-text {
-    color: #ededed;
-  }
-
-  .underline-text:hover {
-    color: #ffffff;
-  }
-}
-
-</style>
-<div class="inland-security-footer">
-  <div class="tooltip-container">
-    <div class="trigger-content">
-      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
-        <span>© 2026 MiniMax</span>
-      </a>
-    </div>
-    <div class="tooltip-content">
-      <section class="info-section">
-        <span>上海稀宇科技有限公司</span>
-      </section>
-
-      <section class="info-section">
-        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
-          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
-          <span class="underline-text">沪公网安备31010402010179号</span>
-        </a>
-        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
-          沪ICP备2023003282号-38
-        </a>
-      </section>
-
-      <section class="info-section">
-        <span>模型名称：MiniMax</span>
-        <span>备案号：Shanghai-MiniMax-202505230046</span>
-      </section>
-
-      <section class="info-section">
-        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
-          用户协议
-        </a>
-        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
-          隐私政策
-        </a>
-      </section>
-    </div>
-  </div>
-</div>
-
+  <script>document.addEventListener('DOMContentLoaded',()=>{lucide.createIcons();updateCartBadge();});</script>
 </body>
 </html>
