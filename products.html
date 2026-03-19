@@ -16,9 +16,11 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/inquiry.css">
 
   <!-- i18n -->
   <script src="js/i18n.js"></script>
+  <script src="js/inquiry.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -34,10 +36,15 @@
           <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
           <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
           <a href="products.html" class="nav-link active" data-i18n="nav.products">Products</a>
+<a href="inquiry.html" class="nav-link" data-i18n="nav.inquiry">My Inquiry</a>
           <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
         </nav>
 
         <div class="nav-actions">
+<div class="inquiry-cart-btn" onclick="toggleCartPanel()" style="cursor:pointer;position:relative;display:flex;align-items:center;padding:8px;border-radius:8px;">
+              <i data-lucide="shopping-cart" style="width:20px;height:20px;"></i>
+              <span class="inquiry-badge" style="display:none;">0</span>
+            </div>
           <!-- Language Switcher -->
           <div class="language-switcher">
             <button class="current-lang-indicator" type="button">
@@ -86,6 +93,7 @@
     <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
     <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
     <a href="products.html" class="nav-link active" data-i18n="nav.products">Products</a>
+<a href="inquiry.html" class="nav-link" data-i18n="nav.inquiry">My Inquiry</a>
     <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
     <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;" data-i18n="nav.getQuote">Get Quote</a>
 
@@ -231,11 +239,27 @@
           <!-- Product Grid -->
           <div class="products-full-grid">
             <!-- Product 1 -->
-            <a href="product-detail.html" class="product-card reveal" data-categories="nuts">
+            <a href="product-detail.html" class="product-card reveal"
+               data-product-id="p001" data-product-name="Premium Mixed Nuts Selection"
+               data-product-category="Nuts & Seeds"
+               data-product-image="https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?w=400&h=400&fit=crop"
+               data-product-moq="500" data-product-unit="boxes"
+               data-product-price-min="2.80" data-product-price-max="4.50"
+               data-product-tags="halal,organic">
               <div class="product-image">
                 <img src="https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?w=400&h=400&fit=crop" alt="Premium Mixed Nuts">
                 <div class="product-overlay">
                   <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                  <button class="btn btn-orange btn-sm add-to-inquiry-btn"
+                    data-product-id="p001" data-product-name="Premium Mixed Nuts Selection"
+                    data-product-category="Nuts & Seeds"
+                    data-product-image="https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?w=400&h=400&fit=crop"
+                    data-product-moq="500" data-product-unit="boxes"
+                    data-product-price-min="2.80" data-product-price-max="4.50"
+                    data-product-tags="halal,organic"
+                    onclick="event.preventDefault(); event.stopPropagation(); (function(btn){const p={id:btn.dataset.productId,name:btn.dataset.productName,category:btn.dataset.productCategory,image:btn.dataset.productImage,moq:parseInt(btn.dataset.productMoq),unit:btn.dataset.productUnit,priceMin:parseFloat(btn.dataset.productPriceMin),priceMax:parseFloat(btn.dataset.productPriceMax),tags:(btn.dataset.productTags||'').split(',')}; addProductToInquiry(btn,p);})(this)">
+                    <i data-lucide="plus" style="width:13px;height:13px;margin-right:3px;"></i>Add to Quote
+                  </button>
                 </div>
               </div>
               <div class="product-content">
@@ -249,11 +273,27 @@
             </a>
 
             <!-- Product 2 -->
-            <a href="product-detail.html" class="product-card reveal" data-categories="dried-fruits">
+            <a href="product-detail.html" class="product-card reveal"
+               data-product-id="p002" data-product-name="Tropical Dried Mango Slices"
+               data-product-category="Dried Fruits"
+               data-product-image="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&h=400&fit=crop"
+               data-product-moq="300" data-product-unit="boxes"
+               data-product-price-min="3.20" data-product-price-max="5.00"
+               data-product-tags="halal,organic">
               <div class="product-image">
                 <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&h=400&fit=crop" alt="Dried Mango">
                 <div class="product-overlay">
                   <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                  <button class="btn btn-orange btn-sm add-to-inquiry-btn"
+                    data-product-id="p002" data-product-name="Tropical Dried Mango Slices"
+                    data-product-category="Dried Fruits"
+                    data-product-image="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&h=400&fit=crop"
+                    data-product-moq="300" data-product-unit="boxes"
+                    data-product-price-min="3.20" data-product-price-max="5.00"
+                    data-product-tags="halal,organic"
+                    onclick="event.preventDefault(); event.stopPropagation(); (function(btn){const p={id:btn.dataset.productId,name:btn.dataset.productName,category:btn.dataset.productCategory,image:btn.dataset.productImage,moq:parseInt(btn.dataset.productMoq),unit:btn.dataset.productUnit,priceMin:parseFloat(btn.dataset.productPriceMin),priceMax:parseFloat(btn.dataset.productPriceMax),tags:(btn.dataset.productTags||'').split(',')}; addProductToInquiry(btn,p);})(this)">
+                    <i data-lucide="plus" style="width:13px;height:13px;margin-right:3px;"></i>Add to Quote
+                  </button>
                 </div>
               </div>
               <div class="product-content">
@@ -267,11 +307,27 @@
             </a>
 
             <!-- Product 3 -->
-            <a href="product-detail.html" class="product-card reveal" data-categories="sea-snacks">
+            <a href="product-detail.html" class="product-card reveal"
+               data-product-id="p003" data-product-name="Japanese Style Seaweed Snacks"
+               data-product-category="Sea Snacks"
+               data-product-image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop"
+               data-product-moq="1000" data-product-unit="boxes"
+               data-product-price-min="1.50" data-product-price-max="2.80"
+               data-product-tags="halal,vegan">
               <div class="product-image">
                 <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop" alt="Seaweed Snacks">
                 <div class="product-overlay">
                   <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                  <button class="btn btn-orange btn-sm add-to-inquiry-btn"
+                    data-product-id="p003" data-product-name="Japanese Style Seaweed Snacks"
+                    data-product-category="Sea Snacks"
+                    data-product-image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop"
+                    data-product-moq="1000" data-product-unit="boxes"
+                    data-product-price-min="1.50" data-product-price-max="2.80"
+                    data-product-tags="halal,vegan"
+                    onclick="event.preventDefault(); event.stopPropagation(); (function(btn){const p={id:btn.dataset.productId,name:btn.dataset.productName,category:btn.dataset.productCategory,image:btn.dataset.productImage,moq:parseInt(btn.dataset.productMoq),unit:btn.dataset.productUnit,priceMin:parseFloat(btn.dataset.productPriceMin),priceMax:parseFloat(btn.dataset.productPriceMax),tags:(btn.dataset.productTags||'').split(',')}; addProductToInquiry(btn,p);})(this)">
+                    <i data-lucide="plus" style="width:13px;height:13px;margin-right:3px;"></i>Add to Quote
+                  </button>
                 </div>
               </div>
               <div class="product-content">
@@ -290,6 +346,7 @@
                 <img src="https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?w=400&h=400&fit=crop" alt="Candied Walnuts">
                 <div class="product-overlay">
                   <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                  <button class="btn btn-orange btn-sm add-to-inquiry-btn" data-product-id="p004" data-product-name="Honey Glazed Candied Walnuts" data-product-category="Nuts & Seeds" data-product-image="https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?w=400" data-product-moq="500" data-product-unit="boxes" data-product-price-min="4.20" data-product-price-max="6.50" data-product-tags="halal" onclick="event.preventDefault();event.stopPropagation();(function(b){var p={id:b.dataset.productId,name:b.dataset.productName,category:b.dataset.productCategory,image:b.dataset.productImage,moq:parseInt(b.dataset.productMoq),unit:b.dataset.productUnit,priceMin:parseFloat(b.dataset.productPriceMin),priceMax:parseFloat(b.dataset.productPriceMax),tags:(b.dataset.productTags||"").split(",")};addProductToInquiry(b,p)})(this)"><i data-lucide="plus" style="width:13px;height:13px;margin-right:3px;"></i>Add to Quote</button>
                 </div>
               </div>
               <div class="product-content">
@@ -308,6 +365,7 @@
                 <img src="https://images.unsplash.com/photo-1599480653546-1b1a23c0d0e9?w=400&h=400&fit=crop" alt="Black Sesame">
                 <div class="product-overlay">
                   <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                  <button class="btn btn-orange btn-sm add-to-inquiry-btn" data-product-id="p005" data-product-name="Black Sesame Rice Candies" data-product-category="Traditional Sweets" data-product-image="https://images.unsplash.com/photo-1599480653546-1b1a23c0d0e9?w=400" data-product-moq="800" data-product-unit="boxes" data-product-price-min="2.50" data-product-price-max="3.80" data-product-tags="halal" onclick="event.preventDefault();event.stopPropagation();(function(b){var p={id:b.dataset.productId,name:b.dataset.productName,category:b.dataset.productCategory,image:b.dataset.productImage,moq:parseInt(b.dataset.productMoq),unit:b.dataset.productUnit,priceMin:parseFloat(b.dataset.productPriceMin),priceMax:parseFloat(b.dataset.productPriceMax),tags:(b.dataset.productTags||"").split(",")};addProductToInquiry(b,p)})(this)"><i data-lucide="plus" style="width:13px;height:13px;margin-right:3px;"></i>Add to Quote</button>
                 </div>
               </div>
               <div class="product-content">
@@ -326,6 +384,7 @@
                 <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=400&h=400&fit=crop" alt="Gift Box">
                 <div class="product-overlay">
                   <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                  <button class="btn btn-orange btn-sm add-to-inquiry-btn" data-product-id="p006" data-product-name="Premium Gift Box Collection" data-product-category="Gift Sets" data-product-image="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=400" data-product-moq="200" data-product-unit="boxes" data-product-price-min="15.00" data-product-price-max="28.00" data-product-tags="custom" onclick="event.preventDefault();event.stopPropagation();(function(b){var p={id:b.dataset.productId,name:b.dataset.productName,category:b.dataset.productCategory,image:b.dataset.productImage,moq:parseInt(b.dataset.productMoq),unit:b.dataset.productUnit,priceMin:parseFloat(b.dataset.productPriceMin),priceMax:parseFloat(b.dataset.productPriceMax),tags:(b.dataset.productTags||"").split(",")};addProductToInquiry(b,p)})(this)"><i data-lucide="plus" style="width:13px;height:13px;margin-right:3px;"></i>Add to Quote</button>
                 </div>
               </div>
               <div class="product-content">
@@ -344,6 +403,7 @@
                 <img src="https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=400&h=400&fit=crop" alt="Roasted Cashews">
                 <div class="product-overlay">
                   <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                  <button class="btn btn-orange btn-sm add-to-inquiry-btn" data-product-id="p007" data-product-name="Premium Roasted Cashews" data-product-category="Nuts & Seeds" data-product-image="https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=400" data-product-moq="500" data-product-unit="boxes" data-product-price-min="5.50" data-product-price-max="8.00" data-product-tags="halal,organic" onclick="event.preventDefault();event.stopPropagation();(function(b){var p={id:b.dataset.productId,name:b.dataset.productName,category:b.dataset.productCategory,image:b.dataset.productImage,moq:parseInt(b.dataset.productMoq),unit:b.dataset.productUnit,priceMin:parseFloat(b.dataset.productPriceMin),priceMax:parseFloat(b.dataset.productPriceMax),tags:(b.dataset.productTags||"").split(",")};addProductToInquiry(b,p)})(this)"><i data-lucide="plus" style="width:13px;height:13px;margin-right:3px;"></i>Add to Quote</button>
                 </div>
               </div>
               <div class="product-content">
@@ -362,6 +422,7 @@
                 <img src="https://images.unsplash.com/photo-1560023907-5f339617ea30?w=400&h=400&fit=crop" alt="Dried Strawberries">
                 <div class="product-overlay">
                   <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                  <button class="btn btn-orange btn-sm add-to-inquiry-btn" data-product-id="p008" data-product-name="Freeze-Dried Strawberries" data-product-category="Dried Fruits" data-product-image="https://images.unsplash.com/photo-1560023907-5f339617ea30?w=400" data-product-moq="300" data-product-unit="boxes" data-product-price-min="4.80" data-product-price-max="7.20" data-product-tags="organic,vegan" onclick="event.preventDefault();event.stopPropagation();(function(b){var p={id:b.dataset.productId,name:b.dataset.productName,category:b.dataset.productCategory,image:b.dataset.productImage,moq:parseInt(b.dataset.productMoq),unit:b.dataset.productUnit,priceMin:parseFloat(b.dataset.productPriceMin),priceMax:parseFloat(b.dataset.productPriceMax),tags:(b.dataset.productTags||"").split(",")};addProductToInquiry(b,p)})(this)"><i data-lucide="plus" style="width:13px;height:13px;margin-right:3px;"></i>Add to Quote</button>
                 </div>
               </div>
               <div class="product-content">
@@ -380,6 +441,7 @@
                 <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=400&h=400&fit=crop" alt="Kelp Snacks">
                 <div class="product-overlay">
                   <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                  <button class="btn btn-orange btn-sm add-to-inquiry-btn" data-product-id="p009" data-product-name="Crispy Kelp Strips" data-product-category="Sea Snacks" data-product-image="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=400" data-product-moq="800" data-product-unit="boxes" data-product-price-min="2.20" data-product-price-max="3.50" data-product-tags="halal,vegan" onclick="event.preventDefault();event.stopPropagation();(function(b){var p={id:b.dataset.productId,name:b.dataset.productName,category:b.dataset.productCategory,image:b.dataset.productImage,moq:parseInt(b.dataset.productMoq),unit:b.dataset.productUnit,priceMin:parseFloat(b.dataset.productPriceMin),priceMax:parseFloat(b.dataset.productPriceMax),tags:(b.dataset.productTags||"").split(",")};addProductToInquiry(b,p)})(this)"><i data-lucide="plus" style="width:13px;height:13px;margin-right:3px;"></i>Add to Quote</button>
                 </div>
               </div>
               <div class="product-content">
@@ -398,6 +460,7 @@
                 <img src="https://images.unsplash.com/photo-1582056615449-3b65df0e7c8c?w=400&h=400&fit=crop" alt="Milk Candies">
                 <div class="product-overlay">
                   <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                  <button class="btn btn-orange btn-sm add-to-inquiry-btn" data-product-id="p010" data-product-name="Milk Candy Variety Pack" data-product-category="Traditional Sweets" data-product-image="https://images.unsplash.com/photo-1582056615449-3b65df0e7c8c?w=400" data-product-moq="500" data-product-unit="boxes" data-product-price-min="2.00" data-product-price-max="3.50" data-product-tags="halal" onclick="event.preventDefault();event.stopPropagation();(function(b){var p={id:b.dataset.productId,name:b.dataset.productName,category:b.dataset.productCategory,image:b.dataset.productImage,moq:parseInt(b.dataset.productMoq),unit:b.dataset.productUnit,priceMin:parseFloat(b.dataset.productPriceMin),priceMax:parseFloat(b.dataset.productPriceMax),tags:(b.dataset.productTags||"").split(",")};addProductToInquiry(b,p)})(this)"><i data-lucide="plus" style="width:13px;height:13px;margin-right:3px;"></i>Add to Quote</button>
                 </div>
               </div>
               <div class="product-content">
