@@ -402,42 +402,28 @@ p {
 .logo {
   display: flex;
   align-items: center;
-  gap: var(--space-md);
   text-decoration: none;
   transition: opacity var(--transition-fast);
+  height: 100%;
 }
 
 .logo:hover {
   opacity: 0.85;
 }
 
-.logo-icon {
-  width: 48px;
-  height: 48px;
+.logo-img {
+  height: 56px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.15;
-}
-
-.logo-text-brand {
-  font-family: var(--font-heading);
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: var(--color-charcoal);
-  letter-spacing: 0.02em;
-}
-
-.logo-text-sub {
-  font-family: var(--font-body);
-  font-size: 0.6rem;
-  font-weight: 600;
-  color: var(--color-primary);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+@media (max-width: 768px) {
+  .logo-img {
+    height: 44px;
+    max-width: 160px;
+  }
 }
 
 .nav-menu {
