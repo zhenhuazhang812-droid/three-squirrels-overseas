@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
+  <!-- Compact Logo for Header -->
+  <circle cx="30" cy="30" r="28" fill="#FF6B35"/>
+
+  <!-- Left Ear -->
+  <ellipse cx="14" cy="12" rx="7" ry="9" fill="#FF6B35"/>
+  <ellipse cx="14" cy="12" rx="4" ry="6" fill="#FFD4B8"/>
+
+  <!-- Right Ear -->
+  <ellipse cx="46" cy="12" rx="7" ry="9" fill="#FF6B35"/>
+  <ellipse cx="46" cy="12" rx="4" ry="6" fill="#FFD4B8"/>
+
+  <!-- Face -->
+  <ellipse cx="30" cy="36" rx="18" ry="16" fill="#FFD4B8"/>
+
+  <!-- Eyes -->
+  <circle cx="23" cy="33" r="4" fill="#2D3436"/>
+  <circle cx="37" cy="33" r="4" fill="#2D3436"/>
+  <circle cx="24" cy="32" r="1.5" fill="#fff"/>
+  <circle cx="38" cy="32" r="1.5" fill="#fff"/>
+
+  <!-- Nose -->
+  <ellipse cx="30" cy="40" rx="3.5" ry="2.5" fill="#E85A24"/>
+
+  <!-- Smile -->
+  <path d="M25 43 Q30 47 35 43" stroke="#2D3436" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Bow -->
+  <circle cx="10" cy="18" r="3" fill="#FF69B4"/>
+</svg>

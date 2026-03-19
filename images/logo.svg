@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" fill="none">
+  <!-- Mascot Icon - Simplified for Header -->
+  <g transform="translate(0, 5)">
+    <!-- Squirrel Head Circle -->
+    <circle cx="30" cy="35" r="28" fill="#FF6B35"/>
+
+    <!-- Left Ear -->
+    <ellipse cx="12" cy="15" rx="8" ry="10" fill="#FF6B35"/>
+    <ellipse cx="12" cy="15" rx="5" ry="7" fill="#FFD4B8"/>
+
+    <!-- Right Ear -->
+    <ellipse cx="48" cy="15" rx="8" ry="10" fill="#FF6B35"/>
+    <ellipse cx="48" cy="15" rx="5" ry="7" fill="#FFD4B8"/>
+
+    <!-- Face -->
+    <ellipse cx="30" cy="42" rx="20" ry="18" fill="#FFD4B8"/>
+
+    <!-- Eyes -->
+    <circle cx="22" cy="38" r="5" fill="#2D3436"/>
+    <circle cx="38" cy="38" r="5" fill="#2D3436"/>
+    <circle cx="23" cy="37" r="2" fill="#fff"/>
+    <circle cx="39" cy="37" r="2" fill="#fff"/>
+
+    <!-- Nose -->
+    <ellipse cx="30" cy="46" rx="4" ry="3" fill="#E85A24"/>
+
+    <!-- Smile -->
+    <path d="M24 50 Q30 55 36 50" stroke="#2D3436" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Bow (Left Squirrel Element) -->
+    <circle cx="8" cy="22" r="4" fill="#FF69B4"/>
+  </g>
+
+  <!-- Brand Text -->
+  <g transform="translate(70, 0)">
+    <!-- Chinese Characters -->
+    <text x="0" y="32" font-family="'Noto Sans SC', 'PingFang SC', sans-serif" font-size="28" font-weight="700" fill="#2D3436">三只松鼠</text>
+
+    <!-- English Text -->
+    <text x="0" y="58" font-family="'Inter', 'Arial', sans-serif" font-size="14" font-weight="500" fill="#636E72" letter-spacing="1">THREE SQUIRRELS</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="74" font-family="'Inter', 'Arial', sans-serif" font-size="10" font-weight="400" fill="#B2BEC3" letter-spacing="2">OVERSEAS CENTER</text>
+  </g>
+</svg>
