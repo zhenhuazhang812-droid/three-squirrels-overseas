@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "title": "Three Squirrels Overseas | Premium Chinese Snacks Exporter",
+    "description": "Discover premium Chinese snacks for global markets. High-quality nuts, dried fruits, and specialty treats exported worldwide since 2012."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "videos": "Videos",
+    "products": "Products",
+    "contact": "Contact",
+    "getQuote": "Get Quote"
+  },
+  "hero": {
+    "badge": "Global Snack Solutions Since 2012",
+    "title": "Premium Chinese Snacks<br>For the World",
+    "subtitle": "Bringing authentic Chinese snack culture to global markets with premium quality nuts, dried fruits, and specialty treats.",
+    "ctaProducts": "Explore Products",
+    "ctaContact": "Contact Us",
+    "scrollDown": "Scroll Down"
+  },
+  "stats": {
+    "sales": "Annual Sales (USD)",
+    "skus": "Product SKUs",
+    "countries": "Countries Served",
+    "partners": "Global Partners"
+  },
+  "aboutPreview": {
+    "since": "Since 2012",
+    "title": "Your Trusted Partner in Premium Chinese Snacks",
+    "desc1": "Three Squirrels Overseas Center specializes in bringing the finest Chinese snack delicacies to international markets. With over a decade of experience, we've built strong relationships with manufacturers and maintain rigorous quality control standards.",
+    "desc2": "From traditional favorites to innovative new flavors, we curate products that meet diverse global tastes while preserving authentic Chinese snack culture.",
+    "cert1": "ISO 22000 Certified",
+    "cert2": "FDA Registered",
+    "cert3": "HACCP Compliant",
+    "cert4": "Custom Packaging",
+    "cta": "Learn More About Us"
+  },
+  "strengths": {
+    "title": "Why Choose Three Squirrels",
+    "subtitle": "We combine traditional craftsmanship with modern quality standards to deliver exceptional snack experiences worldwide.",
+    "quality": {
+      "title": "Premium Quality",
+      "desc": "Carefully selected ingredients from certified suppliers with strict quality control at every stage."
+    },
+    "logistics": {
+      "title": "Global Logistics",
+      "desc": "Efficient supply chain with warehousing in key locations for fast delivery to 50+ countries."
+    },
+    "custom": {
+      "title": "Custom Solutions",
+      "desc": "Flexible MOQ options with custom branding, packaging, and flavor development available."
+    },
+    "support": {
+      "title": "Dedicated Support",
+      "desc": "Personal account managers and 24/7 responsive service for all your business needs."
+    }
+  },
+  "videoShowcase": {
+    "title": "Discover Our Story",
+    "subtitle": "Watch how Three Squirrels brings authentic Chinese snacks to tables around the world.",
+    "cat1": "Company Profile",
+    "video1": "Introduction to Three Squirrels",
+    "cat2": "Behind The Scenes",
+    "video2": "Quality Production Process",
+    "cat3": "Products",
+    "video3": "Product Line Overview",
+    "cta": "View All Videos"
+  },
+  "productsPreview": {
+    "title": "Featured Products",
+    "subtitle": "Explore our curated selection of premium Chinese snacks loved by customers worldwide.",
+    "cta": "View All Products"
+  },
+  "videos": {
+    "title": "Discover Our Story",
+    "subtitle": "Watch how Three Squirrels brings authentic Chinese snacks to tables around the world.",
+    "viewAll": "View All Videos",
+    "companyProfile": "Company Profile",
+    "products": "Products",
+    "behindScenes": "Behind The Scenes"
+  },
+  "products": {
+    "title": "Featured Products",
+    "subtitle": "Explore our curated selection of premium Chinese snacks loved by customers worldwide.",
+    "viewAll": "View All Products",
+    "viewDetails": "View Details",
+    "moq": "MOQ",
+    "category": {
+      "nuts": "Nuts & Seeds",
+      "driedFruits": "Dried Fruits",
+      "seaSnacks": "Sea Snacks",
+      "sweets": "Traditional Sweets",
+      "giftSets": "Gift Sets"
+    }
+  },
+  "partners": {
+    "title": "Trusted by Global Partners",
+    "subtitle": "We proudly serve distributors, retailers, and foodservice companies in over 50 countries."
+  },
+  "cta": {
+    "title": "Ready to Partner with Us?",
+    "subtitle": "Join hundreds of global distributors who trust Three Squirrels for premium Chinese snacks. Let's discuss how we can support your business growth.",
+    "button": "Start Your Partnership"
+  },
+  "footer": {
+    "brandText": "Premium Chinese snacks exporter serving global markets since 2012. Quality, authenticity, and reliability in every bite.",
+    "quickLinks": "Quick Links",
+    "products": "Products",
+    "contactUs": "Contact Us",
+    "address": "Building A, Innovation Park<br>Hefei, Anhui, China 230001",
+    "phone": "+86 551 1234 5678",
+    "email": "overseas@threesquirrels.com",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "2024 Three Squirrels Overseas Center. All rights reserved."
+  },
+  "aboutPage": {
+    "title": "About Three Squirrels",
+    "breadcrumb": "About Us",
+    "storyTitle": "Our Story",
+    "storyText1": "Three Squirrels Overseas Center was founded in 2012 with a singular vision: to share the rich tapestry of Chinese snack culture with the world. What began as a small export operation has grown into a trusted global partner serving distributors, retailers, and foodservice companies across 50+ countries.",
+    "storyText2": "Our name draws inspiration from the industrious squirrel—symbolizing our commitment to carefully curating and delivering the finest snacks from China's diverse culinary landscape. Just as squirrels gather and preserve the best nature has to offer, we source, inspect, and deliver premium products that meet exacting international standards.",
+    "storyText3": "Today, we manage over 500 product SKUs and work with more than 200 global partners. Our success is built on three pillars: unwavering quality, transparent partnerships, and a genuine passion for sharing authentic Chinese flavors.",
+    "mission": "Our Mission",
+    "missionText": "To be the bridge between Chinese snack heritage and global consumers, delivering authentic flavors that delight taste buds while upholding the highest standards of quality, safety, and reliability.",
+    "vision": "Our Vision",
+    "visionText": "To become the world's most trusted Chinese snack export partner, recognized for our product excellence, customer service, and contribution to introducing Chinese culinary culture to every corner of the globe.",
+    "journey": "Our Journey",
+    "journeySubtitle": "Key milestones in our growth from a local startup to a global export leader.",
+    "certifications": "Certifications & Compliance",
+    "certificationsSubtitle": "We maintain the highest international standards for food safety and quality management.",
+    "team": "Leadership Team",
+    "teamSubtitle": "Meet the experienced professionals driving Three Squirrels' global success."
+  },
+  "timeline": {
+    "2012": "Foundation - Three Squirrels Overseas Center established in Hefei, Anhui, with a small team of 10 passionate food enthusiasts.",
+    "2015": "First International Shipment - Expanded to serve our first international clients in Southeast Asia, marking the beginning of our global journey.",
+    "2017": "European Market Entry - Successfully entered the European market with full FDA and EU compliance certifications.",
+    "2019": "Product Line Expansion - Grew our product portfolio to over 300 SKUs and established partnerships with 100+ global distributors.",
+    "2022": "10th Anniversary - Celebrated serving 50+ countries with 500+ products and 200+ global partners across all continents.",
+    "2024": "Innovation Center - Opened state-of-the-art product development center to create custom formulations for global partners."
+  },
+  "certificates": {
+    "iso22000": "ISO 22000 - Food Safety Management System",
+    "fssc22000": "FSSC 22000 - Food Safety System Certification",
+    "haccp": "HACCP - Hazard Analysis Critical Control Point",
+    "fda": "FDA Registered - US Food and Drug Administration",
+    "iso14001": "ISO 14001 - Environmental Management System",
+    "iso45001": "ISO 45001 - Occupational Health & Safety",
+    "brc": "BRC Global Standard - Food Safety Certification",
+    "halal": "HALAL Certified - Islamic Food Standards"
+  },
+  "team": {
+    "ceo": "Chief Executive Officer",
+    "coo": "Chief Operating Officer",
+    "salesHead": "Head of International Sales",
+    "qaDirector": "Quality Assurance Director"
+  },
+  "videoPage": {
+    "title": "Video Center",
+    "breadcrumb": "Videos",
+    "allVideos": "All Videos",
+    "filterCompany": "Company Profile",
+    "filterProducts": "Products",
+    "filterBehindScenes": "Behind The Scenes",
+    "seeMore": "Contact Us",
+    "seeMoreText": "Want to See More? Get in touch to request a private video presentation or schedule a virtual factory tour."
+  },
+  "productPage": {
+    "title": "Our Products",
+    "breadcrumb": "Products",
+    "searchPlaceholder": "Search products...",
+    "categories": "Categories",
+    "priceRange": "Price Range",
+    "moq": "MOQ",
+    "features": "Features",
+    "customBranding": "Custom Branding Available",
+    "organicOptions": "Organic Options",
+    "halalCertified": "Halal Certified",
+    "showing": "Showing",
+    "products": "products",
+    "applyFilters": "Apply Filters",
+    "relatedProducts": "You May Also Like",
+    "exploreMore": "Explore more premium products from our collection."
+  },
+  "productDetail": {
+    "category": "Category",
+    "sku": "SKU",
+    "origin": "Origin",
+    "shelfLife": "Shelf Life",
+    "priceRange": "Price Range",
+    "specifications": "Specifications",
+    "netWeight": "Net Weight",
+    "ingredients": "Ingredients",
+    "packaging": "Packaging",
+    "certifications": "Certifications",
+    "storage": "Storage",
+    "requestQuote": "Request Quote",
+    "contactSales": "Contact Sales",
+    "viewAll": "View All Products"
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "breadcrumb": "Contact",
+    "connectTitle": "Let's Connect",
+    "connectText": "Whether you're interested in our products, exploring partnership opportunities, or have questions about our services, we'd love to hear from you.",
+    "visitUs": "Visit Us",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "businessHours": "Business Hours",
+    "weekdays": "Monday - Friday: 9:00 AM - 6:00 PM (CST)",
+    "weekends": "Saturday - Sunday: Closed",
+    "formTitle": "Send Us a Message",
+    "fullName": "Full Name",
+    "companyName": "Company Name",
+    "emailAddress": "Email Address",
+    "phoneNumber": "Phone Number",
+    "inquiryType": "Inquiry Type",
+    "selectOption": "Select an option",
+    "productInquiry": "Product Inquiry",
+    "businessPartnership": "Business Partnership",
+    "requestSamples": "Request Samples",
+    "customOrder": "Custom Order",
+    "generalQuestion": "General Question",
+    "productsInterest": "Products of Interest",
+    "yourMessage": "Your Message",
+    "messagePlaceholder": "Please tell us about your requirements, preferred products, estimated quantities, and any questions you may have...",
+    "sendMessage": "Send Message",
+    "faqTitle": "Frequently Asked Questions",
+    "faqSubtitle": "Quick answers to common questions about working with us.",
+    "moqQuestion": "What is your minimum order quantity?",
+    "moqAnswer": "Our standard MOQ varies by product, typically ranging from 200-1000 boxes. We offer flexible options for new partners - contact us to discuss your requirements.",
+    "shippingQuestion": "What are your shipping options?",
+    "shippingAnswer": "We ship via sea freight (FOB, CIF) for large orders and air freight for samples. We work with major shipping lines and can arrange door-to-door delivery to most destinations.",
+    "customQuestion": "Can I customize packaging?",
+    "customAnswer": "Yes! We offer full custom branding services including logo design, packaging design, and custom flavors. MOQ for custom packaging starts at 1,000 boxes.",
+    "certQuestion": "What certifications do you have?",
+    "certAnswer": "We are certified with ISO 22000, FSSC 22000, HACCP, BRC, and FDA. Our facilities are also HALAL and KOSHER certified for applicable products.",
+    "locationTitle": "Hefei, Anhui, China",
+    "locationText": "Building A, Innovation Park<br>High-Tech Development Zone<br>Near Metro Line 2 - Aerospace Industrial Park Station"
+  },
+  "form": {
+    "required": "Required",
+    "errorName": "Please enter your name",
+    "errorCompany": "Please enter your company name",
+    "errorEmail": "Please enter a valid email address",
+    "errorType": "Please select an inquiry type",
+    "errorMessage": "Please enter at least 20 characters",
+    "sending": "Sending...",
+    "sent": "Message Sent!"
+  },
+  "empty": {
+    "title": "No products found",
+    "message": "Try adjusting your filters or search criteria"
+  }
+}

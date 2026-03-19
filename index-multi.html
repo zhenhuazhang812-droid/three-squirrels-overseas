@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" data-i18n="meta.description" content="Discover premium Chinese snacks for global markets. High-quality nuts, dried fruits, and specialty treats exported worldwide since 2012.">
+  <title data-i18n="meta.title">Three Squirrels Overseas | Premium Chinese Snacks Exporter</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- i18n -->
+  <script src="js/i18n.js"></script>
+</head>
+<body>
+  <!-- Loading Overlay -->
+  <div class="loading-overlay">
+    <div class="loader">
+      <svg class="loader-squirrel" viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="45" stroke="#FF6B35" stroke-width="4" fill="none"/>
+        <path d="M50 15 L55 25 L65 25 L57 32 L60 42 L50 36 L40 42 L43 32 L35 25 L45 25 Z" fill="#FF6B35"/>
+        <circle cx="50" cy="55" r="20" fill="#FF6B35"/>
+        <circle cx="44" cy="52" r="3" fill="#fff"/>
+        <circle cx="56" cy="52" r="3" fill="#fff"/>
+        <ellipse cx="50" cy="60" rx="4" ry="3" fill="#E85A24"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="22" fill="#FF6B35"/>
+            <path d="M24 8 L27 14 L33 14 L28 18 L30 24 L24 20 L18 24 L20 18 L15 14 L21 14 Z" fill="#fff"/>
+            <circle cx="24" cy="30" r="10" fill="#fff"/>
+            <circle cx="21" cy="28" r="2" fill="#2D3436"/>
+            <circle cx="27" cy="28" r="2" fill="#2D3436"/>
+          </svg>
+          <span class="logo-text">Three<span>Squirrels</span></span>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a>
+          <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+          <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
+          <a href="products.html" class="nav-link" data-i18n="nav.products">Products</a>
+          <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Language Switcher -->
+          <div class="language-switcher">
+            <button class="current-lang-indicator" type="button">
+              <span class="lang-flag">EN</span>
+              <span class="current-lang-name">English</span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="lang-dropdown">
+              <button class="lang-btn active" data-lang="en">
+                <span class="lang-flag">EN</span>
+                <span class="lang-name">English</span>
+              </button>
+              <button class="lang-btn" data-lang="zh">
+                <span class="lang-flag">中</span>
+                <span class="lang-name">Chinese</span>
+              </button>
+              <button class="lang-btn" data-lang="ko">
+                <span class="lang-flag">한</span>
+                <span class="lang-name">Korean</span>
+              </button>
+              <button class="lang-btn" data-lang="ms">
+                <span class="lang-flag">MS</span>
+                <span class="lang-name">Malay</span>
+              </button>
+              <button class="lang-btn" data-lang="vi">
+                <span class="lang-flag">VI</span>
+                <span class="lang-name">Vietnamese</span>
+              </button>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.getQuote">Get Quote</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+    <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
+    <a href="products.html" class="nav-link" data-i18n="nav.products">Products</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;" data-i18n="nav.getQuote">Get Quote</a>
+
+    <!-- Mobile Language Switcher -->
+    <div class="mobile-lang-switcher">
+      <p style="font-size: 0.875rem; color: var(--color-gray); margin-bottom: var(--space-sm);">Select Language:</p>
+      <div class="mobile-lang-list">
+        <button class="mobile-lang-btn active" data-lang="en">English</button>
+        <button class="mobile-lang-btn" data-lang="zh">中文</button>
+        <button class="mobile-lang-btn" data-lang="ko">한국어</button>
+        <button class="mobile-lang-btn" data-lang="ms">Bahasa Melayu</button>
+        <button class="mobile-lang-btn" data-lang="vi">Tiếng Việt</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge" data-i18n="hero.badge">
+        <i data-lucide="globe" style="width: 16px; height: 16px;"></i>
+        Global Snack Solutions Since 2012
+      </div>
+      <h1 class="hero-title" data-i18n-html="true" data-i18n="hero.title">Premium Chinese Snacks<br>For the World</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Bringing authentic Chinese snack culture to global markets with premium quality nuts, dried fruits, and specialty treats.</p>
+      <div class="hero-buttons">
+        <a href="products.html" class="btn btn-primary btn-lg" data-i18n="hero.exploreProducts">Explore Products</a>
+        <a href="contact.html" class="btn btn-white btn-lg" data-i18n="hero.contactUs">Contact Us</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <i data-lucide="chevron-down" style="width: 24px; height: 24px;"></i>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <i data-lucide="trending-up" class="stat-icon"></i>
+          <div class="stat-number" data-counter="1500">0</div>
+          <div class="stat-unit">M+</div>
+          <div class="stat-label" data-i18n="stats.annualSales">Annual Sales (USD)</div>
+        </div>
+        <div class="stat-card reveal">
+          <i data-lucide="package" class="stat-icon"></i>
+          <div class="stat-number" data-counter="500">0</div>
+          <div class="stat-unit">+</div>
+          <div class="stat-label" data-i18n="stats.productSKUs">Product SKUs</div>
+        </div>
+        <div class="stat-card reveal">
+          <i data-lucide="globe-2" class="stat-icon"></i>
+          <div class="stat-number" data-counter="50">0</div>
+          <div class="stat-unit">+</div>
+          <div class="stat-label" data-i18n="stats.countriesServed">Countries Served</div>
+        </div>
+        <div class="stat-card reveal">
+          <i data-lucide="handshake" class="stat-icon"></i>
+          <div class="stat-number" data-counter="200">0</div>
+          <div class="stat-unit">+</div>
+          <div class="stat-label" data-i18n="stats.globalPartners">Global Partners</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview Section -->
+  <section class="about-preview section">
+    <div class="container">
+      <div class="about-preview-grid">
+        <div class="about-preview-image reveal">
+          <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=800&h=600&fit=crop" alt="Three Squirrels Production Facility">
+          <div class="about-badge" data-i18n="about.since2012">Since 2012</div>
+        </div>
+        <div class="about-preview-content reveal">
+          <h2 data-i18n="about.previewTitle">Your Trusted Partner in Premium Chinese Snacks</h2>
+          <p data-i18n="about.previewText1">Three Squirrels Overseas Center specializes in bringing the finest Chinese snack delicacies to international markets. With over a decade of experience, we've built strong relationships with manufacturers and maintain rigorous quality control standards.</p>
+          <p data-i18n="about.previewText2">From traditional favorites to innovative new flavors, we curate products that meet diverse global tastes while preserving authentic Chinese snack culture.</p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
+              <span data-i18n="about.isoCertified">ISO 22000 Certified</span>
+            </div>
+            <div class="about-feature">
+              <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
+              <span data-i18n="about.fdaRegistered">FDA Registered</span>
+            </div>
+            <div class="about-feature">
+              <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
+              <span data-i18n="about.haccpCompliant">HACCP Compliant</span>
+            </div>
+            <div class="about-feature">
+              <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
+              <span data-i18n="about.customPackaging">Custom Packaging</span>
+            </div>
+          </div>
+
+          <a href="about.html" class="btn btn-secondary" data-i18n="about.learnMore">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strengths Section -->
+  <section class="strengths-section section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="strengths.title">Why Choose Three Squirrels</h2>
+        <p data-i18n="strengths.subtitle">We combine traditional craftsmanship with modern quality standards to deliver exceptional snack experiences worldwide.</p>
+      </div>
+
+      <div class="strengths-grid">
+        <div class="strength-card reveal">
+          <div class="strength-icon">
+            <i data-lucide="award" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h4 data-i18n="strengths.premiumQuality">Premium Quality</h4>
+          <p data-i18n="strengths.premiumQualityDesc">Carefully selected ingredients from certified suppliers with strict quality control at every stage.</p>
+        </div>
+
+        <div class="strength-card reveal">
+          <div class="strength-icon">
+            <i data-lucide="truck" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h4 data-i18n="strengths.globalLogistics">Global Logistics</h4>
+          <p data-i18n="strengths.globalLogisticsDesc">Efficient supply chain with warehousing in key locations for fast delivery to 50+ countries.</p>
+        </div>
+
+        <div class="strength-card reveal">
+          <div class="strength-icon">
+            <i data-lucide="palette" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h4 data-i18n="strengths.customSolutions">Custom Solutions</h4>
+          <p data-i18n="strengths.customSolutionsDesc">Flexible MOQ options with custom branding, packaging, and flavor development available.</p>
+        </div>
+
+        <div class="strength-card reveal">
+          <div class="strength-icon">
+            <i data-lucide="headphones" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h4 data-i18n="strengths.dedicatedSupport">Dedicated Support</h4>
+          <p data-i18n="strengths.dedicatedSupportDesc">Personal account managers and 24/7 responsive service for all your business needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Showcase Section -->
+  <section class="video-showcase section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="videos.title">Discover Our Story</h2>
+        <p data-i18n="videos.subtitle">Watch how Three Squirrels brings authentic Chinese snacks to tables around the world.</p>
+      </div>
+
+      <div class="video-grid">
+        <div class="video-card reveal" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
+          <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=600&h=400&fit=crop" alt="Company Introduction">
+          <span class="video-duration">3:45</span>
+          <div class="video-overlay">
+            <div class="play-button">
+              <i data-lucide="play" style="width: 24px; height: 24px; color: white;"></i>
+            </div>
+            <span class="video-category" data-i18n="videos.companyProfile">Company Profile</span>
+            <span class="video-title">Introduction to Three Squirrels</span>
+          </div>
+        </div>
+
+        <div class="video-card reveal" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
+          <img src="https://images.unsplash.com/photo-1563729768-6af7c46d5e86?w=600&h=400&fit=crop" alt="Production Process">
+          <span class="video-duration">2:30</span>
+          <div class="video-overlay">
+            <div class="play-button">
+              <i data-lucide="play" style="width: 24px; height: 24px; color: white;"></i>
+            </div>
+            <span class="video-category" data-i18n="videos.behindScenes">Behind The Scenes</span>
+            <span class="video-title">Quality Production Process</span>
+          </div>
+        </div>
+
+        <div class="video-card reveal" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
+          <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a8?w=600&h=400&fit=crop" alt="Product Showcase">
+          <span class="video-duration">4:15</span>
+          <div class="video-overlay">
+            <div class="play-button">
+              <i data-lucide="play" style="width: 24px; height: 24px; color: white;"></i>
+            </div>
+            <span class="video-category" data-i18n="videos.products">Products</span>
+            <span class="video-title">Product Line Overview</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-lg">
+        <a href="videos.html" class="btn btn-secondary" data-i18n="videos.viewAll">View All Videos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Preview Section -->
+  <section class="products-preview section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="products.title">Featured Products</h2>
+        <p data-i18n="products.subtitle">Explore our curated selection of premium Chinese snacks loved by customers worldwide.</p>
+      </div>
+
+      <div class="products-grid">
+        <a href="product-detail.html" class="product-card reveal">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?w=400&h=400&fit=crop" alt="Premium Mixed Nuts">
+            <div class="product-overlay">
+              <span class="btn btn-white btn-sm" data-i18n="products.viewDetails">View Details</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <span class="product-category" data-i18n="products.category.nuts">Nuts & Seeds</span>
+            <h4 class="product-name">Premium Mixed Nuts Selection</h4>
+            <div class="product-meta">
+              <span class="product-moq" data-i18n="products.moq">MOQ: 500 boxes</span>
+              <span class="product-price">$2.80 - $4.50</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="product-detail.html" class="product-card reveal">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&h=400&fit=crop" alt="Dried Mango Slices">
+            <div class="product-overlay">
+              <span class="btn btn-white btn-sm" data-i18n="products.viewDetails">View Details</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <span class="product-category" data-i18n="products.category.driedFruits">Dried Fruits</span>
+            <h4 class="product-name">Tropical Dried Mango Slices</h4>
+            <div class="product-meta">
+              <span class="product-moq" data-i18n="products.moq">MOQ: 300 boxes</span>
+              <span class="product-price">$3.20 - $5.00</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="product-detail.html" class="product-card reveal">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop" alt="Seaweed Snacks">
+            <div class="product-overlay">
+              <span class="btn btn-white btn-sm" data-i18n="products.viewDetails">View Details</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <span class="product-category" data-i18n="products.category.seaSnacks">Sea Snacks</span>
+            <h4 class="product-name">Japanese Style Seaweed Snacks</h4>
+            <div class="product-meta">
+              <span class="product-moq" data-i18n="products.moq">MOQ: 1000 boxes</span>
+              <span class="product-price">$1.50 - $2.80</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="product-detail.html" class="product-card reveal">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?w=400&h=400&fit=crop" alt="Candied Walnuts">
+            <div class="product-overlay">
+              <span class="btn btn-white btn-sm" data-i18n="products.viewDetails">View Details</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <span class="product-category" data-i18n="products.category.nuts">Nuts & Seeds</span>
+            <h4 class="product-name">Honey Glazed Candied Walnuts</h4>
+            <div class="product-meta">
+              <span class="product-moq" data-i18n="products.moq">MOQ: 500 boxes</span>
+              <span class="product-price">$4.20 - $6.50</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="product-detail.html" class="product-card reveal">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1599480653546-1b1a23c0d0e9?w=400&h=400&fit=crop" alt="Black Sesame Candies">
+            <div class="product-overlay">
+              <span class="btn btn-white btn-sm" data-i18n="products.viewDetails">View Details</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <span class="product-category" data-i18n="products.category.sweets">Traditional Sweets</span>
+            <h4 class="product-name">Black Sesame Rice Candies</h4>
+            <div class="product-meta">
+              <span class="product-moq" data-i18n="products.moq">MOQ: 800 boxes</span>
+              <span class="product-price">$2.50 - $3.80</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="product-detail.html" class="product-card reveal">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=400&h=400&fit=crop" alt="Gift Box Set">
+            <div class="product-overlay">
+              <span class="btn btn-white btn-sm" data-i18n="products.viewDetails">View Details</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <span class="product-category" data-i18n="products.category.giftSets">Gift Sets</span>
+            <h4 class="product-name">Premium Gift Box Collection</h4>
+            <div class="product-meta">
+              <span class="product-moq" data-i18n="products.moq">MOQ: 200 boxes</span>
+              <span class="product-price">$15.00 - $28.00</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="text-center">
+        <a href="products.html" class="btn btn-primary btn-lg" data-i18n="products.viewAll">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="partners-section section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="partners.title">Trusted by Global Partners</h2>
+        <p data-i18n="partners.subtitle">We proudly serve distributors, retailers, and foodservice companies in over 50 countries.</p>
+      </div>
+
+      <div class="partners-grid reveal">
+        <svg class="partner-logo" viewBox="0 0 120 60" fill="currentColor">
+          <rect x="10" y="15" width="100" height="30" rx="5" stroke="#636E72" stroke-width="2" fill="none"/>
+          <text x="60" y="37" text-anchor="middle" fill="#636E72" font-size="12" font-weight="600">PARTNER 1</text>
+        </svg>
+        <svg class="partner-logo" viewBox="0 0 120 60" fill="currentColor">
+          <rect x="10" y="15" width="100" height="30" rx="5" stroke="#636E72" stroke-width="2" fill="none"/>
+          <text x="60" y="37" text-anchor="middle" fill="#636E72" font-size="12" font-weight="600">PARTNER 2</text>
+        </svg>
+        <svg class="partner-logo" viewBox="0 0 120 60" fill="currentColor">
+          <rect x="10" y="15" width="100" height="30" rx="5" stroke="#636E72" stroke-width="2" fill="none"/>
+          <text x="60" y="37" text-anchor="middle" fill="#636E72" font-size="12" font-weight="600">PARTNER 3</text>
+        </svg>
+        <svg class="partner-logo" viewBox="0 0 120 60" fill="currentColor">
+          <rect x="10" y="15" width="100" height="30" rx="5" stroke="#636E72" stroke-width="2" fill="none"/>
+          <text x="60" y="37" text-anchor="middle" fill="#636E72" font-size="12" font-weight="600">PARTNER 4</text>
+        </svg>
+        <svg class="partner-logo" viewBox="0 0 120 60" fill="currentColor">
+          <rect x="10" y="15" width="100" height="30" rx="5" stroke="#636E72" stroke-width="2" fill="none"/>
+          <text x="60" y="37" text-anchor="middle" fill="#636E72" font-size="12" font-weight="600">PARTNER 5</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 data-i18n="cta.title">Ready to Partner with Us?</h2>
+      <p data-i18n="cta.subtitle">Join hundreds of global distributors who trust Three Squirrels for premium Chinese snacks. Let's discuss how we can support your business growth.</p>
+      <a href="contact.html" class="btn btn-white btn-lg" data-i18n="cta.button">Start Your Partnership</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="22" fill="#FF6B35"/>
+              <path d="M24 8 L27 14 L33 14 L28 18 L30 24 L24 20 L18 24 L20 18 L15 14 L21 14 Z" fill="#fff"/>
+              <circle cx="24" cy="30" r="10" fill="#fff"/>
+            </svg>
+            <span class="logo-text">Three<span>Squirrels</span></span>
+          </a>
+          <p data-i18n="footer.brandText">Premium Chinese snacks exporter serving global markets since 2012. Quality, authenticity, and reliability in every bite.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i data-lucide="linkedin" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i data-lucide="twitter" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <i data-lucide="youtube" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i data-lucide="instagram" style="width: 20px; height: 20px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title" data-i18n="footer.quickLinks">Quick Links</h4>
+          <div class="footer-links">
+            <a href="about.html" data-i18n="nav.about">About Us</a>
+            <a href="products.html" data-i18n="nav.products">Products</a>
+            <a href="videos.html" data-i18n="nav.videos">Videos</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title" data-i18n="footer.products">Products</h4>
+          <div class="footer-links">
+            <a href="products.html" data-i18n="products.category.nuts">Nuts & Seeds</a>
+            <a href="products.html" data-i18n="products.category.driedFruits">Dried Fruits</a>
+            <a href="products.html" data-i18n="products.category.seaSnacks">Sea Snacks</a>
+            <a href="products.html" data-i18n="products.category.giftSets">Gift Sets</a>
+          </div>
+        </div>
+
+        <div class="footer-contact-info">
+          <h4 class="footer-title" data-i18n="footer.contactUs">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
+              <span data-i18n-html="true" data-i18n="footer.address">Building A, Innovation Park<br>Hefei, Anhui, China 230001</span>
+            </li>
+            <li>
+              <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+              <span data-i18n="footer.phone">+86 551 1234 5678</span>
+            </li>
+            <li>
+              <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
+              <span data-i18n="footer.email">overseas@threesquirrels.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">2024 Three Squirrels Overseas Center. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="#" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <i data-lucide="arrow-up" style="width: 24px; height: 24px;"></i>
+  </a>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-content">
+      <button class="video-modal-close" aria-label="Close video">
+        <i data-lucide="x" style="width: 24px; height: 24px;"></i>
+      </button>
+      <video controls></video>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile language switcher handler
+    document.querySelectorAll('.mobile-lang-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const lang = this.dataset.lang;
+
+        // Update active state
+        document.querySelectorAll('.mobile-lang-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        // Change language via i18n
+        if (window.i18n) {
+          window.i18n.changeLanguage(lang);
+        }
+      });
+    });
+  </script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.inland-security-footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.trigger-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minimax-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.minimax-link:visited {
+  color: #adadad;
+}
+
+.minimax-link:hover {
+  color: #666666;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #171717;
+}
+
+/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.beian-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #171717;
+}
+
+.beian-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.underline-text {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  color: #000000;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .trigger-content {
+    background-color: transparent;
+  }
+
+  .minimax-link,
+  .minimax-link:visited {
+    color: #666666;
+  }
+
+  .minimax-link:hover {
+    color: #adadad;
+  }
+
+  .tooltip-content {
+    background-color: #262626;
+    color: #ededed;
+  }
+
+  .beian-link,
+  .underline-text {
+    color: #ededed;
+  }
+
+  .underline-text:hover {
+    color: #ffffff;
+  }
+}
+
+</style>
+<div class="inland-security-footer">
+  <div class="tooltip-container">
+    <div class="trigger-content">
+      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
+        <span>© 2026 MiniMax</span>
+      </a>
+    </div>
+    <div class="tooltip-content">
+      <section class="info-section">
+        <span>上海稀宇科技有限公司</span>
+      </section>
+
+      <section class="info-section">
+        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
+          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
+          <span class="underline-text">沪公网安备31010402010179号</span>
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
+          沪ICP备2023003282号-38
+        </a>
+      </section>
+
+      <section class="info-section">
+        <span>模型名称：MiniMax</span>
+        <span>备案号：Shanghai-MiniMax-202505230046</span>
+      </section>
+
+      <section class="info-section">
+        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
+          用户协议
+        </a>
+        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
+          隐私政策
+        </a>
+      </section>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

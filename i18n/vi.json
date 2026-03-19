@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "title": "Three Squirrels Overseas | Nhà Xuất Khẩu Đồ Ăn Vặt Trung Quốc Cao Cấp",
+    "description": "Khám phá đồ ăn vặt Trung Quốc cao cấp cho thị trường toàn cầu. Xuất khẩu các loại hạt, hoa quả sấy khô và đồ ăn vặt đặc biệt chất lượng cao từ năm 2012."
+  },
+  "nav": {
+    "home": "Trang Chủ",
+    "about": "Giới Thiệu",
+    "videos": "Video",
+    "products": "Sản Phẩm",
+    "contact": "Liên Hệ",
+    "getQuote": "Yêu Cầu Báo Giá"
+  },
+  "hero": {
+    "badge": "Giải Pháp Đồ Ăn Vặt Toàn Cầu Từ 2012",
+    "title": "Đồ Ăn Vặt Trung Quốc Cao Cấp<br>Cho Toàn Thế Giới",
+    "subtitle": "Mang văn hóa đồ ăn vặt Trung Quốc đích thực đến thị trường quốc tế với các loại hạt, hoa quả sấy khô và đồ ăn vặt đặc biệt chất lượng cao.",
+    "ctaProducts": "Khám Phá Sản Phẩm",
+    "ctaContact": "Liên Hệ Chúng Tôi",
+    "scrollDown": "Cuộn Xuống"
+  },
+  "stats": {
+    "sales": "Doanh Số Hàng Năm (USD)",
+    "skus": "SKU Sản Phẩm",
+    "countries": "Quốc Gia Phục Vụ",
+    "partners": "Đối Tác Toàn Cầu"
+  },
+  "aboutPreview": {
+    "since": "Từ Năm 2012",
+    "title": "Đối Tác Đáng Tin Cậy Cho Đồ Ăn Vặt Trung Quốc Cao Cấp",
+    "desc1": "Trung Tâm Three Squirrels Overseas chuyên mang đến những đặc sản đồ ăn vặt Trung Quốc tốt nhất cho thị trường quốc tế. Với hơn một thập kỷ kinh nghiệm, chúng tôi đã xây dựng mối quan hệ vững chắc với các nhà sản xuất và duy trì các tiêu chuẩn kiểm soát chất lượng nghiêm ngặt.",
+    "desc2": "Từ những món ưa thích truyền thống đến những hương vị mới đổi mới, chúng tôi tuyển chọn các sản phẩm đáp ứng khẩu vị đa dạng trên toàn cầu trong khi vẫn giữ gìn văn hóa đồ ăn vặt Trung Quốc đích thực.",
+    "cert1": "Chứng Nhận ISO 22000",
+    "cert2": "Đăng Ký FDA",
+    "cert3": "Tuân Thủ HACCP",
+    "cert4": "Đóng Gói Tùy Chỉnh",
+    "cta": "Tìm Hiểu Thêm Về Chúng Tôi"
+  },
+  "strengths": {
+    "title": "Tại Sao Chọn Three Squirrels",
+    "subtitle": "Chúng tôi kết hợp giữa kỹ nghệ truyền thống với các tiêu chuẩn chất lượng hiện đại để mang đến trải nghiệm đồ ăn vặt đặc biệt trên toàn thế giới.",
+    "quality": {
+      "title": "Chất Lượng Cao Cấp",
+      "desc": "Nguyên liệu được tuyển chọn kỹ lưỡng từ các nhà cung cấp được chứng nhận với kiểm soát chất lượng nghiêm ngặt ở mọi giai đoạn."
+    },
+    "logistics": {
+      "title": "Hậu Cần Toàn Cầu",
+      "desc": "Chuỗi cung ứng hiệu quả với kho hàng tại các địa điểm chiến lược để giao hàng nhanh đến hơn 50 quốc gia."
+    },
+    "custom": {
+      "title": "Giải Pháp Tùy Chỉnh",
+      "desc": "Tùy chọn MOQ linh hoạt với dịch vụ đặt thương hiệu, đóng gói và phát triển hương vị tùy chỉnh."
+    },
+    "support": {
+      "title": "Hỗ Trợ Chuyên Dụng",
+      "desc": "Quản lý tài khoản cá nhân và dịch vụ phản hồi 24/7 cho mọi nhu cầu kinh doanh của bạn."
+    }
+  },
+  "videoShowcase": {
+    "title": "Khám Phá Câu Chuyện Của Chúng Tôi",
+    "subtitle": "Xem cách Three Squirrels mang đồ ăn vặt Trung Quốc đích thực đến bàn ăn trên khắp thế giới.",
+    "cat1": "Hồ Sơ Công Ty",
+    "video1": "Giới Thiệu Three Squirrels",
+    "cat2": "Hậu Trường",
+    "video2": "Quy Trình Sản Xuất Chất Lượng",
+    "cat3": "Sản Phẩm",
+    "video3": "Tổng Quan Dòng Sản Phẩm",
+    "cta": "Xem Tất Cả Video"
+  },
+  "productsPreview": {
+    "title": "Sản Phẩm Nổi Bật",
+    "subtitle": "Khám phá bộ sưu tập đồ ăn vặt Trung Quốc cao cấp được tuyển chọn kỹ lưỡng, được khách hàng trên toàn thế giới yêu thích.",
+    "cta": "Xem Tất Cả Sản Phẩm"
+  },
+  "videos": {
+    "title": "Khám Phá Câu Chuyện Của Chúng Tôi",
+    "subtitle": "Xem cách Three Squirrels mang đồ ăn vặt Trung Quốc đích thực đến bàn ăn trên khắp thế giới.",
+    "viewAll": "Xem Tất Cả Video",
+    "companyProfile": "Hồ Sơ Công Ty",
+    "products": "Sản Phẩm",
+    "behindScenes": "Hậu Trường"
+  },
+  "products": {
+    "title": "Sản Phẩm Nổi Bật",
+    "subtitle": "Khám phá bộ sưu tập đồ ăn vặt Trung Quốc cao cấp được tuyển chọn kỹ lưỡng, được khách hàng trên toàn thế giới yêu thích.",
+    "viewAll": "Xem Tất Cả Sản Phẩm",
+    "viewDetails": "Xem Chi Tiết",
+    "moq": "MOQ",
+    "category": {
+      "nuts": "Các Loại Hạt & Hạt Giống",
+      "driedFruits": "Hoa Quả Sấy Khô",
+      "seaSnacks": "Đồ Ăn Vặt Biển",
+      "sweets": "Bánh Kẹo Truyền Thống",
+      "giftSets": "Bộ Quà Tặng"
+    }
+  },
+  "partners": {
+    "title": "Được Tin Cậy Bởi Các Đối Tác Toàn Cầu",
+    "subtitle": "Chúng tôi tự hào phục vụ các nhà phân phối, nhà bán lẻ và công ty dịch vụ thực phẩm tại hơn 50 quốc gia."
+  },
+  "cta": {
+    "title": "Sẵn Sàng Hợp Tác Với Chúng Tôi?",
+    "subtitle": "Gia nhập hàng trăm nhà phân phối toàn cầu tin tưởng Three Squirrels cho đồ ăn vặt Trung Quốc cao cấp. Hãy thảo luận về cách chúng tôi có thể hỗ trợ sự phát triển kinh doanh của bạn.",
+    "button": "Bắt Đầu Hợp Tác"
+  },
+  "footer": {
+    "brandText": "Nhà xuất khẩu đồ ăn vặt Trung Quốc cao cấp phục vụ thị trường toàn cầu từ năm 2012. Chất lượng, tính xác thực và độ tin cậy trong từng miếng bánh.",
+    "quickLinks": "Liên Kết Nhanh",
+    "products": "Sản Phẩm",
+    "contactUs": "Liên Hệ",
+    "address": "Tòa Nhà A, Công Viên Đổi Mới<br>Hefei, Anhui, Trung Quốc 230001",
+    "phone": "+86 551 1234 5678",
+    "email": "overseas@threesquirrels.com",
+    "privacy": "Chính Sách Bảo Mật",
+    "terms": "Điều Khoản Dịch Vụ",
+    "copyright": "2024 Trung Tâm Three Squirrels Overseas. Mọi quyền được bảo lưu."
+  },
+  "aboutPage": {
+    "title": "Về Three Squirrels",
+    "breadcrumb": "Giới Thiệu",
+    "storyTitle": "Câu Chuyện Của Chúng Tôi",
+    "storyText1": "Trung Tâm Three Squirrels Overseas được thành lập năm 2012 với một tầm nhìn duy nhất: chia sẻ nền văn hóa đồ ăn vặt phong phú của Trung Quốc với thế giới. Điều bắt đầu như một hoạt động xuất khẩu nhỏ đã phát triển thành một đối tác toàn cầu đáng tin cậy phục vụ các nhà phân phối, nhà bán lẻ và công ty dịch vụ thực phẩm tại hơn 50 quốc gia.",
+    "storyText2": "Tên của chúng tôi lấy cảm hứng từ con sóc chăm chỉ—tượng trưng cho cam kết của chúng tôi trong việc tuyển chọn cẩn thận và cung cấp những đồ ăn vặt tốt nhất từ bức tranh ẩm thực đa dạng của Trung Quốc. Cũng như sóc thu thập và bảo quản những gì tốt nhất từ thiên nhiên, chúng tôi tìm nguồn cung ứng, kiểm tra và cung cấp các sản phẩm cao cấp đáp ứng các tiêu chuẩn quốc tế nghiêm ngặt.",
+    "storyText3": "Ngày nay, chúng tôi quản lý hơn 500 SKU sản phẩm và làm việc với hơn 200 đối tác toàn cầu. Thành công của chúng tôi được xây dựng trên ba trụ cột: chất lượng không lay lay, quan hệ đối tác minh bạch và niềm đam mê thuần túy trong việc chia sẻ hương vị Trung Quốc đích thực.",
+    "mission": "Sứ Mệnh Của Chúng Tôi",
+    "missionText": "Trở thành cầu nối giữa di sản đồ ăn vặt Trung Quốc và người tiêu dùng toàn cầu, mang đến những hương vị đích thực làm hài lòng vị giác trong khi duy trì các tiêu chuẩn cao nhất về chất lượng, an toàn và độ tin cậy.",
+    "vision": "Tầm Nhìn Của Chúng Tôi",
+    "visionText": "Trở thành đối tác xuất khẩu đồ ăn vặt Trung Quốc đáng tin cậy nhất thế giới, được công nhận vì sự xuất sắc về sản phẩm, dịch vụ khách hàng và đóng góp trong việc giới thiệu văn hóa ẩm thực Trung Quốc đến mọi nơi trên thế giới.",
+    "journey": "Hành Trình Của Chúng Tôi",
+    "journeySubtitle": "Những cột mốc quan trọng trong sự phát triển từ một công ty khởi nghiệp địa phương đến một nhà lãnh đạo xuất khẩu toàn cầu.",
+    "certifications": "Chứng Nhận & Tuân Thủ",
+    "certificationsSubtitle": "Chúng tôi duy trì các tiêu chuẩn quốc tế cao nhất về an toàn thực phẩm và quản lý chất lượng.",
+    "team": "Đội Ngũ Lãnh Đạo",
+    "teamSubtitle": "Gặp gỡ những chuyên gia giàu kinh nghiệm thúc đẩy thành công toàn cầu của Three Squirrels."
+  },
+  "timeline": {
+    "2012": "Thành Lập - Trung Tâm Three Squirrels Overseas được thành lập tại Hefei, Anhui, với một nhóm nhỏ 10 người đam mê ẩm thực.",
+    "2015": "Lô Hàng Quốc Tế Đầu Tiên - Mở rộng phục vụ khách hàng quốc tế đầu tiên tại Đông Nam Á, đánh dấu sự khởi đầu của hành trình toàn cầu.",
+    "2017": "Gia Nhập Thị Trường Châu Âu - Thành công gia nhập thị trường châu Âu với các chứng nhận tuân thủ FDA và EU đầy đủ.",
+    "2019": "Mở Rộng Dòng Sản Phẩm - Phát triển danh mục sản phẩm lên hơn 300 SKU và thiết lập quan hệ đối tác với hơn 100 nhà phân phối toàn cầu.",
+    "2022": "Kỷ Niệm 10 Năm - Ăn mừng phục vụ hơn 50 quốc gia với hơn 500 sản phẩm và hơn 200 đối tác toàn cầu trên tất cả các châu lục.",
+    "2024": "Trung Tâm Đổi Mới - Khai trương trung tâm phát triển sản phẩm tiên tiến để tạo ra các công thức tùy chỉnh cho các đối tác toàn cầu."
+  },
+  "certificates": {
+    "iso22000": "ISO 22000 - Hệ Thống Quản Lý An Toàn Thực Phẩm",
+    "fssc22000": "FSSC 22000 - Chứng Nhận Hệ Thống An Toàn Thực Phẩm",
+    "haccp": "HACCP - Điểm Kiểm Soát Tới Hạn Phân Tích Nguy Cơ",
+    "fda": "Đăng Ký FDA - Quản Lý Thực Phẩm và Dược Phẩm Hoa Kỳ",
+    "iso14001": "ISO 14001 - Hệ Thống Quản Lý Môi Trường",
+    "iso45001": "ISO 45001 - Sức Khỏe & An Toàn Nghề Nghiệp",
+    "brc": "Tiêu Chuẩn Toàn Cầu BRC - Chứng Nhận An Toàn Thực Phẩm",
+    "halal": "Chứng Nhận HALAL - Tiêu Chuẩn Thực Phẩm Hồi Giáo"
+  },
+  "team": {
+    "ceo": "Giám Đốc Điều Hành",
+    "coo": "Giám Đốc Vận Hành",
+    "salesHead": "Trưởng Phòng Kinh Doanh Quốc Tế",
+    "qaDirector": "Giám Đốc Đảm Bảo Chất Lượng"
+  },
+  "videoPage": {
+    "title": "Trung Tâm Video",
+    "breadcrumb": "Video",
+    "allVideos": "Tất Cả Video",
+    "filterCompany": "Hồ Sơ Công Ty",
+    "filterProducts": "Sản Phẩm",
+    "filterBehindScenes": "Hậu Trường",
+    "seeMore": "Liên Hệ Chúng Tôi",
+    "seeMoreText": "Muốn xem thêm? Liên hệ để yêu cầu bản trình chiếu video riêng tư hoặc lên lịch tham quan nhà máy ảo."
+  },
+  "productPage": {
+    "title": "Sản Phẩm Của Chúng Tôi",
+    "breadcrumb": "Sản Phẩm",
+    "searchPlaceholder": "Tìm kiếm sản phẩm...",
+    "categories": "Danh Mục",
+    "priceRange": "Khoảng Giá",
+    "moq": "MOQ",
+    "features": "Tính Năng",
+    "customBranding": "Đặt Thương Hiệu Có Thể",
+    "organicOptions": "Tùy Chọn Hữu Cơ",
+    "halalCertified": "Chứng Nhận HALAL",
+    "showing": "Hiển Thị",
+    "products": "sản phẩm",
+    "applyFilters": "Áp Dụng Bộ Lọc",
+    "relatedProducts": "Bạn Cũng Có Thể Thích",
+    "exploreMore": "Khám phá thêm nhiều sản phẩm cao cấp từ bộ sưu tập của chúng tôi."
+  },
+  "productDetail": {
+    "category": "Danh Mục",
+    "sku": "SKU",
+    "origin": "Xuất Xứ",
+    "shelfLife": "Hạn Sử Dụng",
+    "priceRange": "Khoảng Giá",
+    "specifications": "Thông Số Kỹ Thuật",
+    "netWeight": "Trọng Lượng Tịnh",
+    "ingredients": "Thành Phần",
+    "packaging": "Đóng Gói",
+    "certifications": "Chứng Nhận",
+    "storage": "Bảo Quản",
+    "requestQuote": "Yêu Cầu Báo Giá",
+    "contactSales": "Liên Hệ Bán Hàng",
+    "viewAll": "Xem Tất Cả Sản Phẩm"
+  },
+  "contactPage": {
+    "title": "Liên Hệ Chúng Tôi",
+    "breadcrumb": "Liên Hệ",
+    "connectTitle": "Kết Nối Với Chúng Tôi",
+    "connectText": "Dù bạn quan tâm đến sản phẩm của chúng tôi, khám phá cơ hội hợp tác hay có câu hỏi về dịch vụ của chúng tôi, chúng tôi rất mong được nghe từ bạn.",
+    "visitUs": "Ghé Thăm Chúng Tôi",
+    "callUs": "Gọi Cho Chúng Tôi",
+    "emailUs": "Email Cho Chúng Tôi",
+    "businessHours": "Giờ Làm Việc",
+    "weekdays": "Thứ Hai - Thứ Sáu: 9:00 Sáng - 6:00 Chiều (CST)",
+    "weekends": "Thứ Bảy - Chủ Nhật: Đóng Cửa",
+    "formTitle": "Gửi Tin Nhắn Cho Chúng Tôi",
+    "fullName": "Họ Tên",
+    "companyName": "Tên Công Ty",
+    "emailAddress": "Địa Chỉ Email",
+    "phoneNumber": "Số Điện Thoại",
+    "inquiryType": "Loại Yêu Cầu",
+    "selectOption": "Chọn một tùy chọn",
+    "productInquiry": "Yêu Cầu Về Sản Phẩm",
+    "businessPartnership": "Hợp Tác Kinh Doanh",
+    "requestSamples": "Yêu Cầu Mẫu",
+    "customOrder": "Đơn Hàng Tùy Chỉnh",
+    "generalQuestion": "Câu Hỏi Chung",
+    "productsInterest": "Sản Phẩm Quan Tâm",
+    "yourMessage": "Tin Nhắn Của Bạn",
+    "messagePlaceholder": "Vui lòng cho chúng tôi biết về yêu cầu của bạn, sản phẩm ưa thích, số lượng ước tính và bất kỳ câu hỏi nào bạn có thể có...",
+    "sendMessage": "Gửi Tin Nhắn",
+    "faqTitle": "Câu Hỏi Thường Gặp",
+    "faqSubtitle": "Câu trả lời nhanh cho các câu hỏi phổ biến về làm việc với chúng tôi.",
+    "moqQuestion": "Số lượng đặt hàng tối thiểu của bạn là bao nhiêu?",
+    "moqAnswer": "MOQ tiêu chuẩn của chúng tôi khác nhau tùy theo sản phẩm, thường từ 200-1000 hộp. Chúng tôi cung cấp các tùy chọn linh hoạt cho các đối tác mới - liên hệ với chúng tôi để thảo luận về yêu cầu của bạn.",
+    "shippingQuestion": "Các tùy chọn vận chuyển của bạn là gì?",
+    "shippingAnswer": "Chúng tôi vận chuyển qua đường biển (FOB, CIF) cho đơn hàng lớn và đường hàng không cho mẫu. Chúng tôi làm việc với các công ty vận chuyển lớn và có thể sắp xếp giao hàng tận door đến hầu hết các điểm đến.",
+    "customQuestion": "Tôi có thể tùy chỉnh đóng gói không?",
+    "customAnswer": "Có! Chúng tôi cung cấp dịch vụ đặt thương hiệu đầy đủ bao gồm thiết kế logo, thiết kế đóng gói và phát triển hương vị tùy chỉnh. MOQ cho đóng gói tùy chỉnh bắt đầu từ 1.000 hộp.",
+    "certQuestion": "Bạn có những chứng nhận gì?",
+    "certAnswer": "Chúng tôi được chứng nhận ISO 22000, FSSC 22000, HACCP, BRC và FDA. Cơ sở của chúng tôi cũng được chứng nhận HALAL và KOSHER cho các sản phẩm liên quan.",
+    "locationTitle": "Hefei, Anhui, Trung Quốc",
+    "locationText": "Tòa Nhà A, Công Viên Đổi Mới<br>Khu Phát Triển Công Nghệ Cao<br>Gần Ga Metro Line 2 - Aerospace Industrial Park"
+  },
+  "form": {
+    "required": "Bắt Buộc",
+    "errorName": "Vui lòng nhập tên của bạn",
+    "errorCompany": "Vui lòng nhập tên công ty của bạn",
+    "errorEmail": "Vui lòng nhập địa chỉ email hợp lệ",
+    "errorType": "Vui lòng chọn loại yêu cầu",
+    "errorMessage": "Vui lòng nhập ít nhất 20 ký tự",
+    "sending": "Đang gửi...",
+    "sent": "Tin Nhắn Đã Gửi!"
+  },
+  "empty": {
+    "title": "Không tìm thấy sản phẩm",
+    "message": "Hãy thử điều chỉnh bộ lọc hoặc tiêu chí tìm kiếm của bạn"
+  }
+}

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" data-i18n="contactPage.meta.description" content="Contact Three Squirrels Overseas - Get in touch for product inquiries, business partnerships, and export assistance.">
+  <title data-i18n="contactPage.title">Contact Us | Three Squirrels Overseas</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- i18n -->
+  <script src="js/i18n.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="22" fill="#FF6B35"/>
+            <path d="M24 8 L27 14 L33 14 L28 18 L30 24 L24 20 L18 24 L20 18 L15 14 L21 14 Z" fill="#fff"/>
+            <circle cx="24" cy="30" r="10" fill="#fff"/>
+            <circle cx="21" cy="28" r="2" fill="#2D3436"/>
+            <circle cx="27" cy="28" r="2" fill="#2D3436"/>
+          </svg>
+          <span class="logo-text">Three<span>Squirrels</span></span>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+          <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+          <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
+          <a href="products.html" class="nav-link" data-i18n="nav.products">Products</a>
+          <a href="contact.html" class="nav-link active" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Language Switcher -->
+          <div class="language-switcher">
+            <button class="current-lang-indicator" type="button">
+              <span class="lang-flag">EN</span>
+              <span class="current-lang-name">English</span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="lang-dropdown">
+              <button class="lang-btn active" data-lang="en">
+                <span class="lang-flag">EN</span>
+                <span class="lang-name">English</span>
+              </button>
+              <button class="lang-btn" data-lang="zh">
+                <span class="lang-flag">中</span>
+                <span class="lang-name">Chinese</span>
+              </button>
+              <button class="lang-btn" data-lang="ko">
+                <span class="lang-flag">한</span>
+                <span class="lang-name">Korean</span>
+              </button>
+              <button class="lang-btn" data-lang="ms">
+                <span class="lang-flag">MS</span>
+                <span class="lang-name">Malay</span>
+              </button>
+              <button class="lang-btn" data-lang="vi">
+                <span class="lang-flag">VI</span>
+                <span class="lang-name">Vietnamese</span>
+              </button>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.getQuote">Get Quote</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+    <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
+    <a href="products.html" class="nav-link" data-i18n="nav.products">Products</a>
+    <a href="contact.html" class="nav-link active" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;" data-i18n="nav.getQuote">Get Quote</a>
+
+    <!-- Mobile Language Switcher -->
+    <div class="mobile-lang-switcher">
+      <p style="font-size: 0.875rem; color: var(--color-gray); margin-bottom: var(--space-sm);">Select Language:</p>
+      <div class="mobile-lang-list">
+        <button class="mobile-lang-btn active" data-lang="en">English</button>
+        <button class="mobile-lang-btn" data-lang="zh">中文</button>
+        <button class="mobile-lang-btn" data-lang="ko">한국어</button>
+        <button class="mobile-lang-btn" data-lang="ms">Bahasa Melayu</button>
+        <button class="mobile-lang-btn" data-lang="vi">Tiếng Việt</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1 data-i18n="contactPage.pageTitle">Contact Us</h1>
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span data-i18n="nav.contact">Contact</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-page section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <h2 data-i18n="contactPage.letsConnect">Let's Connect</h2>
+          <p data-i18n="contactPage.connectText">Whether you're interested in our products, exploring partnership opportunities, or have questions about our services, we'd love to hear from you.</p>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-lucide="map-pin" style="width: 24px; height: 24px;"></i>
+              </div>
+              <div>
+                <h4 data-i18n="contactPage.visitUs">Visit Us</h4>
+                <p data-i18n-html="true" data-i18n="contactPage.address">Building A, Innovation Park<br>Hefei, Anhui 230001<br>China</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-lucide="phone" style="width: 24px; height: 24px;"></i>
+              </div>
+              <div>
+                <h4 data-i18n="contactPage.callUs">Call Us</h4>
+                <p data-i18n-html="true" data-i18n="contactPage.phoneNumbers">+86 551 1234 5678<br>+86 551 8765 4321</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-lucide="mail" style="width: 24px; height: 24px;"></i>
+              </div>
+              <div>
+                <h4 data-i18n="contactPage.emailUs">Email Us</h4>
+                <p data-i18n-html="true" data-i18n="contactPage.emails">overseas@threesquirrels.com<br>sales@threesquirrels.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-lucide="clock" style="width: 24px; height: 24px;"></i>
+              </div>
+              <div>
+                <h4 data-i18n="contactPage.businessHours">Business Hours</h4>
+                <p data-i18n-html="true" data-i18n="contactPage.hours">Monday - Friday: 9:00 AM - 6:00 PM (CST)<br>Saturday - Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <h4 data-i18n="contactPage.followUs">Follow Us</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i data-lucide="linkedin" style="width: 20px; height: 20px;"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <i data-lucide="twitter" style="width: 20px; height: 20px;"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <i data-lucide="youtube" style="width: 20px; height: 20px;"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <i data-lucide="instagram" style="width: 20px; height: 20px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-section reveal">
+          <h2 data-i18n="contactPage.sendMessage">Send Us a Message</h2>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" data-i18n="contactPage.fullName">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" class="form-control" required data-i18n="contactPage.namePlaceholder" placeholder="John Smith">
+                <span class="error-message" data-i18n="contactPage.errorName">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label for="company" data-i18n="contactPage.companyName">Company Name <span class="required">*</span></label>
+                <input type="text" id="company" name="company" class="form-control" required data-i18n="contactPage.companyPlaceholder" placeholder="Your Company Ltd.">
+                <span class="error-message" data-i18n="contactPage.errorCompany">Please enter your company name</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email" data-i18n="contactPage.emailAddress">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" required data-i18n="contactPage.emailPlaceholder" placeholder="john@company.com">
+                <span class="error-message" data-i18n="contactPage.errorEmail">Please enter a valid email address</span>
+              </div>
+              <div class="form-group">
+                <label for="phone" data-i18n="contactPage.phoneNumber">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control" data-i18n="contactPage.phonePlaceholder" placeholder="+1 234 567 8900">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inquiry-type" data-i18n="contactPage.inquiryType">Inquiry Type <span class="required">*</span></label>
+              <select id="inquiry-type" name="inquiry-type" class="form-control" required>
+                <option value="" data-i18n="contactPage.selectOption">Select an option</option>
+                <option value="product" data-i18n="contactPage.productInquiry">Product Inquiry</option>
+                <option value="business" data-i18n="contactPage.businessPartnership">Business Partnership</option>
+                <option value="sample" data-i18n="contactPage.requestSamples">Request Samples</option>
+                <option value="custom" data-i18n="contactPage.customOrder">Custom Order</option>
+                <option value="general" data-i18n="contactPage.generalQuestion">General Question</option>
+              </select>
+              <span class="error-message" data-i18n="contactPage.errorInquiry">Please select an inquiry type</span>
+            </div>
+
+            <div class="form-group">
+              <label data-i18n="contactPage.productsInterest">Products of Interest</label>
+              <div class="checkbox-group">
+                <label class="checkbox-item">
+                  <input type="checkbox" name="products" value="nuts">
+                  <span data-i18n="products.category.nuts">Nuts & Seeds</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="products" value="dried-fruits">
+                  <span data-i18n="products.category.driedFruits">Dried Fruits</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="products" value="sea-snacks">
+                  <span data-i18n="products.category.seaSnacks">Sea Snacks</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="products" value="sweets">
+                  <span data-i18n="products.category.sweets">Traditional Sweets</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="products" value="gift-sets">
+                  <span data-i18n="products.category.giftSets">Gift Sets</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message" data-i18n="contactPage.yourMessage">Your Message <span class="required">*</span></label>
+              <textarea id="message" name="message" class="form-control" required minlength="20" data-i18n="contactPage.messagePlaceholder" placeholder="Please tell us about your requirements, preferred products, estimated quantities, and any questions you may have..."></textarea>
+              <span class="error-message" data-i18n="contactPage.errorMessage">Please enter at least 20 characters</span>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary btn-lg">
+                <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+                <span data-i18n="contactPage.sendButton">Send Message</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="reveal" style="background: var(--color-off-white); border-radius: var(--radius-xl); overflow: hidden; height: 400px; display: flex; align-items: center; justify-content: center;">
+        <div style="text-align: center; padding: var(--space-xl);">
+          <i data-lucide="map" style="width: 64px; height: 64px; color: var(--color-light-gray); margin-bottom: var(--space-lg);"></i>
+          <h3 data-i18n="contactPage.locationTitle">Hefei, Anhui, China</h3>
+          <p data-i18n-html="true" data-i18n="contactPage.locationText" style="color: var(--color-gray); margin-top: var(--space-sm);">
+            Building A, Innovation Park<br>
+            High-Tech Development Zone<br>
+            Near Metro Line 2 - Aerospace Industrial Park Station
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" style="background: var(--color-off-white);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="contactPage.faqTitle">Frequently Asked Questions</h2>
+        <p data-i18n="contactPage.faqSubtitle">Quick answers to common questions about working with us.</p>
+      </div>
+
+      <div class="strengths-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="strength-card reveal">
+          <div class="strength-icon">
+            <i data-lucide="help-circle" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h4 data-i18n="contactPage.faq1Q">What is your minimum order quantity?</h4>
+          <p data-i18n="contactPage.faq1A">Our standard MOQ varies by product, typically ranging from 200-1000 boxes. We offer flexible options for new partners - contact us to discuss your requirements.</p>
+        </div>
+
+        <div class="strength-card reveal">
+          <div class="strength-icon">
+            <i data-lucide="truck" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h4 data-i18n="contactPage.faq2Q">What are your shipping options?</h4>
+          <p data-i18n="contactPage.faq2A">We ship via sea freight (FOB, CIF) for large orders and air freight for samples. We work with major shipping lines and can arrange door-to-door delivery to most destinations.</p>
+        </div>
+
+        <div class="strength-card reveal">
+          <div class="strength-icon">
+            <i data-lucide="palette" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h4 data-i18n="contactPage.faq3Q">Can I customize packaging?</h4>
+          <p data-i18n="contactPage.faq3A">Yes! We offer full custom branding services including logo design, packaging design, and custom flavors. MOQ for custom packaging starts at 1,000 boxes.</p>
+        </div>
+
+        <div class="strength-card reveal">
+          <div class="strength-icon">
+            <i data-lucide="file-text" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h4 data-i18n="contactPage.faq4Q">What certifications do you have?</h4>
+          <p data-i18n="contactPage.faq4A">We are certified with ISO 22000, FSSC 22000, HACCP, BRC, and FDA. Our facilities are also HALAL and KOSHER certified for applicable products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="22" fill="#FF6B35"/>
+              <path d="M24 8 L27 14 L33 14 L28 18 L30 24 L24 20 L18 24 L20 18 L15 14 L21 14 Z" fill="#fff"/>
+              <circle cx="24" cy="30" r="10" fill="#fff"/>
+            </svg>
+            <span class="logo-text">Three<span>Squirrels</span></span>
+          </a>
+          <p data-i18n="footer.brandText">Premium Chinese snacks exporter serving global markets since 2012. Quality, authenticity, and reliability in every bite.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i data-lucide="linkedin" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i data-lucide="twitter" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <i data-lucide="youtube" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i data-lucide="instagram" style="width: 20px; height: 20px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title" data-i18n="footer.quickLinks">Quick Links</h4>
+          <div class="footer-links">
+            <a href="about.html" data-i18n="nav.about">About Us</a>
+            <a href="products.html" data-i18n="nav.products">Products</a>
+            <a href="videos.html" data-i18n="nav.videos">Videos</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title" data-i18n="footer.products">Products</h4>
+          <div class="footer-links">
+            <a href="products.html" data-i18n="products.category.nuts">Nuts & Seeds</a>
+            <a href="products.html" data-i18n="products.category.driedFruits">Dried Fruits</a>
+            <a href="products.html" data-i18n="products.category.seaSnacks">Sea Snacks</a>
+            <a href="products.html" data-i18n="products.category.giftSets">Gift Sets</a>
+          </div>
+        </div>
+
+        <div class="footer-contact-info">
+          <h4 class="footer-title" data-i18n="footer.contactUs">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
+              <span data-i18n-html="true" data-i18n="footer.address">Building A, Innovation Park<br>Hefei, Anhui, China 230001</span>
+            </li>
+            <li>
+              <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+              <span data-i18n="footer.phone">+86 551 1234 5678</span>
+            </li>
+            <li>
+              <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
+              <span data-i18n="footer.email">overseas@threesquirrels.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">2024 Three Squirrels Overseas Center. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="#" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <i data-lucide="arrow-up" style="width: 24px; height: 24px;"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile language switcher handler
+    document.querySelectorAll('.mobile-lang-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const lang = this.dataset.lang;
+
+        // Update active state
+        document.querySelectorAll('.mobile-lang-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        // Change language via i18n
+        if (window.i18n) {
+          window.i18n.changeLanguage(lang);
+        }
+      });
+    });
+  </script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.inland-security-footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.trigger-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minimax-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.minimax-link:visited {
+  color: #adadad;
+}
+
+.minimax-link:hover {
+  color: #666666;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #171717;
+}
+
+/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.beian-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #171717;
+}
+
+.beian-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.underline-text {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  color: #000000;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .trigger-content {
+    background-color: transparent;
+  }
+
+  .minimax-link,
+  .minimax-link:visited {
+    color: #666666;
+  }
+
+  .minimax-link:hover {
+    color: #adadad;
+  }
+
+  .tooltip-content {
+    background-color: #262626;
+    color: #ededed;
+  }
+
+  .beian-link,
+  .underline-text {
+    color: #ededed;
+  }
+
+  .underline-text:hover {
+    color: #ffffff;
+  }
+}
+
+</style>
+<div class="inland-security-footer">
+  <div class="tooltip-container">
+    <div class="trigger-content">
+      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
+        <span>© 2026 MiniMax</span>
+      </a>
+    </div>
+    <div class="tooltip-content">
+      <section class="info-section">
+        <span>上海稀宇科技有限公司</span>
+      </section>
+
+      <section class="info-section">
+        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
+          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
+          <span class="underline-text">沪公网安备31010402010179号</span>
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
+          沪ICP备2023003282号-38
+        </a>
+      </section>
+
+      <section class="info-section">
+        <span>模型名称：MiniMax</span>
+        <span>备案号：Shanghai-MiniMax-202505230046</span>
+      </section>
+
+      <section class="info-section">
+        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
+          用户协议
+        </a>
+        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
+          隐私政策
+        </a>
+      </section>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

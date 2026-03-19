@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "title": "三只松鼠海外中心 | 优质中国零食出口商",
+    "description": "为全球市场提供优质中国零食。从2012年起向全球出口高品质坚果、干果和特色零食。"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "videos": "视频中心",
+    "products": "产品中心",
+    "contact": "联系我们",
+    "getQuote": "获取报价"
+  },
+  "hero": {
+    "badge": "全球零食解决方案 始于2012年",
+    "title": "优质中国零食<br>销往全球",
+    "subtitle": "将正宗的中国零食文化带入全球市场，提供优质坚果、干果和特色美食。",
+    "ctaProducts": "探索产品",
+    "ctaContact": "联系我们",
+    "scrollDown": "向下滑动"
+  },
+  "stats": {
+    "sales": "年销售额 (美元)",
+    "skus": "产品SKU",
+    "countries": "服务国家",
+    "partners": "全球合作伙伴"
+  },
+  "aboutPreview": {
+    "since": "始于2012年",
+    "title": "您值得信赖的优质中国零食合作伙伴",
+    "desc1": "三只松鼠海外中心致力于将最优质的中国零食美味带给国际市场。凭借十余年的经验，我们与众多制造商建立了牢固的合作关系，并保持着严格的质量控制标准。",
+    "desc2": "从传统经典到创新口味，我们精心挑选符合全球多样化口味的产品，同时保持正宗的中国零食文化。",
+    "cert1": "ISO 22000认证",
+    "cert2": "FDA注册",
+    "cert3": "HACCP合规",
+    "cert4": "定制包装",
+    "cta": "了解更多关于我们"
+  },
+  "strengths": {
+    "title": "为什么选择三只松鼠",
+    "subtitle": "我们将传统工艺与现代质量标准相结合，在全球范围内提供卓越的零食体验。",
+    "quality": {
+      "title": "优质品质",
+      "desc": "从认证供应商中精心挑选原料，每个环节都严格把控质量。"
+    },
+    "logistics": {
+      "title": "全球物流",
+      "desc": "高效的供应链，在关键地区设有仓库，可快速配送至50多个国家。"
+    },
+    "custom": {
+      "title": "定制方案",
+      "desc": "灵活的最低起订量选项，支持定制品牌、包装和口味开发。"
+    },
+    "support": {
+      "title": "专属支持",
+      "desc": "专属客户经理和全天候响应服务，满足您的所有业务需求。"
+    }
+  },
+  "videoShowcase": {
+    "title": "了解我们的故事",
+    "subtitle": "观看三只松鼠如何将正宗的中国零食带到世界各地。",
+    "cat1": "公司介绍",
+    "video1": "三只松鼠介绍",
+    "cat2": "幕后花絮",
+    "video2": "品质生产流程",
+    "cat3": "产品",
+    "video3": "产品系列概述",
+    "cta": "查看所有视频"
+  },
+  "productsPreview": {
+    "title": "精选产品",
+    "subtitle": "探索我们精心挑选的优质中国零食，深受全球客户喜爱。",
+    "cta": "查看所有产品"
+  },
+  "videos": {
+    "title": "了解我们的故事",
+    "subtitle": "观看三只松鼠如何将正宗的中国零食带到世界各地。",
+    "viewAll": "查看所有视频",
+    "companyProfile": "公司介绍",
+    "products": "产品",
+    "behindScenes": "幕后花絮"
+  },
+  "products": {
+    "title": "精选产品",
+    "subtitle": "探索我们精心挑选的优质中国零食，深受全球客户喜爱。",
+    "viewAll": "查看所有产品",
+    "viewDetails": "查看详情",
+    "moq": "最低起订量",
+    "category": {
+      "nuts": "坚果与籽类",
+      "driedFruits": "干果",
+      "seaSnacks": "海味零食",
+      "sweets": "传统糖果",
+      "giftSets": "礼盒套装"
+    }
+  },
+  "partners": {
+    "title": "全球合作伙伴信赖之选",
+    "subtitle": "我们为50多个国家的分销商、零售商和餐饮服务商提供优质服务。"
+  },
+  "cta": {
+    "title": "准备好与我们合作了吗？",
+    "subtitle": "加入数百家信任三只松鼠优质中国零食的全球分销商。让我们探讨如何支持您的业务增长。",
+    "button": "开始合作"
+  },
+  "footer": {
+    "brandText": "自2012年起为全球市场提供优质中国零食。每一口都是品质、真实与可靠的保证。",
+    "quickLinks": "快速链接",
+    "products": "产品",
+    "contactUs": "联系我们",
+    "address": "安徽省合肥市<br>创新产业园A座 230001",
+    "phone": "+86 551 1234 5678",
+    "email": "overseas@threesquirrels.com",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "copyright": "2024 三只松鼠海外中心 版权所有"
+  },
+  "aboutPage": {
+    "title": "关于三只松鼠",
+    "breadcrumb": "关于我们",
+    "storyTitle": "我们的故事",
+    "storyText1": "三只松鼠海外中心成立于2012年，怀着同一个愿景：将丰富多彩的中国零食文化推向世界。从一家小型出口企业起步，如今已发展成为服务50多个国家分销商、零售商和餐饮服务商的全球信赖合作伙伴。",
+    "storyText2": "我们的名称灵感来自勤劳的松鼠——象征着我们致力于精心挑选和递送中国美食精华的承诺。正如松鼠收集和保存最好的食物一样，我们采购、检验并递送符合严格国际标准的优质产品。",
+    "storyText3": "今天，我们管理着超过500个产品SKU，与200多家全球合作伙伴携手合作。我们的成功建立在三大支柱之上：品质保证、透明合作以及分享正宗中国美食的真诚热情。",
+    "mission": "我们的使命",
+    "missionText": "成为中国美食与国际消费者之间的桥梁，以令人愉悦的正宗口味传递品质、安全和可靠的最高标准。",
+    "vision": "我们的愿景",
+    "visionText": "成为全球最值得信赖的中国零食出口合作伙伴，以产品卓越、客户服务和推广中国美食文化而享誉全球。",
+    "journey": "我们的历程",
+    "journeySubtitle": "从本地初创企业成长为全球出口领导者的关键里程碑。",
+    "certifications": "认证与合规",
+    "certificationsSubtitle": "我们保持最高的国际食品安全和质量管理体系标准。",
+    "team": "领导团队",
+    "teamSubtitle": "认识推动三只松鼠全球成功的专业团队。"
+  },
+  "timeline": {
+    "2012": "创立 - 三只松鼠海外中心在安徽合肥成立，由10位充满热情美食爱好者组成的小团队。",
+    "2015": "首次国际发货 - 扩展服务至东南亚首批国际客户，标志我们全球旅程的开始。",
+    "2017": "进入欧洲市场 - 成功进入欧洲市场，获得完整的FDA和欧盟合规认证。",
+    "2019": "产品线扩展 - 产品组合扩展至300多个SKU，与100多家全球分销商建立合作关系。",
+    "2022": "十周年 - 庆祝服务50多个国家、500多个产品、跨越各大洲的200多家全球合作伙伴。",
+    "2024": "创新中心 - 开设先进的产品研发中心，为全球合作伙伴开发定制配方。"
+  },
+  "certificates": {
+    "iso22000": "ISO 22000 - 食品安全管理体系",
+    "fssc22000": "FSSC 22000 - 食品安全体系认证",
+    "haccp": "HACCP - 危害分析关键控制点",
+    "fda": "FDA注册 - 美国食品药品监督管理局",
+    "iso14001": "ISO 14001 - 环境管理体系",
+    "iso45001": "ISO 45001 - 职业健康与安全",
+    "brc": "BRC全球标准 - 食品安全认证",
+    "halal": "清真认证 - 伊斯兰食品标准"
+  },
+  "team": {
+    "ceo": "首席执行官",
+    "coo": "首席运营官",
+    "salesHead": "国际销售负责人",
+    "qaDirector": "质量保证总监"
+  },
+  "videoPage": {
+    "title": "视频中心",
+    "breadcrumb": "视频",
+    "allVideos": "全部视频",
+    "filterCompany": "公司介绍",
+    "filterProducts": "产品",
+    "filterBehindScenes": "幕后花絮",
+    "seeMore": "联系我们",
+    "seeMoreText": "想看更多？联系我们获取私人视频演示或安排虚拟工厂参观。"
+  },
+  "productPage": {
+    "title": "我们的产品",
+    "breadcrumb": "产品",
+    "searchPlaceholder": "搜索产品...",
+    "categories": "类别",
+    "priceRange": "价格区间",
+    "moq": "最低起订量",
+    "features": "特性",
+    "customBranding": "可定制品牌",
+    "organicOptions": "有机选项",
+    "halalCertified": "清真认证",
+    "showing": "显示",
+    "products": "个产品",
+    "applyFilters": "应用筛选",
+    "relatedProducts": "您可能还喜欢",
+    "exploreMore": "探索我们更多的优质产品。"
+  },
+  "productDetail": {
+    "category": "类别",
+    "sku": "产品编号",
+    "origin": "产地",
+    "shelfLife": "保质期",
+    "priceRange": "价格区间",
+    "specifications": "产品规格",
+    "netWeight": "净含量",
+    "ingredients": "配料表",
+    "packaging": "包装",
+    "certifications": "认证",
+    "storage": "储存方式",
+    "requestQuote": "请求报价",
+    "contactSales": "联系销售",
+    "viewAll": "查看所有产品"
+  },
+  "contactPage": {
+    "title": "联系我们",
+    "breadcrumb": "联系",
+    "connectTitle": "联系我们",
+    "connectText": "无论您对我们的产品感兴趣、寻求合作机会，还是对我们的服务有疑问，我们都期待您的来信。",
+    "visitUs": "访问我们",
+    "callUs": "致电我们",
+    "emailUs": "邮件联系我们",
+    "businessHours": "营业时间",
+    "weekdays": "周一至周五：上午9:00 - 下午6:00（北京时间）",
+    "weekends": "周六至周日：休息",
+    "formTitle": "发送消息",
+    "fullName": "姓名",
+    "companyName": "公司名称",
+    "emailAddress": "电子邮箱",
+    "phoneNumber": "电话号码",
+    "inquiryType": "咨询类型",
+    "selectOption": "请选择",
+    "productInquiry": "产品咨询",
+    "businessPartnership": "商业合作",
+    "requestSamples": "申请样品",
+    "customOrder": "定制订单",
+    "generalQuestion": "一般问题",
+    "productsInterest": "感兴趣的产品",
+    "yourMessage": "您的留言",
+    "messagePlaceholder": "请告诉我们您的需求、偏好产品、预计数量以及您可能有的任何问题...",
+    "sendMessage": "发送消息",
+    "faqTitle": "常见问题",
+    "faqSubtitle": "关于我们合作常见问题的快速解答。",
+    "moqQuestion": "最低起订量是多少？",
+    "moqAnswer": "我们的标准最低起订量因产品而异，通常在200-1000盒之间。我们为新合作伙伴提供灵活的选择——联系我们讨论您的需求。",
+    "shippingQuestion": "有哪些运输方式？",
+    "shippingAnswer": "我们通过海运（FOB、CIF）运输大批量订单，空运运输样品。我们与主要船运公司合作，可安排门到门配送至大多数目的地。",
+    "customQuestion": "可以定制包装吗？",
+    "customAnswer": "可以！我们提供全面的定制品牌服务，包括标志设计、包装设计和定制口味。定制包装最低起订量从1000盒起。",
+    "certQuestion": "有哪些认证？",
+    "certAnswer": "我们获得ISO 22000、FSSC 22000、HACCP、BRC和FDA认证。我们的工厂还获得了适用产品的HALAL和KOSHER认证。",
+    "locationTitle": "中国安徽合肥",
+    "locationText": "创新产业园A座<br>高新技术产业开发区<br>地铁2号线 - 航天工业园站附近"
+  },
+  "form": {
+    "required": "必填",
+    "errorName": "请输入您的姓名",
+    "errorCompany": "请输入公司名称",
+    "errorEmail": "请输入有效的电子邮箱地址",
+    "errorType": "请选择咨询类型",
+    "errorMessage": "请输入至少20个字符",
+    "sending": "发送中...",
+    "sent": "消息已发送！"
+  },
+  "empty": {
+    "title": "未找到产品",
+    "message": "请尝试调整筛选条件或搜索标准"
+  }
+}

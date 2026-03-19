@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" data-i18n="productPage.meta.description" content="Explore Three Squirrels premium Chinese snack products - Nuts, dried fruits, seaweed snacks, and gift sets for global markets.">
+  <title data-i18n="productPage.title">Products | Three Squirrels Overseas</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- i18n -->
+  <script src="js/i18n.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="22" fill="#FF6B35"/>
+            <path d="M24 8 L27 14 L33 14 L28 18 L30 24 L24 20 L18 24 L20 18 L15 14 L21 14 Z" fill="#fff"/>
+            <circle cx="24" cy="30" r="10" fill="#fff"/>
+            <circle cx="21" cy="28" r="2" fill="#2D3436"/>
+            <circle cx="27" cy="28" r="2" fill="#2D3436"/>
+          </svg>
+          <span class="logo-text">Three<span>Squirrels</span></span>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+          <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+          <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
+          <a href="products.html" class="nav-link active" data-i18n="nav.products">Products</a>
+          <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Language Switcher -->
+          <div class="language-switcher">
+            <button class="current-lang-indicator" type="button">
+              <span class="lang-flag">EN</span>
+              <span class="current-lang-name">English</span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="lang-dropdown">
+              <button class="lang-btn active" data-lang="en">
+                <span class="lang-flag">EN</span>
+                <span class="lang-name">English</span>
+              </button>
+              <button class="lang-btn" data-lang="zh">
+                <span class="lang-flag">中</span>
+                <span class="lang-name">Chinese</span>
+              </button>
+              <button class="lang-btn" data-lang="ko">
+                <span class="lang-flag">한</span>
+                <span class="lang-name">Korean</span>
+              </button>
+              <button class="lang-btn" data-lang="ms">
+                <span class="lang-flag">MS</span>
+                <span class="lang-name">Malay</span>
+              </button>
+              <button class="lang-btn" data-lang="vi">
+                <span class="lang-flag">VI</span>
+                <span class="lang-name">Vietnamese</span>
+              </button>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.getQuote">Get Quote</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+    <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
+    <a href="products.html" class="nav-link active" data-i18n="nav.products">Products</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;" data-i18n="nav.getQuote">Get Quote</a>
+
+    <!-- Mobile Language Switcher -->
+    <div class="mobile-lang-switcher">
+      <p style="font-size: 0.875rem; color: var(--color-gray); margin-bottom: var(--space-sm);">Select Language:</p>
+      <div class="mobile-lang-list">
+        <button class="mobile-lang-btn active" data-lang="en">English</button>
+        <button class="mobile-lang-btn" data-lang="zh">中文</button>
+        <button class="mobile-lang-btn" data-lang="ko">한국어</button>
+        <button class="mobile-lang-btn" data-lang="ms">Bahasa Melayu</button>
+        <button class="mobile-lang-btn" data-lang="vi">Tiếng Việt</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1 data-i18n="productPage.pageTitle">Our Products</h1>
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span data-i18n="nav.products">Products</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Products Section -->
+  <section class="products-page section">
+    <div class="container">
+      <div class="products-layout">
+        <!-- Sidebar Filters -->
+        <aside class="products-sidebar reveal">
+          <div class="filter-section">
+            <div class="search-box">
+              <i data-lucide="search" style="width: 18px; height: 18px;"></i>
+              <input type="text" data-i18n="productPage.searchPlaceholder" placeholder="Search products...">
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <h4 class="filter-title" data-i18n="productPage.categories">Categories</h4>
+            <div class="filter-options">
+              <label class="filter-checkbox">
+                <input type="checkbox" value="nuts" checked>
+                <span data-i18n="productPage.nutsSeeds">(24)</span>
+              </label>
+              <label class="filter-checkbox">
+                <input type="checkbox" value="dried-fruits" checked>
+                <span data-i18n="productPage.driedFruits">(18)</span>
+              </label>
+              <label class="filter-checkbox">
+                <input type="checkbox" value="sea-snacks" checked>
+                <span data-i18n="productPage.seaSnacks">(12)</span>
+              </label>
+              <label class="filter-checkbox">
+                <input type="checkbox" value="sweets" checked>
+                <span data-i18n="productPage.traditionalSweets">(15)</span>
+              </label>
+              <label class="filter-checkbox">
+                <input type="checkbox" value="gift-sets" checked>
+                <span data-i18n="productPage.giftSets">(8)</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <h4 class="filter-title" data-i18n="productPage.priceRange">Price Range</h4>
+            <div class="filter-options">
+              <label class="filter-checkbox">
+                <input type="checkbox" value="price-1">
+                <span data-i18n="productPage.under3">Under $3.00</span>
+              </label>
+              <label class="filter-checkbox">
+                <input type="checkbox" value="price-2">
+                <span data-i18n="productPage.price35">$3.00 - $5.00</span>
+              </label>
+              <label class="filter-checkbox">
+                <input type="checkbox" value="price-3">
+                <span data-i18n="productPage.price510">$5.00 - $10.00</span>
+              </label>
+              <label class="filter-checkbox">
+                <input type="checkbox" value="price-4">
+                <span data-i18n="productPage.over10">Over $10.00</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <h4 class="filter-title" data-i18n="productPage.moq">MOQ</h4>
+            <div class="filter-options">
+              <label class="filter-checkbox">
+                <input type="checkbox" value="moq-1">
+                <span data-i18n="productPage.moqUnder500">Under 500 boxes</span>
+              </label>
+              <label class="filter-checkbox">
+                <input type="checkbox" value="moq-2">
+                <span data-i18n="productPage.moq5001000">500 - 1000 boxes</span>
+              </label>
+              <label class="filter-checkbox">
+                <input type="checkbox" value="moq-3">
+                <span data-i18n="productPage.moqOver1000">Over 1000 boxes</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <h4 class="filter-title" data-i18n="productPage.features">Features</h4>
+            <div class="filter-options">
+              <label class="filter-checkbox">
+                <input type="checkbox" value="custom">
+                <span data-i18n="productPage.customBranding">Custom Branding Available</span>
+              </label>
+              <label class="filter-checkbox">
+                <input type="checkbox" value="organic">
+                <span data-i18n="productPage.organicOptions">Organic Options</span>
+              </label>
+              <label class="filter-checkbox">
+                <input type="checkbox" value="halal">
+                <span data-i18n="productPage.halalCertified">Halal Certified</span>
+              </label>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" style="width: 100%;" data-i18n="productPage.applyFilters">Apply Filters</button>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="products-main">
+          <div class="products-toolbar">
+            <span class="products-count" data-i18n="productPage.showing24">Showing 24 products</span>
+            <div class="view-toggle">
+              <button class="view-btn active" data-view="grid" aria-label="Grid view">
+                <i data-lucide="grid-3x3" style="width: 18px; height: 18px;"></i>
+              </button>
+              <button class="view-btn" data-view="list" aria-label="List view">
+                <i data-lucide="list" style="width: 18px; height: 18px;"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="products-full-grid">
+            <!-- Product 1 -->
+            <a href="product-detail.html" class="product-card reveal" data-categories="nuts">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?w=400&h=400&fit=crop" alt="Premium Mixed Nuts">
+                <div class="product-overlay">
+                  <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category" data-i18n="products.category.nuts">Nuts & Seeds</span>
+                <h4 class="product-name" data-i18n="productPage.product1Name">Premium Mixed Nuts Selection</h4>
+                <div class="product-meta">
+                  <span class="product-moq" data-i18n="productPage.moq500">MOQ: 500 boxes</span>
+                  <span class="product-price">$2.80 - $4.50</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product 2 -->
+            <a href="product-detail.html" class="product-card reveal" data-categories="dried-fruits">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&h=400&fit=crop" alt="Dried Mango">
+                <div class="product-overlay">
+                  <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category" data-i18n="products.category.driedFruits">Dried Fruits</span>
+                <h4 class="product-name" data-i18n="productPage.product2Name">Tropical Dried Mango Slices</h4>
+                <div class="product-meta">
+                  <span class="product-moq" data-i18n="productPage.moq300">MOQ: 300 boxes</span>
+                  <span class="product-price">$3.20 - $5.00</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product 3 -->
+            <a href="product-detail.html" class="product-card reveal" data-categories="sea-snacks">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop" alt="Seaweed Snacks">
+                <div class="product-overlay">
+                  <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category" data-i18n="products.category.seaSnacks">Sea Snacks</span>
+                <h4 class="product-name" data-i18n="productPage.product3Name">Japanese Style Seaweed Snacks</h4>
+                <div class="product-meta">
+                  <span class="product-moq" data-i18n="productPage.moq1000">MOQ: 1000 boxes</span>
+                  <span class="product-price">$1.50 - $2.80</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product 4 -->
+            <a href="product-detail.html" class="product-card reveal" data-categories="nuts">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?w=400&h=400&fit=crop" alt="Candied Walnuts">
+                <div class="product-overlay">
+                  <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category" data-i18n="products.category.nuts">Nuts & Seeds</span>
+                <h4 class="product-name" data-i18n="productPage.product4Name">Honey Glazed Candied Walnuts</h4>
+                <div class="product-meta">
+                  <span class="product-moq" data-i18n="productPage.moq500">MOQ: 500 boxes</span>
+                  <span class="product-price">$4.20 - $6.50</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product 5 -->
+            <a href="product-detail.html" class="product-card reveal" data-categories="sweets">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1599480653546-1b1a23c0d0e9?w=400&h=400&fit=crop" alt="Black Sesame">
+                <div class="product-overlay">
+                  <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category" data-i18n="products.category.sweets">Traditional Sweets</span>
+                <h4 class="product-name" data-i18n="productPage.product5Name">Black Sesame Rice Candies</h4>
+                <div class="product-meta">
+                  <span class="product-moq" data-i18n="productPage.moq800">MOQ: 800 boxes</span>
+                  <span class="product-price">$2.50 - $3.80</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product 6 -->
+            <a href="product-detail.html" class="product-card reveal" data-categories="gift-sets">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=400&h=400&fit=crop" alt="Gift Box">
+                <div class="product-overlay">
+                  <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category" data-i18n="products.category.giftSets">Gift Sets</span>
+                <h4 class="product-name" data-i18n="productPage.product6Name">Premium Gift Box Collection</h4>
+                <div class="product-meta">
+                  <span class="product-moq" data-i18n="productPage.moq200">MOQ: 200 boxes</span>
+                  <span class="product-price">$15.00 - $28.00</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product 7 -->
+            <a href="product-detail.html" class="product-card reveal" data-categories="nuts">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=400&h=400&fit=crop" alt="Roasted Cashews">
+                <div class="product-overlay">
+                  <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category" data-i18n="products.category.nuts">Nuts & Seeds</span>
+                <h4 class="product-name" data-i18n="productPage.product7Name">Premium Roasted Cashews</h4>
+                <div class="product-meta">
+                  <span class="product-moq" data-i18n="productPage.moq500">MOQ: 500 boxes</span>
+                  <span class="product-price">$5.50 - $8.00</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product 8 -->
+            <a href="product-detail.html" class="product-card reveal" data-categories="dried-fruits">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1560023907-5f339617ea30?w=400&h=400&fit=crop" alt="Dried Strawberries">
+                <div class="product-overlay">
+                  <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category" data-i18n="products.category.driedFruits">Dried Fruits</span>
+                <h4 class="product-name" data-i18n="productPage.product8Name">Freeze-Dried Strawberries</h4>
+                <div class="product-meta">
+                  <span class="product-moq" data-i18n="productPage.moq300">MOQ: 300 boxes</span>
+                  <span class="product-price">$4.80 - $7.20</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product 9 -->
+            <a href="product-detail.html" class="product-card reveal" data-categories="sea-snacks">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=400&h=400&fit=crop" alt="Kelp Snacks">
+                <div class="product-overlay">
+                  <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category" data-i18n="products.category.seaSnacks">Sea Snacks</span>
+                <h4 class="product-name" data-i18n="productPage.product9Name">Crispy Kelp Strips</h4>
+                <div class="product-meta">
+                  <span class="product-moq" data-i18n="productPage.moq800">MOQ: 800 boxes</span>
+                  <span class="product-price">$2.20 - $3.50</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product 10 -->
+            <a href="product-detail.html" class="product-card reveal" data-categories="sweets">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1582056615449-3b65df0e7c8c?w=400&h=400&fit=crop" alt="Milk Candies">
+                <div class="product-overlay">
+                  <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category" data-i18n="products.category.sweets">Traditional Sweets</span>
+                <h4 class="product-name" data-i18n="productPage.product10Name">Classic Milk Candy Box</h4>
+                <div class="product-meta">
+                  <span class="product-moq" data-i18n="productPage.moq1000">MOQ: 1000 boxes</span>
+                  <span class="product-price">$1.80 - $2.50</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product 11 -->
+            <a href="product-detail.html" class="product-card reveal" data-categories="nuts">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1599599810694-b5b37304c041?w=400&h=400&fit=crop" alt="Almonds">
+                <div class="product-overlay">
+                  <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category" data-i18n="products.category.nuts">Nuts & Seeds</span>
+                <h4 class="product-name" data-i18n="productPage.product11Name">Blanched Whole Almonds</h4>
+                <div class="product-meta">
+                  <span class="product-moq" data-i18n="productPage.moq500">MOQ: 500 boxes</span>
+                  <span class="product-price">$4.00 - $6.00</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product 12 -->
+            <a href="product-detail.html" class="product-card reveal" data-categories="gift-sets">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400&h=400&fit=crop" alt="Snack Box">
+                <div class="product-overlay">
+                  <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+                </div>
+              </div>
+              <div class="product-content">
+                <span class="product-category" data-i18n="products.category.giftSets">Gift Sets</span>
+                <h4 class="product-name" data-i18n="productPage.product12Name">Assorted Snack Variety Box</h4>
+                <div class="product-meta">
+                  <span class="product-moq" data-i18n="productPage.moq300">MOQ: 300 boxes</span>
+                  <span class="product-price">$8.50 - $12.00</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <button class="pagination-btn" data-page="prev" aria-label="Previous page">
+              <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
+            </button>
+            <button class="pagination-btn active" data-page="1">1</button>
+            <button class="pagination-btn" data-page="2">2</button>
+            <button class="pagination-btn" data-page="3">3</button>
+            <button class="pagination-btn" data-page="next" aria-label="Next page">
+              <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 data-i18n="productPage.ctaTitle">Looking for Something Specific?</h2>
+      <p data-i18n="productPage.ctaText">We offer custom product development and branding services. Contact us to discuss your requirements.</p>
+      <a href="contact.html" class="btn btn-white btn-lg" data-i18n="productPage.ctaButton">Request Custom Product</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="22" fill="#FF6B35"/>
+              <path d="M24 8 L27 14 L33 14 L28 18 L30 24 L24 20 L18 24 L20 18 L15 14 L21 14 Z" fill="#fff"/>
+              <circle cx="24" cy="30" r="10" fill="#fff"/>
+            </svg>
+            <span class="logo-text">Three<span>Squirrels</span></span>
+          </a>
+          <p data-i18n="footer.brandText">Premium Chinese snacks exporter serving global markets since 2012. Quality, authenticity, and reliability in every bite.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i data-lucide="linkedin" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i data-lucide="twitter" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <i data-lucide="youtube" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i data-lucide="instagram" style="width: 20px; height: 20px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title" data-i18n="footer.quickLinks">Quick Links</h4>
+          <div class="footer-links">
+            <a href="about.html" data-i18n="nav.about">About Us</a>
+            <a href="products.html" data-i18n="nav.products">Products</a>
+            <a href="videos.html" data-i18n="nav.videos">Videos</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title" data-i18n="footer.products">Products</h4>
+          <div class="footer-links">
+            <a href="products.html" data-i18n="products.category.nuts">Nuts & Seeds</a>
+            <a href="products.html" data-i18n="products.category.driedFruits">Dried Fruits</a>
+            <a href="products.html" data-i18n="products.category.seaSnacks">Sea Snacks</a>
+            <a href="products.html" data-i18n="products.category.giftSets">Gift Sets</a>
+          </div>
+        </div>
+
+        <div class="footer-contact-info">
+          <h4 class="footer-title" data-i18n="footer.contactUs">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
+              <span data-i18n-html="true" data-i18n="footer.address">Building A, Innovation Park<br>Hefei, Anhui, China 230001</span>
+            </li>
+            <li>
+              <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+              <span data-i18n="footer.phone">+86 551 1234 5678</span>
+            </li>
+            <li>
+              <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
+              <span data-i18n="footer.email">overseas@threesquirrels.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">2024 Three Squirrels Overseas Center. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="#" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <i data-lucide="arrow-up" style="width: 24px; height: 24px;"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile language switcher handler
+    document.querySelectorAll('.mobile-lang-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const lang = this.dataset.lang;
+
+        // Update active state
+        document.querySelectorAll('.mobile-lang-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        // Change language via i18n
+        if (window.i18n) {
+          window.i18n.changeLanguage(lang);
+        }
+      });
+    });
+  </script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.inland-security-footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.trigger-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minimax-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.minimax-link:visited {
+  color: #adadad;
+}
+
+.minimax-link:hover {
+  color: #666666;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #171717;
+}
+
+/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.beian-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #171717;
+}
+
+.beian-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.underline-text {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  color: #000000;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .trigger-content {
+    background-color: transparent;
+  }
+
+  .minimax-link,
+  .minimax-link:visited {
+    color: #666666;
+  }
+
+  .minimax-link:hover {
+    color: #adadad;
+  }
+
+  .tooltip-content {
+    background-color: #262626;
+    color: #ededed;
+  }
+
+  .beian-link,
+  .underline-text {
+    color: #ededed;
+  }
+
+  .underline-text:hover {
+    color: #ffffff;
+  }
+}
+
+</style>
+<div class="inland-security-footer">
+  <div class="tooltip-container">
+    <div class="trigger-content">
+      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
+        <span>© 2026 MiniMax</span>
+      </a>
+    </div>
+    <div class="tooltip-content">
+      <section class="info-section">
+        <span>上海稀宇科技有限公司</span>
+      </section>
+
+      <section class="info-section">
+        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
+          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
+          <span class="underline-text">沪公网安备31010402010179号</span>
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
+          沪ICP备2023003282号-38
+        </a>
+      </section>
+
+      <section class="info-section">
+        <span>模型名称：MiniMax</span>
+        <span>备案号：Shanghai-MiniMax-202505230046</span>
+      </section>
+
+      <section class="info-section">
+        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
+          用户协议
+        </a>
+        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
+          隐私政策
+        </a>
+      </section>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

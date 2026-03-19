@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" data-i18n="productDetail.meta.description" content="Premium Mixed Nuts Selection - High-quality Chinese snack available for global export. Custom packaging available.">
+  <title data-i18n="productDetail.meta.title">Premium Mixed Nuts Selection | Three Squirrels Overseas</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- i18n -->
+  <script src="js/i18n.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="22" fill="#FF6B35"/>
+            <path d="M24 8 L27 14 L33 14 L28 18 L30 24 L24 20 L18 24 L20 18 L15 14 L21 14 Z" fill="#fff"/>
+            <circle cx="24" cy="30" r="10" fill="#fff"/>
+            <circle cx="21" cy="28" r="2" fill="#2D3436"/>
+            <circle cx="27" cy="28" r="2" fill="#2D3436"/>
+          </svg>
+          <span class="logo-text">Three<span>Squirrels</span></span>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+          <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+          <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
+          <a href="products.html" class="nav-link active" data-i18n="nav.products">Products</a>
+          <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Language Switcher -->
+          <div class="language-switcher">
+            <button class="current-lang-indicator" type="button">
+              <span class="lang-flag">EN</span>
+              <span class="current-lang-name">English</span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="lang-dropdown">
+              <button class="lang-btn active" data-lang="en">
+                <span class="lang-flag">EN</span>
+                <span class="lang-name">English</span>
+              </button>
+              <button class="lang-btn" data-lang="zh">
+                <span class="lang-flag">中</span>
+                <span class="lang-name">Chinese</span>
+              </button>
+              <button class="lang-btn" data-lang="ko">
+                <span class="lang-flag">한</span>
+                <span class="lang-name">Korean</span>
+              </button>
+              <button class="lang-btn" data-lang="ms">
+                <span class="lang-flag">MS</span>
+                <span class="lang-name">Malay</span>
+              </button>
+              <button class="lang-btn" data-lang="vi">
+                <span class="lang-flag">VI</span>
+                <span class="lang-name">Vietnamese</span>
+              </button>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.getQuote">Get Quote</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+    <a href="videos.html" class="nav-link" data-i18n="nav.videos">Videos</a>
+    <a href="products.html" class="nav-link active" data-i18n="nav.products">Products</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;" data-i18n="nav.getQuote">Get Quote</a>
+
+    <!-- Mobile Language Switcher -->
+    <div class="mobile-lang-switcher">
+      <p style="font-size: 0.875rem; color: var(--color-gray); margin-bottom: var(--space-sm);">Select Language:</p>
+      <div class="mobile-lang-list">
+        <button class="mobile-lang-btn active" data-lang="en">English</button>
+        <button class="mobile-lang-btn" data-lang="zh">中文</button>
+        <button class="mobile-lang-btn" data-lang="ko">한국어</button>
+        <button class="mobile-lang-btn" data-lang="ms">Bahasa Melayu</button>
+        <button class="mobile-lang-btn" data-lang="vi">Tiếng Việt</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Product Detail Section -->
+  <section class="product-detail section">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb" style="margin-bottom: var(--space-xl);">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="products.html" data-i18n="nav.products">Products</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="products.html" data-i18n="products.category.nuts">Nuts & Seeds</a>
+        <span class="breadcrumb-separator">/</span>
+        <span data-i18n="productDetail.breadcrumb">Premium Mixed Nuts Selection</span>
+      </div>
+
+      <div class="product-detail-grid">
+        <!-- Product Gallery -->
+        <div class="product-gallery reveal">
+          <div class="product-main-image">
+            <img src="https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?w=600&h=600&fit=crop" alt="Premium Mixed Nuts Selection">
+          </div>
+          <div class="product-thumbnails">
+            <button class="product-thumbnail active">
+              <img src="https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?w=100&h=100&fit=crop" alt="View 1">
+            </button>
+            <button class="product-thumbnail">
+              <img src="https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=100&h=100&fit=crop" alt="View 2">
+            </button>
+            <button class="product-thumbnail">
+              <img src="https://images.unsplash.com/photo-1599599810694-b5b37304c041?w=100&h=100&fit=crop" alt="View 3">
+            </button>
+            <button class="product-thumbnail">
+              <img src="https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?w=100&h=100&fit=crop" alt="View 4">
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info reveal">
+          <h1 data-i18n="productDetail.productTitle">Premium Mixed Nuts Selection</h1>
+
+          <div class="product-meta-info">
+            <div class="product-meta-item">
+              <span class="product-meta-label" data-i18n="productDetail.category">Category</span>
+              <span class="product-meta-value" data-i18n="products.category.nuts">Nuts & Seeds</span>
+            </div>
+            <div class="product-meta-item">
+              <span class="product-meta-label">SKU</span>
+              <span class="product-meta-value">TS-NS-001</span>
+            </div>
+            <div class="product-meta-item">
+              <span class="product-meta-label" data-i18n="productDetail.origin">Origin</span>
+              <span class="product-meta-value">China</span>
+            </div>
+            <div class="product-meta-item">
+              <span class="product-meta-label" data-i18n="productDetail.shelfLife">Shelf Life</span>
+              <span class="product-meta-value" data-i18n="productDetail.months">12 Months</span>
+            </div>
+          </div>
+
+          <div class="product-price-section">
+            <p class="product-price-label" data-i18n="productDetail.priceRange">Price Range</p>
+            <span class="product-price">$2.80 - $4.50</span>
+            <span class="product-moq">
+              <i data-lucide="box" style="width: 16px; height: 16px;"></i>
+              <span data-i18n="productDetail.moq500">MOQ: 500 boxes</span>
+            </span>
+          </div>
+
+          <p style="color: var(--color-gray); margin-bottom: var(--space-xl);" data-i18n="productDetail.description">
+            Our Premium Mixed Nuts Selection features a carefully curated blend of high-quality almonds, cashews, walnuts, and pistachios. Roasted to perfection and lightly salted, this mix delivers a satisfying crunch in every handful. Perfect for retail, foodservice, or custom branded packaging.
+          </p>
+
+          <div class="product-specs">
+            <h3 data-i18n="productDetail.specifications">Specifications</h3>
+            <div class="specs-table">
+              <div class="specs-row">
+                <span class="specs-label" data-i18n="productDetail.netWeight">Net Weight</span>
+                <span class="specs-value" data-i18n="productDetail.weightOptions">100g / 200g / 500g</span>
+              </div>
+              <div class="specs-row">
+                <span class="specs-label" data-i18n="productDetail.ingredients">Ingredients</span>
+                <span class="specs-value" data-i18n="productDetail.ingredientsList">Almonds, Cashews, Walnuts, Pistachios, Salt, Vegetable Oil</span>
+              </div>
+              <div class="specs-row">
+                <span class="specs-label" data-i18n="productDetail.packaging">Packaging</span>
+                <span class="specs-value" data-i18n="productDetail.packagingOptions">Stand-up pouches, jars, or bulk bags available</span>
+              </div>
+              <div class="specs-row">
+                <span class="specs-label" data-i18n="productDetail.certifications">Certifications</span>
+                <span class="specs-value" data-i18n="productDetail.certList">ISO 22000, HACCP, FDA Registered, HALAL</span>
+              </div>
+              <div class="specs-row">
+                <span class="specs-label" data-i18n="productDetail.storage">Storage</span>
+                <span class="specs-value" data-i18n="productDetail.storageText">Cool, dry place away from direct sunlight</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
+              <span data-i18n="productDetail.requestQuote">Request Quote</span>
+            </a>
+            <a href="contact.html" class="btn btn-secondary btn-lg">
+              <i data-lucide="phone" style="width: 18px; height: 18px;"></i>
+              <span data-i18n="productDetail.contactSales">Contact Sales</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products Section -->
+  <section class="products-preview section" style="background: var(--color-off-white);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="productDetail.relatedTitle">You May Also Like</h2>
+        <p data-i18n="productDetail.relatedSubtitle">Explore more premium products from our collection.</p>
+      </div>
+
+      <div class="products-grid">
+        <a href="product-detail.html" class="product-card reveal">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?w=400&h=400&fit=crop" alt="Candied Walnuts">
+            <div class="product-overlay">
+              <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <span class="product-category" data-i18n="products.category.nuts">Nuts & Seeds</span>
+            <h4 class="product-name" data-i18n="productDetail.relatedProduct1">Honey Glazed Candied Walnuts</h4>
+            <div class="product-meta">
+              <span class="product-moq" data-i18n="productDetail.moq500">MOQ: 500 boxes</span>
+              <span class="product-price">$4.20 - $6.50</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="product-detail.html" class="product-card reveal">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=400&h=400&fit=crop" alt="Cashews">
+            <div class="product-overlay">
+              <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <span class="product-category" data-i18n="products.category.nuts">Nuts & Seeds</span>
+            <h4 class="product-name" data-i18n="productDetail.relatedProduct2">Premium Roasted Cashews</h4>
+            <div class="product-meta">
+              <span class="product-moq" data-i18n="productDetail.moq500">MOQ: 500 boxes</span>
+              <span class="product-price">$5.50 - $8.00</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="product-detail.html" class="product-card reveal">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1599599810694-b5b37304c041?w=400&h=400&fit=crop" alt="Almonds">
+            <div class="product-overlay">
+              <span class="btn btn-white btn-sm" data-i18n="productPage.viewDetails">View Details</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <span class="product-category" data-i18n="products.category.nuts">Nuts & Seeds</span>
+            <h4 class="product-name" data-i18n="productDetail.relatedProduct3">Blanched Whole Almonds</h4>
+            <div class="product-meta">
+              <span class="product-moq" data-i18n="productDetail.moq500">MOQ: 500 boxes</span>
+              <span class="product-price">$4.00 - $6.00</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="text-center mt-lg">
+        <a href="products.html" class="btn btn-secondary" data-i18n="productDetail.viewAllProducts">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 data-i18n="productDetail.ctaTitle">Ready to Place an Order?</h2>
+      <p data-i18n="productDetail.ctaText">Contact our sales team for pricing, custom packaging options, and shipping quotes to your location.</p>
+      <a href="contact.html" class="btn btn-white btn-lg" data-i18n="productDetail.getQuote">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="22" fill="#FF6B35"/>
+              <path d="M24 8 L27 14 L33 14 L28 18 L30 24 L24 20 L18 24 L20 18 L15 14 L21 14 Z" fill="#fff"/>
+              <circle cx="24" cy="30" r="10" fill="#fff"/>
+            </svg>
+            <span class="logo-text">Three<span>Squirrels</span></span>
+          </a>
+          <p data-i18n="footer.brandText">Premium Chinese snacks exporter serving global markets since 2012. Quality, authenticity, and reliability in every bite.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i data-lucide="linkedin" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i data-lucide="twitter" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <i data-lucide="youtube" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i data-lucide="instagram" style="width: 20px; height: 20px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title" data-i18n="footer.quickLinks">Quick Links</h4>
+          <div class="footer-links">
+            <a href="about.html" data-i18n="nav.about">About Us</a>
+            <a href="products.html" data-i18n="nav.products">Products</a>
+            <a href="videos.html" data-i18n="nav.videos">Videos</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title" data-i18n="footer.products">Products</h4>
+          <div class="footer-links">
+            <a href="products.html" data-i18n="products.category.nuts">Nuts & Seeds</a>
+            <a href="products.html" data-i18n="products.category.driedFruits">Dried Fruits</a>
+            <a href="products.html" data-i18n="products.category.seaSnacks">Sea Snacks</a>
+            <a href="products.html" data-i18n="products.category.giftSets">Gift Sets</a>
+          </div>
+        </div>
+
+        <div class="footer-contact-info">
+          <h4 class="footer-title" data-i18n="footer.contactUs">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
+              <span data-i18n-html="true" data-i18n="footer.address">Building A, Innovation Park<br>Hefei, Anhui, China 230001</span>
+            </li>
+            <li>
+              <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+              <span data-i18n="footer.phone">+86 551 1234 5678</span>
+            </li>
+            <li>
+              <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
+              <span data-i18n="footer.email">overseas@threesquirrels.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">2024 Three Squirrels Overseas Center. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="#" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <i data-lucide="arrow-up" style="width: 24px; height: 24px;"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile language switcher handler
+    document.querySelectorAll('.mobile-lang-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const lang = this.dataset.lang;
+
+        // Update active state
+        document.querySelectorAll('.mobile-lang-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        // Change language via i18n
+        if (window.i18n) {
+          window.i18n.changeLanguage(lang);
+        }
+      });
+    });
+  </script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.inland-security-footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.trigger-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minimax-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.minimax-link:visited {
+  color: #adadad;
+}
+
+.minimax-link:hover {
+  color: #666666;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 16px; /* 8px 内容间距 + 8px 用于鼠标移动的透明区域 */
+  font-size: 12px;
+  line-height: 17px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #171717;
+}
+
+/* 创建透明的连接区域，让鼠标可以平滑移动到 tooltip */
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.beian-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #171717;
+}
+
+.beian-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.underline-text {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.underline-text:hover {
+  color: #000000;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .trigger-content {
+    background-color: transparent;
+  }
+
+  .minimax-link,
+  .minimax-link:visited {
+    color: #666666;
+  }
+
+  .minimax-link:hover {
+    color: #adadad;
+  }
+
+  .tooltip-content {
+    background-color: #262626;
+    color: #ededed;
+  }
+
+  .beian-link,
+  .underline-text {
+    color: #ededed;
+  }
+
+  .underline-text:hover {
+    color: #ffffff;
+  }
+}
+
+</style>
+<div class="inland-security-footer">
+  <div class="tooltip-container">
+    <div class="trigger-content">
+      <a href="https://www.minimaxi.com/" target="_blank" rel="noreferrer" class="minimax-link">
+        <span>© 2026 MiniMax</span>
+      </a>
+    </div>
+    <div class="tooltip-content">
+      <section class="info-section">
+        <span>上海稀宇科技有限公司</span>
+      </section>
+
+      <section class="info-section">
+        <a class="beian-link" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402010179" target="_blank" rel="noreferrer">
+          <img alt="hailuo-beian-icon" src="https://cdn.hailuoai.com/hailuo-video-web/public_assets/223037d3-79fd-4db0-a456-749f38a6a14b.png" class="beian-icon">
+          <span class="underline-text">沪公网安备31010402010179号</span>
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" class="underline-text">
+          沪ICP备2023003282号-38
+        </a>
+      </section>
+
+      <section class="info-section">
+        <span>模型名称：MiniMax</span>
+        <span>备案号：Shanghai-MiniMax-202505230046</span>
+      </section>
+
+      <section class="info-section">
+        <a href="https://agent.minimaxi.com/doc/zh/terms-of-service.html" target="_blank" rel="noreferrer" class="underline-text">
+          用户协议
+        </a>
+        <a href="https://agent.minimaxi.com/doc/zh/privacy-policy.html" target="_blank" rel="noreferrer" class="underline-text">
+          隐私政策
+        </a>
+      </section>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
